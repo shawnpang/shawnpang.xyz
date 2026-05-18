@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Instrument_Serif, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import Nav from "./components/Nav";
 
 const geist = Geist({
   subsets: ["latin"],
@@ -26,9 +25,10 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "How X's algorithm actually works — a visual guide",
+  title: "Shawn Pang",
   description:
-    "A visual, interactive plain-English explainer of how X (Twitter) decides what to show you. Based on the open-sourced ranker.",
+    "Personal site of Shawn Pang — research notes and small fun projects.",
+  metadataBase: new URL("https://shawnpang.xyz"),
 };
 
 export default function RootLayout({
@@ -39,10 +39,7 @@ export default function RootLayout({
       lang="en"
       className={`${geist.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable}`}
     >
-      <body data-theme="dark">
-        <Nav />
-        <main id="top">{children}</main>
-      </body>
+      <body data-theme="dark">{children}</body>
     </html>
   );
 }

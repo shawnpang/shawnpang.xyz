@@ -1,33 +1,12 @@
-# How X's Algorithm Works
+# shawnpang.xyz
 
-A plain-English, one-page explainer of how X (Twitter) decides what shows up in your feed. Designed for people who don't write code or read papers — but want to understand what determines whether their posts get seen.
-
-Based on the open-source release at [github.com/xai-org/x-algorithm](https://github.com/xai-org/x-algorithm) (xAI, May 2026).
-
-## What this is
-
-A single-page Next.js app. Eleven sections, in narrative order:
-
-1. **Hero** — the question this page answers
-2. **The 60-second version** — the whole algorithm in 5 bullets
-3. **Where posts come from** — Thunder (in-network) vs Phoenix Retrieval (out-of-network)
-4. **Narrowing down** — funnel from thousands → ~50
-5. **What gets filtered out** — the visibility filters
-6. **The 19 reactions the AI predicts** — the prediction job
-7. **Boosts vs demotes** — what raises and lowers your score
-8. **Special rules** — author diversity, video bonus, new-user routing, For You vs Following
-9. **What it means for creators** — actionable takeaways
-10. **Common misconceptions** — myth-busting from the released code
-11. **Footer**
-
-The visual design is intentionally minimal. Every section is annotated with `{/* DESIGN: ... */}` comments so it can be redesigned (e.g. in Claude design) without touching content.
+Personal site of [Shawn Pang](https://x.com/0xshawnpang) — research notes and small fun projects.
 
 ## Stack
 
 - Next.js 16 (App Router) + TypeScript
 - Tailwind v4
-- No other runtime dependencies
-- Pure CSS animations (no framer-motion, no chart libraries)
+- Deployed on Vercel
 
 ## Run locally
 
@@ -42,31 +21,25 @@ Then open `http://localhost:3000`.
 
 ```
 app/
-  layout.tsx
-  page.tsx                 ← composes all sections in order
-  globals.css              ← .section / .eyebrow / .h2 / .lede + animations
+  layout.tsx               ← root layout (fonts, generic metadata)
+  page.tsx                 ← homepage (name + tagline + index of writing/projects)
+  globals.css              ← shared design tokens + per-section styles
   components/
-    ScrollReveal.tsx       ← fades+rises children on scroll
-    Counter.tsx            ← animated count-up
-    sections/
-      Hero.tsx
-      SixtySeconds.tsx
-      CandidateSources.tsx
-      Funnel.tsx
-      Filters.tsx
-      NineteenReactions.tsx
-      BoostsVsDemotes.tsx
-      SpecialRules.tsx
-      CreatorTakeaways.tsx
-      MythBusting.tsx
-      Footer.tsx
+    Nav.tsx                ← used by the X-algorithm article (scrollspy + share)
+    sections/              ← X-algorithm article sections
+  lib/                     ← icons, hooks, data shared across the site
+  x-algorithm/
+    layout.tsx             ← article-specific metadata + Nav
+    page.tsx               ← article entry — composes the section components
 ```
 
-## Editing content vs editing design
+## Adding a new piece
 
-- **Content** lives inside each section component. Rewrite the JSX text directly.
-- **Design** is controlled by four global classes (`.section`, `.eyebrow`, `.h2`, `.lede`) in `app/globals.css`, plus minimal structural Tailwind utilities. Replace or extend those to re-skin the whole page.
+- **Writing / research article**: create `app/<slug>/page.tsx` and (optionally) `app/<slug>/layout.tsx` for article-specific metadata. Link it from the homepage list in `app/page.tsx`.
+- **Fun project**: same pattern — give it its own route under `app/`.
+
+Design tokens live at the top of `app/globals.css` (colors, fonts, radii, nav height). Reuse the existing utility classes (`.t-h1`, `.t-h2`, `.t-sub`, `.t-mono`, `.wrap`, `.wrap-narrow`, `.card`, `.btn`, `.chip`) so new pages feel consistent.
 
 ## License
 
-Educational explainer. The X algorithm source code itself is licensed by xAI — see their repo.
+Personal site. Article content is mine; reuse with attribution.
