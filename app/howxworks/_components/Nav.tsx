@@ -3,9 +3,14 @@
 import { useEffect, useState } from "react";
 import { CHAPTERS } from "@/app/howxworks/_lib/data";
 
+const SHARE_TEXT = encodeURIComponent(
+  "how X's algorithm actually works — finally explained visually. by @0xshawnpang"
+);
+const SHARE_URL = encodeURIComponent("https://shawnpang.xyz/howxworks");
+const SHARE_HREF = `https://twitter.com/intent/tweet?text=${SHARE_TEXT}&url=${SHARE_URL}`;
+
 export default function Nav() {
   const [activeId, setActiveId] = useState<string>(CHAPTERS[0].id);
-  const [shareHref, setShareHref] = useState<string>("#");
 
   // Scrollspy
   useEffect(() => {
@@ -26,15 +31,6 @@ export default function Nav() {
     );
     els.forEach((el) => io.observe(el));
     return () => io.disconnect();
-  }, []);
-
-  // Share URL
-  useEffect(() => {
-    const text = encodeURIComponent(
-      "how X's algorithm actually works — finally explained visually. by @0xshawnpang"
-    );
-    const url = encodeURIComponent(window.location.href.split("#")[0]);
-    setShareHref(`https://twitter.com/intent/tweet?text=${text}&url=${url}`);
   }, []);
 
   return (
@@ -71,7 +67,7 @@ export default function Nav() {
         <a
           className="share-btn"
           id="shareBtn"
-          href={shareHref}
+          href={SHARE_HREF}
           target="_blank"
           rel="noopener"
         >

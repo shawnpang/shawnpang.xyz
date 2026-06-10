@@ -1,4 +1,78 @@
+import Link from "next/link";
+import { siteItems, type SiteItem, type SiteItemKind } from "./_content/siteItems";
+
+const sections: { title: string; kinds: SiteItemKind[] }[] = [
+  { title: "Research", kinds: ["research"] },
+  { title: "Writing", kinds: ["writing"] },
+  { title: "Projects", kinds: ["project", "data-map"] },
+  { title: "Notes", kinds: ["note"] },
+];
+
+const kindLabels: Record<SiteItemKind, string> = {
+  research: "Research",
+  "data-map": "Data map",
+  writing: "Writing",
+  project: "Project",
+  note: "Note",
+};
+
+function metaForItem(item: SiteItem) {
+  return item.status === "Live" ? item.date : item.status;
+}
+
+function ItemList({ items }: { items: SiteItem[] }) {
+  if (items.length === 0) {
+    return <p className="home-empty">More soon.</p>;
+  }
+
+  return (
+    <ul className="home-list">
+      {items.map((item) => (
+        <li key={item.href}>
+          <Link href={item.href}>
+            <span className="home-list-main">
+              <span className="home-list-title">{item.title}</span>
+              <span className="home-list-desc">{item.description}</span>
+            </span>
+            <span className="home-list-meta">{metaForItem(item)}</span>
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function FeaturedItems({ items }: { items: SiteItem[] }) {
+  if (items.length === 0) {
+    return null;
+  }
+
+  return (
+    <section className="home-section">
+      <h2 className="home-section-title">Featured</h2>
+      <div className="home-feature-grid">
+        {items.map((item) => (
+          <Link className="home-feature-card" href={item.href} key={item.href}>
+            <span className="home-feature-kicker">
+              {kindLabels[item.kind]} - {item.status} - {item.date}
+            </span>
+            <span className="home-feature-title">{item.title}</span>
+            <span className="home-feature-desc">{item.description}</span>
+            <span className="home-tags" aria-label="Tags">
+              {item.tags.map((tag) => (
+                <span key={tag}>{tag}</span>
+              ))}
+            </span>
+          </Link>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 export default function Home() {
+  const featuredItems = siteItems.filter((item) => item.featured);
+
   return (
     <main className="home">
       <div className="home-inner">
@@ -29,37 +103,18 @@ export default function Home() {
           </div>
         </header>
 
-        <section className="home-section">
-          <h2 className="home-section-title">Writing</h2>
-          <ul className="home-list">
-            <li>
-              <a href="/llm-as-a-religion">
-                <span className="home-list-title">
-                  LLM as a religion
-                </span>
-                <span className="home-list-meta">Draft</span>
-              </a>
-            </li>
-            <li>
-              <a href="/howxworks">
-                <span className="home-list-title">
-                  How X&apos;s algorithm actually works
-                </span>
-                <span className="home-list-meta">May 2026</span>
-              </a>
-            </li>
-          </ul>
-        </section>
+        <FeaturedItems items={featuredItems} />
 
-        <section className="home-section">
-          <h2 className="home-section-title">Projects</h2>
-          <p className="home-empty">More soon.</p>
-        </section>
-
-        <section className="home-section">
-          <h2 className="home-section-title">Notes</h2>
-          <p className="home-empty">More soon.</p>
-        </section>
+        {sections.map((section) => (
+          <section className="home-section" key={section.title}>
+            <h2 className="home-section-title">{section.title}</h2>
+            <ItemList
+              items={siteItems.filter((item) =>
+                section.kinds.includes(item.kind),
+              )}
+            />
+          </section>
+        ))}
       </div>
 
       <footer className="home-foot">shawnpang.xyz</footer>

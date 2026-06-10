@@ -53,6 +53,32 @@ Then link it from the homepage list in `app/page.tsx`. The `_components/` and `_
 
 Design tokens are at the top of `app/globals.css`. Reuse existing utility classes (`.t-h1`, `.t-h2`, `.t-sub`, `.t-mono`, `.wrap`, `.wrap-narrow`, `.card`, `.btn`, `.chip`) so new pages feel consistent.
 
+## Adding a New Article or Data Map
+
+1. Add metadata to `app/_content/siteItems.ts`.
+2. Create `app/<slug>/page.tsx`.
+3. For data maps, place static data in `app/<slug>/_data/`.
+4. Keep page-specific components in `app/<slug>/_components/`.
+5. Put route-local types and filtering helpers in `app/<slug>/_lib/`.
+6. Link the new item from the homepage via the registry.
+7. Run `npm run lint` and `npm run build`.
+
+Recommended data-map folder pattern:
+
+```
+app/<slug>/
+  page.tsx
+  layout.tsx
+  _components/
+  _data/
+    dataset.json
+    people.json
+    summary.json
+  _lib/
+    types.ts
+    filters.ts
+```
+
 ## Redirects
 
 - `/x` → `/howxworks` (short alias)

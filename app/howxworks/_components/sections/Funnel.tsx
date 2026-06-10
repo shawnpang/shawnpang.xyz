@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { nFull, nfmt } from "@/app/howxworks/_lib/data";
 
 const STAGES = [
@@ -14,6 +14,17 @@ const DOT_KEEP = [1.0, 0.42, 0.15, 0.005];
 
 type Dot = { x: number; y: number; keep: number };
 
+function seededUnit(index: number, salt: number) {
+  const raw = Math.sin(index * 12.9898 + salt * 78.233) * 43758.5453;
+  return raw - Math.floor(raw);
+}
+
+const DOTS: Dot[] = Array.from({ length: 400 }, (_, index) => ({
+  x: seededUnit(index, 1),
+  y: seededUnit(index, 2),
+  keep: seededUnit(index, 3),
+}));
+
 export default function Funnel() {
   const [stage, setStage] = useState(0);
   const [auto, setAuto] = useState(true);
@@ -23,14 +34,6 @@ export default function Funnel() {
     const id = setInterval(() => setStage((s) => (s + 1) % STAGES.length), 2200);
     return () => clearInterval(id);
   }, [auto]);
-
-  const dots = useMemo<Dot[]>(() => {
-    const arr: Dot[] = [];
-    for (let i = 0; i < 400; i++) {
-      arr.push({ x: Math.random(), y: Math.random(), keep: Math.random() });
-    }
-    return arr;
-  }, []);
 
   const cur = STAGES[stage];
   const widthPct = 100 - stage * 22;
@@ -91,7 +94,7 @@ export default function Funnel() {
 
           <div className="fun-viz">
             <div className="fun-dots" aria-hidden="true">
-              {dots.map((d, i) => {
+              {DOTS.map((d, i) => {
                 const keep = d.keep < DOT_KEEP[stage];
                 return (
                   <span

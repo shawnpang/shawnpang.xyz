@@ -1,19 +1,14 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { XGlyph } from "@/app/howxworks/_lib/icons";
 
+const SHARE_TEXT = encodeURIComponent(
+  "how X's algorithm actually works — finally explained visually. by @0xshawnpang"
+);
+const SHARE_URL = encodeURIComponent("https://shawnpang.xyz/howxworks");
+const SHARE_HREF = `https://twitter.com/intent/tweet?text=${SHARE_TEXT}&url=${SHARE_URL}`;
+
 export default function SiteFooter() {
-  const [shareHref, setShareHref] = useState<string>("#");
-
-  useEffect(() => {
-    const tweet = encodeURIComponent(
-      "how X's algorithm actually works — finally explained visually. by @0xshawnpang"
-    );
-    const url = encodeURIComponent(window.location.href.split("#")[0]);
-    setShareHref(`https://twitter.com/intent/tweet?text=${tweet}&url=${url}`);
-  }, []);
-
   return (
     <footer className="foot">
       <div className="wrap-narrow">
@@ -28,7 +23,7 @@ export default function SiteFooter() {
         </p>
 
         <div className="foot-cta">
-          <a className="btn accent" href={shareHref} target="_blank" rel="noopener">
+          <a className="btn accent" href={SHARE_HREF} target="_blank" rel="noopener">
             <XGlyph size={14} /> Share on X
           </a>
           <a
