@@ -10,9 +10,9 @@
   const state = {
     view: "timeline",
     search: "",
-    wave: "all",
-    theme: "all",
-    status: "all",
+    waves: [],
+    themes: [],
+    statuses: [],
     sortKey: "year",
     sortDir: "asc",
   };
@@ -20,11 +20,24 @@
   const els = {
     metaStrip: document.getElementById("metaStrip"),
     summaryBand: document.getElementById("summaryBand"),
+    footerSource: document.getElementById("footerSource"),
     tabs: Array.from(document.querySelectorAll(".view-tab")),
     searchInput: document.getElementById("searchInput"),
-    waveFilter: document.getElementById("waveFilter"),
-    themeFilter: document.getElementById("themeFilter"),
-    statusFilter: document.getElementById("statusFilter"),
+    filterButtons: {
+      wave: document.getElementById("waveFilterButton"),
+      theme: document.getElementById("themeFilterButton"),
+      status: document.getElementById("statusFilterButton"),
+    },
+    filterMenus: {
+      wave: document.getElementById("waveFilterMenu"),
+      theme: document.getElementById("themeFilterMenu"),
+      status: document.getElementById("statusFilterMenu"),
+    },
+    filterValues: {
+      wave: document.getElementById("waveFilterValue"),
+      theme: document.getElementById("themeFilterValue"),
+      status: document.getElementById("statusFilterValue"),
+    },
     timeline: document.getElementById("timeline"),
     categoryGrid: document.getElementById("categoryGrid"),
     tableBody: document.querySelector("#companyTable tbody"),
@@ -129,34 +142,120 @@
   function filteredCompanies() {
     const query = state.search.trim().toLowerCase();
     return companies.filter((company) => {
-      if (state.wave !== "all" && company.wave !== state.wave) return false;
-      if (state.theme !== "all" && !company.themes.includes(state.theme)) return false;
-      if (state.status !== "all" && company.status !== state.status) return false;
+      if (state.waves.length && !state.waves.includes(company.wave)) return false;
+      if (state.themes.length && !company.themes.some((theme) => state.themes.includes(theme))) {
+        return false;
+      }
+      if (state.statuses.length && !state.statuses.includes(company.status)) return false;
       if (query && !searchable(company).includes(query)) return false;
       return true;
     });
   }
 
-  function setSelectOptions() {
-    els.waveFilter.innerHTML = [
-      `<option value="all">All waves</option>`,
-      ...data.waves.map(
-        (wave) => `<option value="${escapeHtml(wave.id)}">${escapeHtml(wave.label)} - ${escapeHtml(wave.name)}</option>`,
-      ),
-    ].join("");
-
-    els.themeFilter.innerHTML = [
-      `<option value="all">All themes</option>`,
-      ...data.themes.map(
-        (theme) => `<option value="${escapeHtml(theme.id)}">${escapeHtml(theme.label)}</option>`,
-      ),
-    ].join("");
-
+  function filterConfigs() {
     const statuses = Array.from(new Set(companies.map((company) => company.status))).sort();
-    els.statusFilter.innerHTML = [
-      `<option value="all">All statuses</option>`,
-      ...statuses.map((status) => `<option value="${escapeHtml(status)}">${escapeHtml(status)}</option>`),
-    ].join("");
+    return {
+      wave: {
+        allLabel: "All waves",
+        itemName: "wave",
+        stateKey: "waves",
+        items: data.waves.map((wave) => ({
+          value: wave.id,
+          label: `${wave.label} - ${wave.name}`,
+        })),
+      },
+      theme: {
+        allLabel: "All themes",
+        itemName: "theme",
+        stateKey: "themes",
+        items: data.themes.map((theme) => ({
+          value: theme.id,
+          label: theme.label,
+        })),
+      },
+      status: {
+        allLabel: "All statuses",
+        itemName: "status",
+        stateKey: "statuses",
+        items: statuses.map((status) => ({
+          value: status,
+          label: status,
+        })),
+      },
+    };
+  }
+
+  function setFilterOptions() {
+    const configs = filterConfigs();
+    Object.entries(configs).forEach(([filter, config]) => {
+      const menu = els.filterMenus[filter];
+      menu.innerHTML = [
+        `<button class="filter-clear" type="button" data-filter="${filter}">${escapeHtml(config.allLabel)}</button>`,
+        `<div class="filter-options">`,
+        ...config.items.map(
+          (item) => `
+            <label class="filter-option">
+              <input type="checkbox" data-filter="${filter}" value="${escapeHtml(item.value)}" />
+              <span>${escapeHtml(item.label)}</span>
+            </label>
+          `,
+        ),
+        `</div>`,
+      ].join("");
+    });
+    syncFilterControls();
+  }
+
+  function syncFilterControls() {
+    const configs = filterConfigs();
+    Object.entries(configs).forEach(([filter, config]) => {
+      const selected = state[config.stateKey];
+      const selectedLabels = config.items
+        .filter((item) => selected.includes(item.value))
+        .map((item) => item.label);
+      const label =
+        selected.length === 0
+          ? config.allLabel
+          : selected.length === 1
+            ? selectedLabels[0]
+            : `${selected.length} ${config.itemName}s`;
+      els.filterValues[filter].textContent = label;
+      Array.from(els.filterMenus[filter].querySelectorAll("input[type='checkbox']")).forEach(
+        (input) => {
+          input.checked = selected.includes(input.value);
+        },
+      );
+    });
+  }
+
+  function setFilterSelection(filter, value, checked) {
+    const config = filterConfigs()[filter];
+    if (!config) return;
+    const current = new Set(state[config.stateKey]);
+    if (checked) {
+      current.add(value);
+    } else {
+      current.delete(value);
+    }
+    state[config.stateKey] = Array.from(current);
+    syncFilterControls();
+    render();
+  }
+
+  function clearFilterSelection(filter) {
+    const config = filterConfigs()[filter];
+    if (!config) return;
+    state[config.stateKey] = [];
+    syncFilterControls();
+    render();
+  }
+
+  function closeFilterMenus(exceptFilter) {
+    Object.entries(els.filterMenus).forEach(([filter, menu]) => {
+      const isOpen = filter === exceptFilter;
+      menu.classList.toggle("is-open", isOpen);
+      els.filterButtons[filter].setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
   }
 
   function renderMeta() {
@@ -168,6 +267,21 @@
       `<span class="meta-pill">YC status only</span>`,
       `<span class="meta-pill">Updated ${generated}</span>`,
     ].join("");
+  }
+
+  function renderFooterSource() {
+    if (!els.footerSource) return;
+    const updated = data.meta.generatedAt || "unknown";
+    const ycApi = data.meta.ycApi || "https://yc-oss.github.io/api/companies/all.json";
+    els.footerSource.innerHTML = `
+      <strong>Source data:</strong>
+      YC public company data from
+      <a href="${escapeHtml(ycApi)}" target="_blank" rel="noreferrer">yc-oss companies/all.json</a>
+      and YC metadata from
+      <a href="https://yc-oss.github.io/api/meta.json" target="_blank" rel="noreferrer">meta.json</a>.
+      YC API last_updated: <code>${escapeHtml(updated)}</code>.
+      Founder LinkedIn/X links are parsed only from public YC directory company pages; no social profiles are inferred.
+    `;
   }
 
   function renderSummary(rows) {
@@ -205,7 +319,7 @@
     rows.forEach((company) => rowsByWave.get(company.wave)?.push(company));
 
     const visibleWaves = data.waves.filter(
-      (wave) => state.wave === "all" || state.wave === wave.id,
+      (wave) => !state.waves.length || state.waves.includes(wave.id),
     );
 
     els.timeline.innerHTML = visibleWaves
@@ -243,7 +357,9 @@
 
   function renderCategory(rows) {
     const selectedThemes =
-      state.theme === "all" ? data.themes : data.themes.filter((theme) => theme.id === state.theme);
+      state.themes.length
+        ? data.themes.filter((theme) => state.themes.includes(theme.id))
+        : data.themes;
     const maxWaveCount = Math.max(
       1,
       ...selectedThemes.map((theme) =>
@@ -591,17 +707,26 @@
       state.search = event.target.value;
       render();
     });
-    els.waveFilter.addEventListener("change", (event) => {
-      state.wave = event.target.value;
-      render();
+    Object.entries(els.filterButtons).forEach(([filter, button]) => {
+      button.addEventListener("click", (event) => {
+        event.stopPropagation();
+        const willOpen = button.getAttribute("aria-expanded") !== "true";
+        closeFilterMenus(willOpen ? filter : undefined);
+      });
     });
-    els.themeFilter.addEventListener("change", (event) => {
-      state.theme = event.target.value;
-      render();
-    });
-    els.statusFilter.addEventListener("change", (event) => {
-      state.status = event.target.value;
-      render();
+    Object.entries(els.filterMenus).forEach(([filter, menu]) => {
+      menu.addEventListener("click", (event) => {
+        event.stopPropagation();
+        const clearButton = event.target.closest(".filter-clear");
+        if (clearButton) {
+          clearFilterSelection(filter);
+        }
+      });
+      menu.addEventListener("change", (event) => {
+        if (event.target.matches("input[type='checkbox']")) {
+          setFilterSelection(filter, event.target.value, event.target.checked);
+        }
+      });
     });
     els.tableHeads.forEach((head) => {
       head.addEventListener("click", () => {
@@ -617,14 +742,17 @@
     });
     els.drawerClose.addEventListener("click", closeDrawer);
     els.scrim.addEventListener("click", closeDrawer);
+    document.addEventListener("click", () => closeFilterMenus());
     document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") closeFilterMenus();
       if (event.key === "Escape") closeDrawer();
     });
   }
 
   function init() {
-    setSelectOptions();
+    setFilterOptions();
     renderMeta();
+    renderFooterSource();
     bindEvents();
     render();
   }

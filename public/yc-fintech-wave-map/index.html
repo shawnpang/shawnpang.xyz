@@ -26,18 +26,30 @@
           <span>Search</span>
           <input id="searchInput" type="search" placeholder="Company, keyword, tag, market..." autocomplete="off" />
         </label>
-        <label class="select-wrap">
-          <span>Wave</span>
-          <select id="waveFilter"></select>
-        </label>
-        <label class="select-wrap">
-          <span>Theme</span>
-          <select id="themeFilter"></select>
-        </label>
-        <label class="select-wrap">
-          <span>Status</span>
-          <select id="statusFilter"></select>
-        </label>
+        <div class="multi-filter" data-filter="wave">
+          <span class="filter-label">Wave</span>
+          <button class="filter-button" id="waveFilterButton" type="button" aria-expanded="false" aria-controls="waveFilterMenu">
+            <span id="waveFilterValue">All waves</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </button>
+          <div class="filter-menu" id="waveFilterMenu" role="group" aria-label="Wave filter"></div>
+        </div>
+        <div class="multi-filter" data-filter="theme">
+          <span class="filter-label">Theme</span>
+          <button class="filter-button" id="themeFilterButton" type="button" aria-expanded="false" aria-controls="themeFilterMenu">
+            <span id="themeFilterValue">All themes</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </button>
+          <div class="filter-menu" id="themeFilterMenu" role="group" aria-label="Theme filter"></div>
+        </div>
+        <div class="multi-filter" data-filter="status">
+          <span class="filter-label">Status</span>
+          <button class="filter-button" id="statusFilterButton" type="button" aria-expanded="false" aria-controls="statusFilterMenu">
+            <span id="statusFilterValue">All statuses</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </button>
+          <div class="filter-menu" id="statusFilterMenu" role="group" aria-label="Status filter"></div>
+        </div>
       </section>
 
       <main>
@@ -69,6 +81,17 @@
           </div>
         </section>
       </main>
+
+      <footer class="site-footer">
+        <div class="footer-credit">
+          <strong>Built by Shawn Pang from <a href="https://allscale.io" target="_blank" rel="noreferrer">AllScale</a>.</strong>
+          <span>
+            <a href="https://x.com/0xshawnpang" target="_blank" rel="noreferrer">X</a>
+            <a href="https://www.linkedin.com/in/shawnshunxinpang/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </span>
+        </div>
+        <div class="footer-source" id="footerSource"></div>
+      </footer>
     </div>
 
     <div class="tooltip" id="tooltip" role="status" aria-live="polite"></div>
