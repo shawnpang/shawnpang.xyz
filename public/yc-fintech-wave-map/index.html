@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YC Fintech Wave Map</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">YC fintech and payments</p>
+          <h1>Wave comparison map</h1>
+        </div>
+        <div class="meta-strip" id="metaStrip"></div>
+      </header>
+
+      <section class="controls" aria-label="Filters and view controls">
+        <div class="segmented" role="tablist" aria-label="Views">
+          <button class="view-tab is-active" type="button" data-view="timeline" role="tab" aria-selected="true">Timeline</button>
+          <button class="view-tab" type="button" data-view="category" role="tab" aria-selected="false">Category</button>
+          <button class="view-tab" type="button" data-view="spreadsheet" role="tab" aria-selected="false">Spreadsheet</button>
+        </div>
+        <label class="search">
+          <span>Search</span>
+          <input id="searchInput" type="search" placeholder="Company, keyword, tag, market..." autocomplete="off" />
+        </label>
+        <label class="select-wrap">
+          <span>Wave</span>
+          <select id="waveFilter"></select>
+        </label>
+        <label class="select-wrap">
+          <span>Theme</span>
+          <select id="themeFilter"></select>
+        </label>
+        <label class="select-wrap">
+          <span>Status</span>
+          <select id="statusFilter"></select>
+        </label>
+      </section>
+
+      <main>
+        <section class="summary-band" id="summaryBand" aria-label="Dataset summary"></section>
+
+        <section class="view-panel is-active" id="timelineView" aria-label="Timeline view">
+          <div class="timeline" id="timeline"></div>
+        </section>
+
+        <section class="view-panel" id="categoryView" aria-label="Category view">
+          <div class="category-grid" id="categoryGrid"></div>
+        </section>
+
+        <section class="view-panel" id="spreadsheetView" aria-label="Spreadsheet view">
+          <div class="table-wrap">
+            <table id="companyTable">
+              <thead>
+                <tr>
+                  <th data-sort="name">Company</th>
+                  <th data-sort="year">Year</th>
+                  <th data-sort="waveLabel">Wave</th>
+                  <th data-sort="status">Status</th>
+                  <th data-sort="subindustry">Subindustry</th>
+                  <th data-sort="themesText">Themes</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="tooltip" id="tooltip" role="status" aria-live="polite"></div>
+
+    <aside class="drawer" id="drawer" aria-hidden="true">
+      <button class="drawer-close" type="button" id="drawerClose" aria-label="Close details">x</button>
+      <div id="drawerContent"></div>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
