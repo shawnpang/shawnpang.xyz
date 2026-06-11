@@ -318,9 +318,9 @@
     const rowsByWave = new Map(data.waves.map((wave) => [wave.id, []]));
     rows.forEach((company) => rowsByWave.get(company.wave)?.push(company));
 
-    const visibleWaves = data.waves.filter(
-      (wave) => !state.waves.length || state.waves.includes(wave.id),
-    );
+    const visibleWaves = data.waves
+      .filter((wave) => !state.waves.length || state.waves.includes(wave.id))
+      .reverse();
 
     els.timeline.innerHTML = visibleWaves
       .map((wave) => {
