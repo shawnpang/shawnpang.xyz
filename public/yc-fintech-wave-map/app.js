@@ -106,6 +106,16 @@
       company.subindustry,
       company.oneLiner,
       company.longDescription,
+      (company.founders || [])
+        .map((founder) =>
+          [
+            founder.name,
+            founder.title,
+            founder.linkedinUrl,
+            founder.xUrl,
+          ].join(" "),
+        )
+        .join(" "),
       company.tags.join(" "),
       company.themesText,
       company.auditEvidence.join(" "),
@@ -395,6 +405,11 @@
     const keywordText = firstTheme
       ? (company.themeHits[firstTheme] || []).slice(0, 4).join(", ")
       : "";
+    const founderText = (company.founders || [])
+      .slice(0, 3)
+      .map((founder) => founder.name)
+      .filter(Boolean)
+      .join(", ");
     els.tooltip.innerHTML = `
       <div class="tooltip-inner">
         <div class="tooltip-title">
@@ -402,6 +417,7 @@
           ${statusPill(company.status)}
         </div>
         <p>${escapeHtml(company.oneLiner || company.subindustry || "No YC one-liner")}</p>
+        ${founderText ? `<p>Founders: ${escapeHtml(founderText)}</p>` : ""}
         <div>${themeChips(company)}</div>
         ${keywordText ? `<p>Keywords: ${escapeHtml(keywordText)}</p>` : ""}
       </div>
@@ -429,6 +445,7 @@
     if (!company) return;
     hideTooltip();
     const wave = waveById(company.wave);
+    const founders = company.founders || [];
     const themeDetails = company.themes
       .map((themeId) => {
         const theme = themeById(themeId);
@@ -453,6 +470,29 @@
       `<a class="link-button secondary" href="${escapeHtml(company.xSearch)}" target="_blank" rel="noreferrer">X search</a>`,
     ]
       .filter(Boolean)
+      .join("");
+    const founderCards = founders
+      .map((founder) => {
+        const founderLinks = [
+          founder.linkedinUrl
+            ? `<a href="${escapeHtml(founder.linkedinUrl)}" target="_blank" rel="noreferrer">LinkedIn</a>`
+            : "",
+          founder.xUrl
+            ? `<a href="${escapeHtml(founder.xUrl)}" target="_blank" rel="noreferrer">X</a>`
+            : "",
+        ]
+          .filter(Boolean)
+          .join("");
+        return `
+          <div class="founder-card">
+            <div>
+              <strong>${escapeHtml(founder.name || "Founder")}</strong>
+              ${founder.title ? `<span>${escapeHtml(founder.title)}</span>` : ""}
+            </div>
+            <div class="founder-links">${founderLinks || `<span>No YC social link</span>`}</div>
+          </div>
+        `;
+      })
       .join("");
 
     els.drawerContent.innerHTML = `
@@ -480,6 +520,11 @@
       ${
         company.longDescription
           ? `<div class="drawer-section"><h3>YC description</h3><p>${escapeHtml(company.longDescription)}</p></div>`
+          : ""
+      }
+      ${
+        founders.length
+          ? `<div class="drawer-section"><h3>Founders from YC</h3><div class="founder-list">${founderCards}</div></div>`
           : ""
       }
       <div class="drawer-section">

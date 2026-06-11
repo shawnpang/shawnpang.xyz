@@ -9,7 +9,14 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "Active": 490,
       "Inactive": 86,
       "Public": 2
-    }
+    },
+    "founderSocialSource": "YC directory company pages only; no inferred social profiles",
+    "founderCount": 1302,
+    "companiesWithFounders": 659,
+    "companiesWithFounderSocials": 657,
+    "founderLinkedInCount": 1282,
+    "founderXCount": 548,
+    "founderFetchErrors": 0
   },
   "waves": [
     {
@@ -488,6 +495,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "cards_spend",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Phil Yuen",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/philipyuen/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -530,6 +546,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Amit Manjhi",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/amitmanjhi/",
+          "xUrl": "https://x.com/amitmanjhi",
+          "source": "YC directory"
+        },
+        {
+          "name": "Shashank Pandit",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/shashankpandit",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -577,6 +609,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Ivan Kirigin",
+          "title": "Founder/CTO",
+          "linkedinUrl": "http://www.linkedin.com/in/kirigin/",
+          "xUrl": "https://x.com/ikirigin",
+          "source": "YC directory"
+        },
+        {
+          "name": "Abigail Kirigin",
+          "title": "Founder/interaction designer",
+          "linkedinUrl": "https://www.linkedin.com/in/abbykirigin",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -637,6 +685,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Patrick Collison",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/patrickcollison/",
+          "xUrl": "https://x.com/patrickc",
+          "source": "YC directory"
+        },
+        {
+          "name": "John Collison",
+          "title": "Founder/President",
+          "linkedinUrl": "https://www.linkedin.com/in/johnbcollison/",
+          "xUrl": "https://x.com/collision",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -688,6 +752,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Bill Clerico",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/billclerico",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -738,6 +811,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Bo Lu",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/boluprofile",
+          "xUrl": "https://x.com/bolu",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -791,6 +873,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "credit_lending",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Rod Ebrahimi",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://linkedin.com/in/rodebrahimi",
+          "xUrl": "https://x.com/innovatebig",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ignacio Thayer",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/ignaciothayer",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -846,7 +944,8 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
-      ]
+      ],
+      "founders": []
     },
     {
       "id": "80",
@@ -894,6 +993,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Paul Zhang",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/zhangyipeng/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "John Sun",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/avantjohnsun/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Kevin Yu",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/kevinyu1029",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -962,6 +1084,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Hiroki Takeuchi",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/hirokitakeuchi/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Tom Blomfield",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/tomblomfield",
+          "xUrl": "https://x.com/t_blom",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -1012,6 +1150,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Darren Nix",
+          "title": "Founder",
+          "linkedinUrl": "http://www.linkedin.com/in/darrensnix",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Jason Traff",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jasontraff/",
+          "xUrl": "https://x.com/jasontraff",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -1061,6 +1215,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "investing_trading",
         "SEC filings/news analytics for investors"
+      ],
+      "founders": [
+        {
+          "name": "Chris Auer",
+          "title": "Founder",
+          "linkedinUrl": "",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -1115,6 +1278,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Jeffrey Byun",
+          "title": "CEO, Co-Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jeffbyun/",
+          "xUrl": "https://x.com/jeffbyun",
+          "source": "YC directory"
+        },
+        {
+          "name": "Henry A. Lee",
+          "title": "Founder/CTO/Head of Engineering",
+          "linkedinUrl": "https://www.linkedin.com/in/henryalee/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ruddick Lawrence",
+          "title": "Founder/CTO",
+          "linkedinUrl": "",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -1178,6 +1364,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Nicolas Baum",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/nicolasbaum/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -1227,6 +1422,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Jeffrey Brice",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/jeffreybrice",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Gabe Krambs",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/gabekrambs/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -1287,6 +1498,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "crypto_finance"
+      ],
+      "founders": [
+        {
+          "name": "Brian Armstrong",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/barmstrong/",
+          "xUrl": "https://x.com/brian_armstrong",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -1339,6 +1559,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Alex Mittal",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/alexandermittal/",
+          "xUrl": "https://x.com/mittal",
+          "source": "YC directory"
+        },
+        {
+          "name": "Boris Silver",
+          "title": "Founder/President",
+          "linkedinUrl": "https://www.linkedin.com/in/borismsilver/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -1403,6 +1639,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Sasha Orloff",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/sashaorloff/",
+          "xUrl": "https://x.com/sashaorloff",
+          "source": "YC directory"
+        },
+        {
+          "name": "Jacob Rosenberg",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/jakerosenberg/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -1461,6 +1713,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "money_transfer",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Drew Durbin",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/drew-durbin-52517614/",
+          "xUrl": "https://x.com/drewdurbin/",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -1523,6 +1784,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "credit_lending",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Charlie Pinto",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/charlespinto",
+          "xUrl": "https://www.twitter.com/charliepinto",
+          "source": "YC directory"
+        },
+        {
+          "name": "Christopher Morton",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://linkedin.com/in/mortonch",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Joel Christner",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/joelchristner/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -1575,6 +1859,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Michael Carvin",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/michael-carvin-5315692a",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -1622,6 +1915,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crowdfunding",
         "crowdfunding / pooled money collection"
+      ],
+      "founders": [
+        {
+          "name": "James Beshara",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/jjbeshara/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Khaled Hussein",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/dsogkhaled/",
+          "xUrl": "https://x.com/dsog",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -1674,6 +1983,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "fintech_infra"
+      ],
+      "founders": [
+        {
+          "name": "Drew Durbin",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/drew-durbin-52517614/",
+          "xUrl": "https://x.com/drewdurbin/",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -1734,6 +2052,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Edrizio De La Cruz",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/edrizio-de-la-cruz-2b8ab75/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Juan Maldonado",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/juanmaldonado2/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "I\u00f1igo Rumayor",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/inigorumayor/",
+          "xUrl": "https://x.com/InigoRumayor",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -1792,6 +2133,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crypto_finance",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Bennett Hoffman",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/bennhoffman",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -1858,6 +2208,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "credit_lending",
         "crypto_finance",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Kanishk Parashar",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://linkedin.com/in/diamondk",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Karthik Balakrishnan",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/kbalakri",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -1916,6 +2282,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "ap_ar_billing",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Umang Patel",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/umangp90",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -1975,6 +2350,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "payments",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Daniel Kimerling",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/dkimerling/",
+          "xUrl": "https://www.twitter.com/dkimerling/",
+          "source": "YC directory"
+        },
+        {
+          "name": "Brent Goldman",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/brentgoldman",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Zac Townsend",
+          "title": "Founder/Head of Product",
+          "linkedinUrl": "http://linkedin.com/in/zactownsend",
+          "xUrl": "https://x.com/ztownsend",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -2017,6 +2415,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "fintech_infra"
+      ],
+      "founders": [
+        {
+          "name": "Kai Stinchcombe",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/kaistinchcombe",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -2066,6 +2473,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Nick Tommarello",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/nicktommarello/",
+          "xUrl": "https://x.com/nicktommarello",
+          "source": "YC directory"
+        },
+        {
+          "name": "Greg Belote",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/gregbelote/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -2130,6 +2553,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "cards_spend",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Omar Qari",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/oqari",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ted Power",
+          "title": "Founder/CPO",
+          "linkedinUrl": "https://www.linkedin.com/in/tedpower/",
+          "xUrl": "https://x.com/tedp",
+          "source": "YC directory"
+        },
+        {
+          "name": "Joshua Halickman",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/jhalickman/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -2189,6 +2635,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "credit_lending",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Greg Kidd",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/gregkidd/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Meg Nakamura",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/megnakamura",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -2242,6 +2704,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Greg Schvey",
+          "title": "Founder/CEO",
+          "linkedinUrl": "",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Jeffrey Schvey",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/jeffschvey/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -2295,6 +2773,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "ap_ar_billing",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Ian Saunders",
+          "title": "Founder/CEO",
+          "linkedinUrl": "http://linkedin.com/in/ian-m-saunders",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Mark Parry",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/maparry",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Aubone Tennant",
+          "title": "Founder/Chief Growth Officer",
+          "linkedinUrl": "https://www.linkedin.com/in/aubonetennant",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -2350,6 +2851,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "crypto_finance"
+      ],
+      "founders": [
+        {
+          "name": "Moe Adham",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/moeadham/",
+          "xUrl": "https://x.com/moeadham",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -2412,6 +2922,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "cards_spend"
+      ],
+      "founders": [
+        {
+          "name": "Alex Fryer",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/alexjfryer",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Brian Brunner",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/bbrunner",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -2470,6 +2996,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "credit_lending",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Archit Gupta",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/architgupta",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Srivatsan Chari",
+          "title": "Founder/Head of Product",
+          "linkedinUrl": "",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ankit Solanki",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://in.linkedin.com/in/ankitsolanki",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -2536,6 +3085,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "cards_spend",
         "credit_lending",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Geoff Flarity",
+          "title": "Founder/COO",
+          "linkedinUrl": "https://www.linkedin.com/in/gflarity",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -2596,6 +3154,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "credit_lending",
         "crowdfunding"
+      ],
+      "founders": [
+        {
+          "name": "Matthew Christen",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/matthew-christen-93972186/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Broderick McClinton",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/broderick-mcclinton-45708a11",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Eric Sonnier",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ericsonnier",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -2656,6 +3237,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Tad Milbourn",
+          "title": "Founder/CEO",
+          "linkedinUrl": "http://linkedin.com/in/tadmilbourn",
+          "xUrl": "https://x.com/tadmilbourn",
+          "source": "YC directory"
+        },
+        {
+          "name": "Kyle Kilat",
+          "title": "Founder/CPO",
+          "linkedinUrl": "https://www.linkedin.com/in/kylekilat/",
+          "xUrl": "https://x.com/kkilat",
+          "source": "YC directory"
+        },
+        {
+          "name": "Peter Terrill",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/peterterrill",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -2721,6 +3325,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crypto_finance",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "George Melika",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://linkedin.com/in/gmelika",
+          "xUrl": "https://x.com/gmelika",
+          "source": "YC directory"
+        },
+        {
+          "name": "Akbar Thobhani",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/akbart",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -2774,6 +3394,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "crowdfunding"
+      ],
+      "founders": [
+        {
+          "name": "Mike Furlong",
+          "title": "Founder/| CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/michael-furlong-6442b332",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Akhil Lodha",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/akhillodha",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -2847,6 +3483,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Abeer Agrawal",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/abeera/",
+          "xUrl": "https://x.com/abeerag",
+          "source": "YC directory"
+        },
+        {
+          "name": "Hugh Edmundson",
+          "title": "Founder/Managing Partner",
+          "linkedinUrl": "https://www.linkedin.com/in/hugh-edmundson-3901612a",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -2902,6 +3554,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crypto_finance",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Gareth MacLeod",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/garethmacleod/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Trevor Creech",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/trevorcreech",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ross Robinson",
+          "title": "Founder/COO, Software Engineer",
+          "linkedinUrl": "https://www.linkedin.com/in/ross-robinson-aa6a1613/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -2959,6 +3634,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Steve Sobel",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/stephen-sobel-1015a525",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -3024,6 +3708,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "credit_lending",
         "crowdfunding",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Julia Kurnia",
+          "title": "Founder/Director",
+          "linkedinUrl": "https://www.linkedin.com/in/juliakurnia",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -3086,6 +3779,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Mike Duncan",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/HelloMike",
+          "xUrl": "https://x.com/MikeElDuncan",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -3136,6 +3838,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "investing_trading",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Galen Simmons",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/galensimmons/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -3221,6 +3932,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "credit_lending",
         "money_transfer",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Pushkar Mukewar",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/pub/pushkar-mukewar/1/695/31",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -3286,6 +4006,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "cards_spend",
         "credit_lending",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Matt Rothstein",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/marothstein",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -3341,6 +4070,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "George Smith",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/georgedotsmith/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Matt Galloway",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/mpgalloway",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -3386,6 +4131,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Saleem Khatri",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/saleemskhatri",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -3438,6 +4192,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Jamie Holdroyd",
+          "title": "Founder/CIO",
+          "linkedinUrl": "http://uk.linkedin.com/in/jholdroyd",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Adam Sturrock",
+          "title": "Founder/Vice President Customer Success",
+          "linkedinUrl": "http://uk.linkedin.com/in/adamsturrock",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -3492,6 +4262,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Conor Murray",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/pub/conor-murray/93/300/b06",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Phillip Wei",
+          "title": "Founder/CTO",
+          "linkedinUrl": "http://www.linkedin.com/in/phillipwei",
+          "xUrl": "https://x.com/phillipwei",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -3543,6 +4329,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Karim Atiyeh",
+          "title": "Founder",
+          "linkedinUrl": "http://linkedin.com/in/karimatiyeh/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -3606,6 +4401,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "ap_ar_billing"
+      ],
+      "founders": [
+        {
+          "name": "Bhavuk Kaul",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/bhavukkaul",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -3696,6 +4500,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Harshil Mathur",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/pub/harshil-mathur/69/23a/127",
+          "xUrl": "https://x.com/harshilmathur",
+          "source": "YC directory"
+        },
+        {
+          "name": "Shashank Kumar",
+          "title": "Founder",
+          "linkedinUrl": "http://www.linkedin.com/in/kumarshashank",
+          "xUrl": "https://x.com/shashank_kr",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -3763,6 +4583,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Kartik Venkataraman",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/kartikvenkataraman1",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -3817,6 +4646,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "banking_accounts"
+      ],
+      "founders": [
+        {
+          "name": "Kyale Mwendwa",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/kyale-mwendwa-23588898/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Kenneth Ngetha",
+          "title": "Founder",
+          "linkedinUrl": "http://ke.linkedin.com/in/ngetha",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -3864,6 +4709,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "banking_accounts"
+      ],
+      "founders": [
+        {
+          "name": "Brian Merritt",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://linkedin.com/in/brianmerritt",
+          "xUrl": "https://x.com/btmerr",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ryan Hildebrand",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/aibanker",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -3938,7 +4799,8 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "crypto_finance",
         "investing_trading",
         "payments"
-      ]
+      ],
+      "founders": []
     },
     {
       "id": "765",
@@ -3995,6 +4857,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Peggy Mangot",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://linkedin.com/in/peggymangot",
+          "xUrl": "https://x.com/peggymangot",
+          "source": "YC directory"
+        },
+        {
+          "name": "Bob Haigler",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/bobhaigler",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -4065,6 +4943,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Karan Sood",
+          "title": "Founder/CEO",
+          "linkedinUrl": "http://www.linkedin.com/pub/karan-sood/0/370/b45",
+          "xUrl": "https://x.com/soodk",
+          "source": "YC directory"
+        },
+        {
+          "name": "Jeff Chang",
+          "title": "President & Co-Founder",
+          "linkedinUrl": "https://www.linkedin.com/pub/jeff-chang-cfa-cpa-cfe/51/90b/470/",
+          "xUrl": "https://x.com/jeffchanginvest",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -4125,6 +5019,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Moses Lo",
+          "title": "Founder/CEO",
+          "linkedinUrl": "http://linkedin.com/in/moseslo",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Bo Chen",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/bochen303",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Juan Gonzalez",
+          "title": "Founder/Principal Software Engineer",
+          "linkedinUrl": "https://www.linkedin.com/in/0505gonzalez",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -4192,6 +5109,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "cards_spend",
         "credit_lending",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Tianwei Liu",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/tianweiliu",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Victor Liew Jia Hao",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/victorliewjiahao/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -4251,6 +5184,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Ama Marfo",
+          "title": "CoFounder/CEO",
+          "linkedinUrl": "www.linkedin.com/in/amamarfo",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Emmanuel Buah",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/emmanuelbuah",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -4306,6 +5255,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Soraya Taghavi",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/sorayataghavi",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -4367,6 +5325,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Ray Sturm",
+          "title": "Founder/CEO",
+          "linkedinUrl": "http://www.linkedin.com/pub/ray-sturm/3/270/439/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -4423,6 +5390,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Karn Saroya",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/saroya",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Anand Dhillon",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ananddhillon",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Natalie Gray",
+          "title": "Founder/Design",
+          "linkedinUrl": "https://ca.linkedin.com/in/natalieevagray/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -4480,6 +5470,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "ap_ar_billing",
         "cards_spend"
+      ],
+      "founders": [
+        {
+          "name": "Peter Lai",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/peterjlai",
+          "xUrl": "https://x.com/peterjlai",
+          "source": "YC directory"
+        },
+        {
+          "name": "Roger Gu",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/guroger/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -4547,6 +5553,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crypto_finance",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Adeleke Adekoya",
+          "title": "Founder",
+          "linkedinUrl": "https://ng.linkedin.com/in/adeleke-adekoya-68ab7626",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Olugbenga GB Agboola",
+          "title": "Founder",
+          "linkedinUrl": "https://ng.linkedin.com/in/gbengagb",
+          "xUrl": "https://x.com/techprod_arch",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -4602,6 +5624,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Michael Ohana",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/mikeohana",
+          "xUrl": "https://x.com/MichaelOhana/",
+          "source": "YC directory"
+        },
+        {
+          "name": "Aric Lasry",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/lasryaric",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -4656,6 +5694,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Jonathan Asmis",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jonathanasmis",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Alex Lofton",
+          "title": "Founder",
+          "linkedinUrl": "http://www.linkedin.com/in/alexlofton",
+          "xUrl": "https://x.com/alexlofton",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -4715,6 +5769,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Christian Haigh",
+          "title": "Founder",
+          "linkedinUrl": "http://www.linkedin.com/in/christianhaigh",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Eva Shang",
+          "title": "Founder",
+          "linkedinUrl": "http://www.linkedin.com/in/eshang",
+          "xUrl": "https://x.com/eva_shang",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -4775,6 +5845,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Orion Parrott",
+          "title": "Founder/Founding CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/orionparrott/",
+          "xUrl": "https://x.com/orionparrott",
+          "source": "YC directory"
+        },
+        {
+          "name": "Mike Romano",
+          "title": "Founder/| Vice President of Business Development",
+          "linkedinUrl": "https://www.linkedin.com/in/mikerromano",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -4825,6 +5911,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Jim Gibbs",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/pub/james-gibbs/0/8/4ab",
+          "xUrl": "https://x.com/heezo",
+          "source": "YC directory"
+        },
+        {
+          "name": "Daniel Lopretto",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/pub/daniel-lopretto/4b/838/182",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -4889,6 +5991,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Misha Esipov",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/mishaesipov",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -4949,6 +6060,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Stephen Johnson",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/stephendjohnson1",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Kelly Littlepage",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/klittlepage",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -5015,6 +6142,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "credit_lending",
         "money_transfer",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Shola Akinlade",
+          "title": "Founder/CEO",
+          "linkedinUrl": "http://ng.linkedin.com/in/shollsman/en",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ezra Olubi",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://ng.linkedin.com/in/cfezra",
+          "xUrl": "https://x.com/0x",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -5072,6 +6215,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Yang Forjindam",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/yangforjindam",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -5114,6 +6266,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Alok Deshpande",
+          "title": "Founder/President",
+          "linkedinUrl": "https://www.linkedin.com/in/alokdeshpande",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -5190,6 +6351,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Rohit Mittal",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/pub/rohit-mittal/6/30a/58a",
+          "xUrl": "https://x.com/rohitdotmittal",
+          "source": "YC directory"
+        },
+        {
+          "name": "Priyank Singh",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/priyanksingh",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -5232,6 +6409,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Yahya Mokhtarzada",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/yahyamokhtarzada",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Haroon Mokhtarzada",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/haroonmokhtarzada/",
+          "xUrl": "https://www.twitter.com/haroon",
+          "source": "YC directory"
+        },
+        {
+          "name": "Idris Mokhtarzada",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/idrismokhtarzada",
+          "xUrl": "https://x.com/idris",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -5292,6 +6492,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Christopher Sheehan",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/ctsheehan",
+          "xUrl": "https://x.com/evolsb",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -5364,6 +6573,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "credit_lending",
         "fintech_infra",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Akin Jones",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/akin-akinola-j-65b89ba?authType=NAME_SEARCH&authToken=fE9q&locale=en_US&srchid=1755705741441958449722&srchindex=1&srchtotal=1&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A1755705741441958449722%2CVSRPtargetId%3A32057063%2CVSRPcmpt%3Aprimary%2CVSRPnm%3Atrue%2CauthType%3ANAME_SEARCH",
+          "xUrl": "https://x.com/akinj110",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -5415,6 +6633,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Madelaine D'Angelo",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://linkedin.com/in/madelaine-d-angelo-b3508816?trk=hp-identity-name",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Michael DAngelo",
+          "title": "Co-Founder & CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/michaelldangelo",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -5491,6 +6725,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "ap_ar_billing",
         "cards_spend",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Henrique Dubugras",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://br.linkedin.com/in/henriquedubugras",
+          "xUrl": "https://x.com/hdubugras",
+          "source": "YC directory"
+        },
+        {
+          "name": "Pedro Franceschi",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/pfranceschi",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -5549,6 +6799,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "\ud83d\udc68\u200d\ud83d\udcbbFabricio Buzeto",
+          "title": "Founder",
+          "linkedinUrl": "http://www.linkedin.com/in/fabriciobuzeto",
+          "xUrl": "https://x.com/nukdf",
+          "source": "YC directory"
+        },
+        {
+          "name": "Gustavo Gorenstein",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/gorenstein/",
+          "xUrl": "https://x.com/GorensteinG",
+          "source": "YC directory"
+        },
+        {
+          "name": "Roberto Braga",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/robertomb",
+          "xUrl": "https://x.com/robertomb",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -5610,6 +6883,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "payments",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Reeju Datta",
+          "title": "Founder",
+          "linkedinUrl": "https://in.linkedin.com/in/reejudatta",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Akash Sinha",
+          "title": "Founder",
+          "linkedinUrl": "https://in.linkedin.com/in/sinhaakash",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -5660,6 +6949,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Levon Brutyan",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/levonbrutyan",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Max Mizotin",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/maxim-mizotin-5a073a62",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -5726,6 +7031,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "crypto_finance"
+      ],
+      "founders": [
+        {
+          "name": "Nadav Hollander",
+          "title": "Founder/Project Lead",
+          "linkedinUrl": "https://www.linkedin.com/in/nadav-hollander-8268585a/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -5818,6 +7132,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "crypto_finance",
         "payments",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Hendra Kwik",
+          "title": "Founder/Product Manager",
+          "linkedinUrl": "https://www.linkedin.com/in/hendra-kwik-4a291242?trk=hp-identity-name",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Jefriyanto",
+          "title": "Founder",
+          "linkedinUrl": "https://id.linkedin.com/in/jefriyanto",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ricky Winata",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ricky-winata-75735458",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -5885,6 +7222,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Christopher Lotz",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/chrislotz/",
+          "xUrl": "https://x.com/chrisplotz",
+          "source": "YC directory"
+        },
+        {
+          "name": "Daniel Di Spaltro",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/dispaltro",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -5931,6 +7284,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Eugene Park",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/eugenejohnpark",
+          "xUrl": "https://x.com/ejpark",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -6006,6 +7368,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "insurance_benefits",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Art Agrawal",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/artagrawal",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Musawir Shah",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/musawirshah",
+          "xUrl": "https://x.com/musawiralishah",
+          "source": "YC directory"
+        },
+        {
+          "name": "Lina Zhang",
+          "title": "Founder/Vice President Operations",
+          "linkedinUrl": "https://www.linkedin.com/in/lina-zhang-47324721",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -6071,6 +7456,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Samir Shah",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/samir-shah-7410649",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -6137,6 +7531,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crypto_finance",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Eric Ries",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/eries",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "John Bautista",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/john-bautista-a010912",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -6200,6 +7610,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "credit_lending",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Atma Krishna",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/atmakrishna/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Dinesh Gadge",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/dineshgadge/",
+          "xUrl": "https://x.com/dineshgadge",
+          "source": "YC directory"
+        },
+        {
+          "name": "Anand Krishna",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/anand-krishna-9b61a4/",
+          "xUrl": "https://x.com/getak100",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -6273,6 +7706,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "crypto_finance",
         "money_transfer",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Barak Ben Ezer",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/barakb",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -6331,6 +7773,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Yinka Adewale",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/adeyinka-adewale-7b779448?trk=nav_responsive_tab_profile_pic",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Pelumi Aboluwarin",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://uk.linkedin.com/in/pelumiaboluwarin",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -6393,6 +7851,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "ap_ar_billing",
         "credit_lending",
         "fintech_infra"
+      ],
+      "founders": [
+        {
+          "name": "Pratish Gandhi",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/pratishgandhi",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Harshit Vaishnav",
+          "title": "Founder",
+          "linkedinUrl": "https://in.linkedin.com/in/harshitv",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -6441,6 +7915,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Mitch Lee",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/mitchjlee",
+          "xUrl": "https://www.twitter.com/dontmitch",
+          "source": "YC directory"
+        },
+        {
+          "name": "Alex Quach",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/imquach",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -6494,6 +7984,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Ankush Singh",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://linkedin.com/in/ankushsinghbaedas",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Nikhil Satya Mantha",
+          "title": "Founder",
+          "linkedinUrl": "https://in.linkedin.com/in/nikhilsmantha",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Kunal Sangwan",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://in.linkedin.com/in/kunal-sangwan-9127a418",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -6550,6 +8063,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Yves-Laurent Kom Samo",
+          "title": "Founder",
+          "linkedinUrl": "https://uk.linkedin.com/in/komsamo",
+          "xUrl": "https://x.com/Dr_YLKS",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -6604,6 +8126,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "banking_accounts"
+      ],
+      "founders": [
+        {
+          "name": "Heang Chan",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/heangchan",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Chris Blaser",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/chris-nguyen-blaser-553665107/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -6662,6 +8200,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "ap_ar_billing",
         "crypto_finance",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Christophe Lassuyt",
+          "title": "Founder/CFO",
+          "linkedinUrl": "https://www.linkedin.com/in/christophelassuyt",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Etienne TATUR",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/etiennetatur",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -6725,6 +8279,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "payments",
         "tax_accounting",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Omri Mor",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/omrimor/",
+          "xUrl": "https://x.com/omri_mor",
+          "source": "YC directory"
+        },
+        {
+          "name": "Tom Harel",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/tom-harel-74668864/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -6778,6 +8348,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Vincent Wei",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/insuretech",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Nan Zhong",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/nanzhong/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -6839,6 +8425,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Ravi Balasubramanian",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/ravibalasubramanian",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Skye Isard",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/skyeisard",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -6898,6 +8500,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Dan Hughes",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/dan-hughes-2a6b117/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -6962,6 +8573,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "crypto_finance"
+      ],
+      "founders": [
+        {
+          "name": "Andres Gutierrez",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://co.linkedin.com/in/andres-gutierrez-8516588",
+          "xUrl": "https://x.com/andresgcn",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -7026,6 +8646,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "credit_lending",
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Sam Li",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/samsli",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -7082,6 +8711,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Anderson Sumarli",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/andersonsumarli/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Yada Piyajomkwan",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/yada-piyajomkwan-88713865/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -7160,6 +8805,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "crypto_finance",
         "investing_trading",
         "money_transfer"
+      ],
+      "founders": [
+        {
+          "name": "Olivier Porte",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/olivier-porte/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Steve Zheng",
+          "title": "Founder",
+          "linkedinUrl": "",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -7224,6 +8885,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Andrea Baronchelli",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/andrea-baronchelli%EF%BC%88%E5%AE%89%E5%88%A9%EF%BC%89-0979a541/",
+          "xUrl": "https://x.com/andrea_aspire",
+          "source": "YC directory"
+        },
+        {
+          "name": "Giovanni Casinelli",
+          "title": "Founder",
+          "linkedinUrl": "https://sg.linkedin.com/in/giovannicasinelli",
+          "xUrl": "https://x.com/CasinelliG",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -7281,6 +8958,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "crypto_finance"
+      ],
+      "founders": [
+        {
+          "name": "Miguel Kudry",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/kudry/",
+          "xUrl": "https://x.com/kudry",
+          "source": "YC directory"
+        },
+        {
+          "name": "Alex Sismanis",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/alex-sismanis-5300b351/",
+          "xUrl": "https://x.com/alexsismanis",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -7350,6 +9043,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "crypto_finance"
+      ],
+      "founders": [
+        {
+          "name": "Jon Lerner",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jonlerner",
+          "xUrl": "https://x.com/jon_lerner",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -7407,6 +9109,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "fintech_infra",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Razaq Ahmed",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/razaqa/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Edward Popoola",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/edwardpopoola/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -7462,6 +9180,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "credit_lending",
         "fintech_infra"
+      ],
+      "founders": [
+        {
+          "name": "Susli Lie",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/susli/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Naga Tan",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/nagatan/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -7512,6 +9246,36 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Pedro Pineda",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/pedro-pineda-42066923/fi",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Agust\u00edn Feuerhake",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/agustinfeuerhake/",
+          "xUrl": "https://x.com/agustinf",
+          "source": "YC directory"
+        },
+        {
+          "name": "Omar Larr\u00e9",
+          "title": "Founder",
+          "linkedinUrl": "https://cl.linkedin.com/in/olarre/en",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Andres Marinkovic",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/pub/andr%C3%A9s-marinkovic/68/806/767",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -7577,6 +9341,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "crypto_finance"
+      ],
+      "founders": [
+        {
+          "name": "Tiago Sada",
+          "title": "Co-Founder & CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/santiagosada",
+          "xUrl": "https://x.com/tiagosada",
+          "source": "YC directory"
+        },
+        {
+          "name": "Eugenio S\u00e1nchez Rabiella",
+          "title": "Founder/Head of Marketing",
+          "linkedinUrl": "https://www.linkedin.com/in/cesrabiella/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Alonso Garcia Molina",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/alonso-garcia-molina-962a56150/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -7629,6 +9416,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Sergio Romo",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/sergioromo/",
+          "xUrl": "http://www.x.com/romotif",
+          "source": "YC directory"
+        },
+        {
+          "name": "Jonathan Lewy",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jonathanlewy",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -7681,6 +9484,36 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "fintech_infra",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Lalit Keshre",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/lalitkeshre",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ishan Bansal",
+          "title": "Founder",
+          "linkedinUrl": "https://in.linkedin.com/in/ishan-bansal-8678b216",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Harsh Jain",
+          "title": "Founder/COO",
+          "linkedinUrl": "https://in.linkedin.com/in/harshjainiitd",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Neeraj Singh",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/neeraj-singh-a910819",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -7744,6 +9577,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "crypto_finance"
+      ],
+      "founders": [
+        {
+          "name": "Ire Aderinokun",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/iaderinokun/",
+          "xUrl": "https://x.com/ireaderinokun",
+          "source": "YC directory"
+        },
+        {
+          "name": "Timi Ajiboye",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/timi-ajiboye-989b5b24b/",
+          "xUrl": "https://x.com/timigod",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -7800,6 +9649,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "credit_lending",
         "fintech_infra"
+      ],
+      "founders": [
+        {
+          "name": "Ravish Naresh",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/ravish-naresh-72543359/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -7853,6 +9711,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Abe Han",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/abehan",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Shadiah Sigala",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/shadiah/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -7893,6 +9767,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Will Hodson",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/will-hodson-5266a013/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Henry de Zoete",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/henry-de-zoete-aa01835/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -7947,6 +9837,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crypto_finance",
         "stablecoins"
+      ],
+      "founders": [
+        {
+          "name": "Edrick Guan",
+          "title": "Founder",
+          "linkedinUrl": "",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Zehao Li",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/zehao-li",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Xin Sun",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/0xsaam/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -8011,6 +9924,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "insurance_benefits",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Spike Lipkin",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/spike-lipkin-8173651b/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Gordon Wintrob",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/gwintrob",
+          "xUrl": "https://x.com/gwintrob",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -8061,6 +9990,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Pradyuman Vig",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/pradyumanvig/",
+          "xUrl": "https://x.com/pradvig",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -8131,6 +10069,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "credit_lending",
         "payments",
         "tax_accounting"
+      ],
+      "founders": [
+        {
+          "name": "Gaurav Kumar",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/gaurav-kumar-9426a546/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Harsh Pokharna",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/harsh-pokharna-58437a45",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Aditya Prasad",
+          "title": "Founder",
+          "linkedinUrl": "https://in.linkedin.com/in/aditya-prasad-9a785a46",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -8207,6 +10168,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "crypto_finance",
         "payments",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Umed Latifov",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/umedl",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ola Wiberg",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/olawiberg/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -8258,6 +10235,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "banking_accounts"
+      ],
+      "founders": [
+        {
+          "name": "Hussein Ahmed",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/husseinahmed",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -8329,6 +10315,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "ap_ar_billing",
         "credit_lending",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Shantanu Gangal",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/shantanugangal",
+          "xUrl": "https://www.twitter.com/shantanugangal",
+          "source": "YC directory"
+        },
+        {
+          "name": "Sangram Raje",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sangramraje",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -8383,6 +10385,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Phaedra Ellis-Lamkins",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/phaedra-ellis-lamkins-9b51206/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Diana Frappier",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/diana-frappier-b3304710",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -8442,6 +10460,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Sondre Rasch",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/srasch",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Sarah Sandnes",
+          "title": "Founder/CTO",
+          "linkedinUrl": "http://www.linkedin.com/in/sarahbeate/",
+          "xUrl": "https://x.com/sarahbeyahte",
+          "source": "YC directory"
+        },
+        {
+          "name": "Hans Nyvold Kjellby",
+          "title": "Founder/COO",
+          "linkedinUrl": "https://www.linkedin.com/in/hans-nyvold-kjellby-84975162/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -8486,6 +10527,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Andrew Chen",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/achen28",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -8547,6 +10597,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Andrew Peek",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://linkedin.com/in/drupeek",
+          "xUrl": "https://x.com/drupeek",
+          "source": "YC directory"
+        },
+        {
+          "name": "Cliff van der Linden",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/cliffvanderlinden",
+          "xUrl": "https://x.com/CliffvdLinden",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -8602,6 +10668,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Clayton Gardner",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/claytongardner/",
+          "xUrl": "https://x.com/virtualclay",
+          "source": "YC directory"
+        },
+        {
+          "name": "Joe Percoco",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/joe-percoco-62459839/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -8671,6 +10753,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "money_transfer",
         "payments",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Chris Dean",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/ctdean/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -8724,6 +10815,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Thom Adams",
+          "title": "Founder",
+          "linkedinUrl": "",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Nick Friedman",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/nickolasfriedman/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Adam Pollack",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/apollack1/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -8786,6 +10900,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Cameron MacArthur",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/cammacarthur/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -8855,6 +10978,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "crypto_finance",
         "fintech_infra",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Yoshi Yokokawa",
+          "title": "Co-founder & CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/yoshiyokokawa/",
+          "xUrl": "https://x.com/iyoshyoshi",
+          "source": "YC directory"
+        },
+        {
+          "name": "Hitoshi Harada",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/hitoshi-harada-02b01425/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -8920,6 +11059,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "credit_lending",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Jos\u00e9 E. Carrillo Pino",
+          "title": "Founder",
+          "linkedinUrl": "http://pe.linkedin.com/in/jose-enrique-carrillo-pino-40b09877",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Patrick Wakeham",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/pwakeham",
+          "xUrl": "https://x.com/wakehamp",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -8970,6 +11125,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "cards_spend"
+      ],
+      "founders": [
+        {
+          "name": "Patrick Mrozowski",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/patrickmrozowski/",
+          "xUrl": "https://x.com/patrickmro_",
+          "source": "YC directory"
+        },
+        {
+          "name": "Sid Parihar",
+          "title": "Founder",
+          "linkedinUrl": "",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Kenan Pulak",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/kenanpulak",
+          "xUrl": "https://x.com/kenanp",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -9030,6 +11208,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Mike Mahlkow",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/mikemahlkow/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "David Nordhausen",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/david-nordhausen/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Constantin Schreiber",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/constantinschreiber/",
+          "xUrl": "https://x.com/constantinschr",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -9092,6 +11293,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "credit_lending",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Will Megson",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/will-megson-60619645/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Sam King",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sam-king-093613/",
+          "xUrl": "https://x.com/stk",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -9157,6 +11374,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "payments",
         "payroll"
+      ],
+      "founders": [
+        {
+          "name": "Terry Clarke",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/terry-clarke-6a960325/",
+          "xUrl": "https://x.com/onhand_terry",
+          "source": "YC directory"
+        },
+        {
+          "name": "David Polonski",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/davidpolanski/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -9205,6 +11438,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "George Fang",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/fanggeorge/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "John Ling",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jhnling/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -9275,6 +11524,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "insurance_benefits",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Andrew Ambrosino",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/ajambrosino",
+          "xUrl": "https://x.com/ajambrosino",
+          "source": "YC directory"
+        },
+        {
+          "name": "Kristen Anderson",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/kristentyrrell/",
+          "xUrl": "https://x.com/CatchKristen",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -9342,6 +11607,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "crypto_finance",
         "stablecoins"
+      ],
+      "founders": [
+        {
+          "name": "Kevin Charles",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/kevin-charles-6348b5b5/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Victor Charles",
+          "title": "Co-Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/victor-a-charles-754394124/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Francisco jose Martin toro",
+          "title": "Founder",
+          "linkedinUrl": "http://linkedin.com/in/francisco-martin-toro-7a481715b",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -9392,6 +11680,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Jordan Gonen",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jordangonen/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Jacob Schein",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jacob-schein/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -9451,6 +11755,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Victor Garrido",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/vgarridof",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Antoine Nguyen Hong Duc",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/antoinenguyenhd/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Pamela P\u00e9rez Osorio",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/pamela-perez-osorio-a436266b/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -9510,6 +11837,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Mofehintolu Olaogun",
+          "title": "Founder",
+          "linkedinUrl": "https://ng.linkedin.com/in/fehintolu",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -9564,6 +11900,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Felipe Echandi",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/felipeechandi",
+          "xUrl": "https://x.com/felcheck",
+          "source": "YC directory"
+        },
+        {
+          "name": "Jorge L Garc\u00eda",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jorge-luis-garcia-chapman-09487717/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Jose Varela",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/jose-varela-9a345813/",
+          "xUrl": "https://x.com/jose_r_varela",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -9617,6 +11976,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Julia Zheng",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/julia-zheng-30073529/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -9664,6 +12032,36 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Ritik Malhotra",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/ritikmalhotra/",
+          "xUrl": "https://x.com/ritikm",
+          "source": "YC directory"
+        },
+        {
+          "name": "Tanooj Luthra",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://linkedin.com/in/tanoojluthra",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Vamsi Chitters",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/vamsi-chitters-8b62a934",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Sarat Ravi",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sarat-ravi/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -9723,6 +12121,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "payments",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Sambhav Jain",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sambhavanandjain",
+          "xUrl": "https://x.com/_SambhavJain_",
+          "source": "YC directory"
+        },
+        {
+          "name": "Kush Taneja",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/kushtaneja",
+          "xUrl": "https://x.com/kushxtaneja",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -9784,6 +12198,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "credit_lending",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Maximiliano Echeverria",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/maximilianoe",
+          "xUrl": "https://x.com/ecmax",
+          "source": "YC directory"
+        },
+        {
+          "name": "Fernando de la Torre",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/fdelatorre/",
+          "xUrl": "https://x.com/ferdelat_eth",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -9834,6 +12264,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Boateng Opoku-Yeboah",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/byeboah/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Landon Vago-Hughes",
+          "title": "Founder",
+          "linkedinUrl": "",
+          "xUrl": "https://x.com/landon_vh",
+          "source": "YC directory"
+        },
+        {
+          "name": "Tunde Alao",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/tundealao/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -9885,6 +12338,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Eric Menees",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ericmenees/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ethan Anderson",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ethan-anderson-yc",
+          "xUrl": "https://x.com/Ethan_is_online",
+          "source": "YC directory"
+        },
+        {
+          "name": "Bhavin Gupta",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/bhavingpt",
+          "xUrl": "https://x.com/bhavingpt",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -9946,6 +12422,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "crypto_finance"
+      ],
+      "founders": [
+        {
+          "name": "James West",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/james-west-3522375a/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Shaun Ng",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/shaun-ng-7a5434138/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -9994,6 +12486,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Norman Wanto",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/normanjwanto/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -10047,6 +12548,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Blake Robertson",
+          "title": "Founder",
+          "linkedinUrl": "http://www.linkedin.com/pub/blake-robertson/2/829/b62/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Chris Woodard",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/cawoodard/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Patrick Hogan",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/patrick-james-hogan",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -10116,6 +12640,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "payments",
         "tax_accounting"
+      ],
+      "founders": [
+        {
+          "name": "Stiven Rodriguez Sanchez",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/stiven-rodr%C3%ADguez-s%C3%A1nchez-b65958101/",
+          "xUrl": "https://x.com/StivenRodz_",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -10171,6 +12704,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crypto_finance",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Luana Lopes Lara",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/luana-lopes-lara-3151068a",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Tarek Mansour",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/mansourtarek/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -10229,6 +12778,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "tax_accounting"
+      ],
+      "founders": [
+        {
+          "name": "David Kang",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/david-kang-001b177b/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -10281,6 +12839,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "YC Fintech industry",
         "vehicle financing / rent-to-own mobility fintech"
+      ],
+      "founders": [
+        {
+          "name": "ADHEMAR MILANI NETO",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/adhemarmilanineto/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -10340,6 +12907,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "crypto_finance"
+      ],
+      "founders": [
+        {
+          "name": "Max Ball",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/maxball/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Jerry Chu",
+          "title": "Founder",
+          "linkedinUrl": "",
+          "xUrl": "https://x.com/PMDBT",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -10400,6 +12983,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Jose Bethancourt",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/josebethancourt",
+          "xUrl": "https://x.com/josebet1",
+          "source": "YC directory"
+        },
+        {
+          "name": "Jesus Marco del Carmen",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jmdelcarmen/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -10455,6 +13054,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "crypto_finance"
+      ],
+      "founders": [
+        {
+          "name": "Edul Patel",
+          "title": "Founder and CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/edulpatel/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -10516,6 +13124,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crypto_finance",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Thibaut Sahaghian",
+          "title": "Founder & CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/tsahaghian/",
+          "xUrl": "https://x.com/fujisaha",
+          "source": "YC directory"
+        },
+        {
+          "name": "Theophile Villard",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/teawaterwire/",
+          "xUrl": "https://x.com/teawaterwire",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -10582,6 +13206,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "payments",
         "stablecoins"
+      ],
+      "founders": [
+        {
+          "name": "Benjamin Fernandes",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/benjaminf7/",
+          "xUrl": "https://x.com/Benji_Fernandes",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -10636,6 +13269,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crowdfunding",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Brian Forde",
+          "title": "Founder/CEO",
+          "linkedinUrl": "http://linkedin.com/in/brianforde",
+          "xUrl": "https://x.com/BrianForde",
+          "source": "YC directory"
+        },
+        {
+          "name": "Karan Jain",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/krnjn/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Susie Keeler",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/susie-keeler-9a510756/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -10686,6 +13342,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "banking_accounts"
+      ],
+      "founders": [
+        {
+          "name": "Milan Ray",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/milan-ray/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Yacine Sibous",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/yacine-sibous-07956b113/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -10757,6 +13429,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "cards_spend",
         "credit_lending",
         "crypto_finance"
+      ],
+      "founders": [
+        {
+          "name": "Femi Adebogun",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/femiadebogun",
+          "xUrl": "https://x.com/femiadebogun",
+          "source": "YC directory"
+        },
+        {
+          "name": "Evan Farrell",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/evan-farrell/",
+          "xUrl": "https://x.com/evanmtg",
+          "source": "YC directory"
+        },
+        {
+          "name": "Caleb Cross",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/calebcross",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -10821,6 +13516,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "credit_lending",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Luis Sia",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/luis-sia-356877148/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -10875,6 +13579,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Daniel Aisen",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/daniel-aisen-b2025712/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Allison Bishop",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/allison-bishop-46996399/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -10927,6 +13647,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "crypto_finance"
+      ],
+      "founders": [
+        {
+          "name": "Christian Baroni",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/christianbaroni/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Jin Chung",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jinchung17",
+          "xUrl": "https://x.com/jinrummie",
+          "source": "YC directory"
+        },
+        {
+          "name": "Michael Demarais",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/michael-demarais-73273736/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -10991,6 +13734,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Naveen Qureshi",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/naveen-qureshi",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Joseph Finlayson",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/joseph-finlayson",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Towers Wilen",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/towers-wilen-15173622/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -11047,6 +13813,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Kunal Rajvanshi",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/kunal-rajvanshi-0060794",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Vidur Jain",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/vidur-jain-3a693027",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Manish Pal",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/manish-pal-b0037812/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -11112,6 +13901,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Sunit Shah",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sunit-n-shah/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -11184,6 +13982,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "John Oke",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/johnoke",
+          "xUrl": "https://x.com/thejohnoke",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -11262,6 +14069,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "cards_spend",
         "credit_lending",
         "money_transfer"
+      ],
+      "founders": [
+        {
+          "name": "Prateek Swain",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/prateekswain/",
+          "xUrl": "https://x.com/prateekswain22",
+          "source": "YC directory"
+        },
+        {
+          "name": "Tyler Burnam",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/tylerburnam/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -11325,6 +14148,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Jorge Gallego",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/gallegojorge/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Andres Buitrago",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/andresbuitragof/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -11384,6 +14223,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Jonathan Petts",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jonathanpetts",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -11448,6 +14296,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "crypto_finance"
+      ],
+      "founders": [
+        {
+          "name": "David Barinas",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/davidbarinas",
+          "xUrl": "https://www.twitter.com/imdavidbarinas",
+          "source": "YC directory"
+        },
+        {
+          "name": "Simon Chamorro",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/simon-chamorro-92085a96/",
+          "xUrl": "https://x.com/realsimon",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -11519,6 +14383,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "money_transfer",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Anthony Oduwole",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/anthonyoduu/",
+          "xUrl": "https://x.com/AnthonyOduu",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ola Oyetayo",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ola-oyetayo-02277516/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -11596,6 +14476,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "credit_lending",
         "insurance_benefits",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Sam Hodges",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/samhodges/",
+          "xUrl": "https://x.com/HodgesSam",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -11651,6 +14540,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Jermaine Watkins",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/jermainewatkins",
+          "xUrl": "https://x.com/jwatkinsky",
+          "source": "YC directory"
+        },
+        {
+          "name": "Demetrius Gray",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/demetriusgray/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -11701,6 +14606,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "payroll"
+      ],
+      "founders": [
+        {
+          "name": "Pranab Krishnan",
+          "title": "Founder",
+          "linkedinUrl": "http://linkedin.com/in/pranab-krishnan",
+          "xUrl": "https://x.com/PranabKrishnan",
+          "source": "YC directory"
+        },
+        {
+          "name": "Kirti Shenoy",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/kirti-shenoy-9501a8145/",
+          "xUrl": "https://x.com/kirtishenoy",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -11761,6 +14682,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "credit_lending",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Andre Bernardes",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/andre-bernardes/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Bruno Lucas",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/brunollucas/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ludmila Pontremolez",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ludmilapontremolez/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -11818,6 +14762,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "money_transfer",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Tope Alabi",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/topealabi",
+          "xUrl": "https://x.com/topealabi_",
+          "source": "YC directory"
+        },
+        {
+          "name": "John Obirije",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/obirije-john-a2403310a/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -11879,6 +14839,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Michael Broughton",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/michael-j-broughton/",
+          "xUrl": "https://x.com/MikeAltro",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ayush Jain",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ayushajain1/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -11931,6 +14907,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Ty Wang",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/tyw/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Anirban Gangopadhyay",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/anirban-gangopadhyay-388b8565/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -11996,6 +14988,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Vignan Velivela",
+          "title": "Founder and CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/vignanv8/",
+          "xUrl": "https://x.com/vignanv8",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -12061,6 +15062,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "ap_ar_billing",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Bar Geron",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/bar-geron-76b87270",
+          "xUrl": "https://x.com/bar_geron",
+          "source": "YC directory"
+        },
+        {
+          "name": "Yoni Shuster",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/yoni-shuster/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -12123,6 +15140,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Richmond Bassey",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/richmondbassey/",
+          "xUrl": "https://x.com/Richmonb",
+          "source": "YC directory"
+        },
+        {
+          "name": "Yanmo Omorogbe",
+          "title": "Founder",
+          "linkedinUrl": "https://ng.linkedin.com/in/yanmo-omorogbe-a39a6375",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -12182,6 +15215,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "fintech_infra"
+      ],
+      "founders": [
+        {
+          "name": "Oriol Tintore",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/uritintore/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Pablo Viguera",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/viguerapablo/",
+          "xUrl": "https://x.com/viguerapablo",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -12240,6 +15289,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "cards_spend",
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Faisal Khalid",
+          "title": "Founder",
+          "linkedinUrl": "http://uk.linkedin.com/in/faisalkhalid",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -12296,6 +15354,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Anthony De Guzman",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/anthonydeguzman/",
+          "xUrl": "https://x.com/anthonydgs",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ade Labinjo",
+          "title": "Founder",
+          "linkedinUrl": "http://ca.linkedin.com/pub/ade-labinjo/11/a93/ab1",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -12369,6 +15443,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "credit_lending",
         "payments",
         "tax_accounting"
+      ],
+      "founders": [
+        {
+          "name": "Abhinay Peddisetty",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/abh1nay/",
+          "xUrl": "https://x.com/abh1nay",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -12423,6 +15506,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "banking_accounts"
+      ],
+      "founders": [
+        {
+          "name": "Sheena Allen",
+          "title": "Founder",
+          "linkedinUrl": "http://www.LinkedIn.com/in/SheenaAllen",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -12476,6 +15568,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "money_transfer",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Gavin Mai",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/gavinmai",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -12545,6 +15646,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crypto_finance",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Stephen Kump",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/stephenkump",
+          "xUrl": "https://x.com/stephenkump",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ashby Foltz",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ashbyfoltz/",
+          "xUrl": "https://x.com/af3",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -12607,6 +15724,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "cards_spend"
+      ],
+      "founders": [
+        {
+          "name": "Rodrigo Tognini",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/rodrigo-tognini-184287a7/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ricardo Gottschalk",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ricardo-gottschalk-32786111/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Fernando Santos",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/fernandorsantos/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -12661,6 +15801,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Oluwatomi Ayorinde",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/oluwatomiayorinde",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Damilola Ayorinde",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/damilola-ayorinde-05304279/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -12733,6 +15889,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "fintech_infra",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Alejandro Cede\u00f1o",
+          "title": "Co-Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/alejandro00",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Jose de la Luz Lopez S",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/josedelaluz/",
+          "xUrl": "https://x.com/josedelaluz_",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -12782,6 +15954,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Jack Pawlik",
+          "title": "Co-Founder, CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/jack-pawlik/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -12856,6 +16037,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "cards_spend",
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Sanjay Gandhi",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sanjay-gandhi-58318410/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Manisha Pandita",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/manisha-pandita?originalsubdomain=in",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -12908,6 +16105,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "payroll"
+      ],
+      "founders": [
+        {
+          "name": "M\u00e1rcio Dos Santos",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/marcio-dos-santos/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Saulo Tristao",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/saulo-tristao-4332331b/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ticiano Vieira",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ticiano/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -12970,6 +16190,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Agree Ahmed",
+          "title": "Co-Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/agreea",
+          "xUrl": "https://x.com/agreeahmed",
+          "source": "YC directory"
+        },
+        {
+          "name": "Harrison Telyan",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/harrisontelyan/",
+          "xUrl": "https://x.com/harrisontelyan/",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -13030,6 +16266,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "cards_spend"
+      ],
+      "founders": [
+        {
+          "name": "Norman M\u00fcller",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/norman-m%C3%BCller-6b93a857/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Rene Serrano",
+          "title": "Founder",
+          "linkedinUrl": "https://mx.linkedin.com/in/serranorene",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -13085,6 +16337,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Joshua Smith",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/joshua-smith-809244104/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Nannette Smith",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/nannette-smith-9a568512a",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -13140,6 +16408,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Riyaz Khan",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/riyazk",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Sagar Sheth",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sagar8sheth/",
+          "xUrl": "https://x.com/sagar_s95",
+          "source": "YC directory"
+        },
+        {
+          "name": "Aniruddh Singh",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/aniruddhsingh11/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -13207,6 +16498,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "cards_spend",
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Patrick De Suza",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/patrickdesuza/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Christian-Robert Joseph",
+          "title": "Founder",
+          "linkedinUrl": "http://www.linkedin.com/in/christianrjo",
+          "xUrl": "https://x.com/christianrjo",
+          "source": "YC directory"
+        },
+        {
+          "name": "Carl-Alain Memnon",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/carl-alain-memnon-a350a42b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B3FbbC8GRScio%2FYLGi0Aeew%3D%3D",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -13270,6 +16584,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Jorge Flores Acevedo",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jorgefloresacevedo/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Josue Gio \ud83d\udd25",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/josuegio",
+          "xUrl": "https://x.com/JosueGio",
+          "source": "YC directory"
+        },
+        {
+          "name": "Stiven Martinez",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/stivenmartinez/",
+          "xUrl": "https://x.com/stivenmart",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -13326,6 +16663,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Aditya Acharya",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/adityaacharya27/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Nipun Kant",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/nipun-kant-4166b35/",
+          "xUrl": "https://x.com/nipungkant",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -13376,6 +16729,36 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Arthur Alvarenga",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/arthur-alvarenga-0623b193/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Breno Oliveira",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/breno-lima-38a09922",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Bernardo Reis",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/bernardo-reis-22255659/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Raphael Capel\u00e3o",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/raphael-capel%C3%A3o-052759135/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -13422,6 +16805,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "banking_accounts"
+      ],
+      "founders": [
+        {
+          "name": "Darragh Buckley",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/darragh-buckley-56096312",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -13506,6 +16898,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "cards_spend",
         "money_transfer",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Dileep Thazhmon",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/thazhmon/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -13583,6 +16984,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Jeffrey Liu",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jeffreykliu/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Justin Louie",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/nitsujri",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -13644,6 +17061,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "credit_lending",
         "fintech_infra"
+      ],
+      "founders": [
+        {
+          "name": "Will Kim",
+          "title": "Founder",
+          "linkedinUrl": "http://www.linkedin.com/in/wdkim",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Eric Wei",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/eric-wei-43078068",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -13710,6 +17143,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Sahil Bansal",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sahil-bansal-48b17b39/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Aayush Goel",
+          "title": "Founder",
+          "linkedinUrl": "",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -13769,6 +17218,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Sheridan Clayborne",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sheridan-clayborne-77723a119/",
+          "xUrl": "https://x.com/SheridanClayb",
+          "source": "YC directory"
+        },
+        {
+          "name": "Mitchell Jones",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/mitchell-jones-333559a2/",
+          "xUrl": "https://x.com/WhosMitchJones7",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -13834,6 +17299,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Drew Wilson",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/drew-wilson-025a99132/",
+          "xUrl": "https://x.com/drewwilson",
+          "source": "YC directory"
+        },
+        {
+          "name": "Matt DeLoach",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/matthewdeloach/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -13896,6 +17377,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "insurance_benefits",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Nitthin Nair",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/nitthin-chandran-nair-82aa9290/",
+          "xUrl": "https://www.twitter.com/nitthin",
+          "source": "YC directory"
+        },
+        {
+          "name": "Pranay Suyash",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/pranaysuyash/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -13946,6 +17443,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Duncan Hamra",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/duncanhamra",
+          "xUrl": "https://x.com/DuncanHamra",
+          "source": "YC directory"
+        },
+        {
+          "name": "Tyler Bell",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/tyler-bell-129711158/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -14005,6 +17518,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Gregory Gevorkyan",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/grisha-gevorkyan-597b5289/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -14054,6 +17576,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Vojta Drmota",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/vojta-drmota-84b493166/",
+          "xUrl": "https://x.com/vdrmota",
+          "source": "YC directory"
+        },
+        {
+          "name": "Matteo Carroll",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/matteo-carroll-3095a3ba/",
+          "xUrl": "https://x.com/matteoacarroll",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -14118,6 +17656,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "cards_spend",
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Gabriel Roizner",
+          "title": "Co-founder & CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/gabrielroizner/",
+          "xUrl": "https://x.com/groizner",
+          "source": "YC directory"
+        },
+        {
+          "name": "Yael Israeli",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/yaelisraeli1/",
+          "xUrl": "https://x.com/Yaelfintech",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -14177,6 +17731,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Fernando Gomez Arriola",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/fernando-g%C3%B3mez-arriola-9a427024/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Abdon Nacif",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/abdonnacif",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -14237,6 +17807,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "banking_accounts"
+      ],
+      "founders": [
+        {
+          "name": "Aldrin Clement",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/aldrin-clement/",
+          "xUrl": "https://x.com/buzz_aldi",
+          "source": "YC directory"
+        },
+        {
+          "name": "Paul Clement",
+          "title": "Founder",
+          "linkedinUrl": "",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -14297,6 +17883,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "payments",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Sowmya Rao",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/legaljargon/",
+          "xUrl": "https://x.com/sowmyarao_",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -14365,6 +17960,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "crypto_finance",
         "payments",
         "stablecoins"
+      ],
+      "founders": [
+        {
+          "name": "Daniel Nordh",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/pub/daniel-nordh/15/a45/3b",
+          "xUrl": "https://x.com/danielnordh",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -14427,6 +18031,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Shawn Du",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/shawn-du-a8896282/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -14480,6 +18093,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Ziyad Parekh",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ziyad-parekh-b864b655",
+          "xUrl": "https://x.com/ziyadparekh",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -14549,6 +18171,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "insurance_benefits",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Kevin Cox",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/kevin-cox-90337b47/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Suril Kantaria",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/suril-kantaria-59522922/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -14620,6 +18258,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "cards_spend",
         "money_transfer",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Mohandass Kalaichelvan",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/mohandasskalaichelvan/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Isaq Ahmed Mukthar",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/isaqahmed/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -14688,6 +18342,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "payments",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Gaurav Arora",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/whogaurav",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -14739,6 +18402,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "banking_accounts"
+      ],
+      "founders": [
+        {
+          "name": "Rafael Stark",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/rcmstark/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -14805,6 +18477,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "payments",
         "tax_accounting"
+      ],
+      "founders": [
+        {
+          "name": "Jesse Ahin",
+          "title": "Founder",
+          "linkedinUrl": "",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -14855,6 +18536,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Ahmad Hammouda",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ahmad-hammouda-cfa-a6575018/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Seif Amr",
+          "title": "Cofounder",
+          "linkedinUrl": "https://www.linkedin.com/in/seif486/",
+          "xUrl": "https://x.com/saiufa3",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -14916,6 +18613,36 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crypto_finance",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Federico Goldberg",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/federico-goldberg-60393124/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Nicolas D'Onofrio",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/nicol%C3%A1s-d-onofrio-90392458/",
+          "xUrl": "https://x.com/nicodonof",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ramiro Furtado",
+          "title": "Founder",
+          "linkedinUrl": "https://ar.linkedin.com/in/ramiro-furtado-595a3533",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Martin Nagelberg",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/martin-nagelberg-44abab128/",
+          "xUrl": "https://x.com/martonagel",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -14985,6 +18712,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "ap_ar_billing",
         "payments",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Barnaby Malet",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/barnabymalet/",
+          "xUrl": "https://x.com/barnabymalet",
+          "source": "YC directory"
+        },
+        {
+          "name": "Alex Louisy",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/alexlouisy/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -15054,6 +18797,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "cards_spend",
         "money_transfer",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Rajith Shaji",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/rajiths/",
+          "xUrl": "https://x.com/itzrajith",
+          "source": "YC directory"
+        },
+        {
+          "name": "Rajesh Raikwar",
+          "title": "Founder",
+          "linkedinUrl": "https://in.linkedin.com/in/rajeshraikwar",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -15103,6 +18862,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Nadav Lidor",
+          "title": "CEO and Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/nadavlidor/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Avikam Agur",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/avikam-agur-0737363/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ambika Acharya",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ambika-acharya/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -15166,6 +18948,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "ap_ar_billing",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Abhishek Ayyagari",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/aayyagari",
+          "xUrl": "https://x.com/abs_ayyagari",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ganesh Mallya",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ganeshmallya",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ahamed Shah Wahidullah",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ahamed-shah-84221118/",
+          "xUrl": "https://x.com/ahamedwahid",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -15219,6 +19024,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Jared Hobbs",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/jaredhobbs",
+          "xUrl": "https://x.com/jaredhobbs",
+          "source": "YC directory"
+        },
+        {
+          "name": "Sean O'Keefe",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/sokeefe2",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -15269,6 +19090,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "banking_accounts"
+      ],
+      "founders": [
+        {
+          "name": "Adam Moelis",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/adammoelis",
+          "xUrl": "https://x.com/adammoelis",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ben Doyle",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/doyleb",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -15337,6 +19174,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "insurance_benefits",
         "payments",
         "payroll"
+      ],
+      "founders": [
+        {
+          "name": "Omair Ansari",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/omair-ansari-40494329",
+          "xUrl": "https://x.com/OmairAnsari16",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ali Ladhubhai",
+          "title": "Founder",
+          "linkedinUrl": "https://pk.linkedin.com \u203a ali-ladhubhai-205b0710a",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -15391,7 +19244,8 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
-      ]
+      ],
+      "founders": []
     },
     {
       "id": "24042",
@@ -15447,6 +19301,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "banking_accounts"
+      ],
+      "founders": [
+        {
+          "name": "Sajal Khanna",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sajal-khanna-52aa9b126",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Lavika Aggarwal",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/lavika-aggarwal-463a4b132/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Jagveer Gandhi",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jagveer-gandhi-1344b016/",
+          "xUrl": "https://x.com/jagveersg",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -15493,7 +19370,8 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "crypto_finance"
-      ]
+      ],
+      "founders": []
     },
     {
       "id": "22834",
@@ -15546,6 +19424,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Eve Halimi",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/eve-halimi-95b695b4/",
+          "xUrl": "https://x.com/eve_halimi",
+          "source": "YC directory"
+        },
+        {
+          "name": "Anam Lakhani",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/anam-lakhani-443032134/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -15608,6 +19502,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "insurance_benefits",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Shady El Tohfa",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/shady-el-tohfa-13023258/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Adham Nauman",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/adham-nauman-a6882ba3/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -15665,6 +19575,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "cards_spend",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Skyler Aspegren",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/skyler-aspegren/",
+          "xUrl": "https://mobile.twitter.com/skyleraspegren",
+          "source": "YC directory"
+        },
+        {
+          "name": "Josh Wright",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/joshlwright/",
+          "xUrl": "https://x.com/joshuawright11",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -15722,6 +19648,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Rohan Marwaha",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/rohanmarwahanj/",
+          "xUrl": "https://x.com/RohanMarwaha",
+          "source": "YC directory"
+        },
+        {
+          "name": "Dev Patel",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/devpatel9/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -15782,6 +19724,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "crypto_finance"
+      ],
+      "founders": [
+        {
+          "name": "Fernando Terr\u00e9s",
+          "title": "CEO and co-founder",
+          "linkedinUrl": "https://www.linkedin.com/in/fterres/",
+          "xUrl": "https://x.com/tmzfernando",
+          "source": "YC directory"
+        },
+        {
+          "name": "Zach Garman",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/zachgarman",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Alvaro Correa",
+          "title": "Founder",
+          "linkedinUrl": "https://uk.linkedin.com/in/\u00e1lvaro-correa-gallardo-082b4a90",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -15838,6 +19803,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "checkout",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Liat Beng Neo",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/liatbeng/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Sudhan Raj",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sudhan-raj/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Sebastian Roervig",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sebastianroervig/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -15898,6 +19886,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Juan Casian",
+          "title": "Ex-CEO & Co-founder (Previously CTO)",
+          "linkedinUrl": "https://www.linkedin.com/in/juancasian/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Roger Rea",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/rogeliorea",
+          "xUrl": "https://x.com/rogereur",
+          "source": "YC directory"
+        },
+        {
+          "name": "Alejandro Chavez",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/alejandro-chavez/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -15951,6 +19962,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Feras Jalbout",
+          "title": "Founder",
+          "linkedinUrl": "http://www.linkedin.com/in/feras-jalbout-252b0942",
+          "xUrl": "https://x.com/FJeasy",
+          "source": "YC directory"
+        },
+        {
+          "name": "Kunal Taneja",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/kunal-taneja-yc/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -16012,6 +20039,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Roberto Salcedo",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/roberto-salcedo-nieto/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Luis Villarreal",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/luisvcastilla/",
+          "xUrl": "https://www.twitter.com/luisvcastilla/",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -16075,6 +20118,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Vikul Goyal",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/vikulgoyal/",
+          "xUrl": "https://x.com/GoyalVikul",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -16140,6 +20192,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "ap_ar_billing",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Danilo Stern-Sapad",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/danilosapad/",
+          "xUrl": "https://x.com/danilosapad",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -16196,6 +20257,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Sam Yang",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/samuel-q-yang/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -16244,6 +20314,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Alexander Li",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/alexander-li-19900783/",
+          "xUrl": "https://x.com/alexli00",
+          "source": "YC directory"
+        },
+        {
+          "name": "Adam Kang",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/adamkang/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -16302,6 +20388,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Marcos Pileggi Filho",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/marcospileggifilho/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -16367,6 +20462,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "cards_spend",
         "credit_lending",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Saurav Gandhi",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/saurav-gandhi-83171a16",
+          "xUrl": "https://x.com/SauravGandhi13",
+          "source": "YC directory"
+        },
+        {
+          "name": "Sandeep Arora",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sandeep-arora-065bb519/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -16421,6 +20532,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "David Rincon-Cruz",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/davidrinconcruz/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Tom Sharon",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/tomsharon93",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -16487,6 +20614,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "crowdfunding",
         "crypto_finance",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Gabriele Musella",
+          "title": "CEO, Founder",
+          "linkedinUrl": "http://www.linkedin.com/in/gabrielemusella",
+          "xUrl": "https://x.com/freshmuse",
+          "source": "YC directory"
+        },
+        {
+          "name": "Oleg Giberstein",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/giberstein",
+          "xUrl": "https://x.com/ogiberstein",
+          "source": "YC directory"
+        },
+        {
+          "name": "Zden\u011bk H\u00f6fler",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/zdenekhofler/",
+          "xUrl": "https://x.com/ethical_daddy",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -16551,6 +20701,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "fintech_infra",
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Trent Harvey",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/trentharvey/",
+          "xUrl": "https://www.twitter.com/thetrentharvey",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ian Littman",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ian-littman",
+          "xUrl": "https://x.com/iansltx",
+          "source": "YC directory"
+        },
+        {
+          "name": "William Dearie",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/william-dearie-202403209/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -16613,6 +20786,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "payments",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Daniel Ruhman",
+          "title": "Founder",
+          "linkedinUrl": "http://linkedin.com/in/daniel-ruhman-0b739353",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -16679,6 +20861,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "credit_lending",
         "fintech_infra"
+      ],
+      "founders": [
+        {
+          "name": "Omar Ekram",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/omar-ekram-56088128/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -16737,6 +20928,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "banking_accounts"
+      ],
+      "founders": [
+        {
+          "name": "Hassan Bourgi",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/hassan-bourgi-13165136/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -16815,6 +21015,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "fintech_infra",
         "payments",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Sahil Hasan",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sahilhasan/",
+          "xUrl": "https://x.com/itsahil85",
+          "source": "YC directory"
+        },
+        {
+          "name": "Kartikye Mittal",
+          "title": "Co-Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/kartikye/",
+          "xUrl": "https://x.com/kartikyee",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -16865,6 +21081,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Anna-Sophie Hartvigsen",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/anna-sophie-hartvigsen-46352611a/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Camilla Falkenberg",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/camilla-clo%C3%ABtta-falkenberg-69b78895/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -16915,6 +21147,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "fintech_infra"
+      ],
+      "founders": [
+        {
+          "name": "Diego Rojas",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/diegolrojas",
+          "xUrl": "https://x.com/diegoluisr",
+          "source": "YC directory"
+        },
+        {
+          "name": "Keng Low",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/keng/",
+          "xUrl": "https://x.com/raconteer",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -16964,6 +21212,36 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Roger Cawdette",
+          "title": "Co-Founder & CEO",
+          "linkedinUrl": "https://linkedin.com/in/rogercawdette",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Darian Bhathena",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/darian-bhathena/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Michael Liu",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/michaelsongliu/",
+          "xUrl": "https://x.com/michaelsongliu",
+          "source": "YC directory"
+        },
+        {
+          "name": "Jack Phifer",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jack-phifer-62a593157/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -17024,6 +21302,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Mounir Laggoune",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/mounirlaggoune/",
+          "xUrl": "https://x.com/moonlaggoune",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -17088,6 +21375,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "fintech_infra"
+      ],
+      "founders": [
+        {
+          "name": "Kiiru Muhoya",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/kiiru-muhoya-251360131",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ian Njuguna",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ian-n/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Gitari Tirima",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/gitari-t/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -17144,6 +21454,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Jeremy Tsui",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jeremytsui/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Kevin Suh",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/kevin-suh/",
+          "xUrl": "https://x.com/kevinsuh34",
+          "source": "YC directory"
+        },
+        {
+          "name": "Josiah Tsui",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/josiahtsui/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -17201,6 +21534,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Crist\u00f3bal Griffero",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/griffero/",
+          "xUrl": "https://x.com/cgriffero",
+          "source": "YC directory"
+        },
+        {
+          "name": "Lukas Zorich",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/lezorich/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -17252,6 +21601,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Rob LaFave",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/roblafave",
+          "xUrl": "https://x.com/roblafave",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -17314,6 +21672,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Simon Ward",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/wardsimon/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -17374,6 +21741,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Daniel Kang",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/daniel-s-kang/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Norman Yu",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/normanyu1/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -17446,6 +21829,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "crypto_finance",
         "payments",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Ben Eluan",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ben-eluan",
+          "xUrl": "https://x.com/elzibs",
+          "source": "YC directory"
+        },
+        {
+          "name": "Israel Akintunde",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/israel-akintunde-a0b801134/",
+          "xUrl": "https://x.com/____grandmaster",
+          "source": "YC directory"
+        },
+        {
+          "name": "Osezele Orukpe",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/osezele-orukpe-1a37a9167/",
+          "xUrl": "https://x.com/__warchief",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -17506,6 +21912,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "fintech_infra",
         "insurance_benefits",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Victor E. Fimbres",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/victorefimbres/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -17563,6 +21978,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "fintech_infra",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Cl\u00e9ment Sala\u00fcn",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/clementsalaun",
+          "xUrl": "https://www.twitter.com/superzamp",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -17613,6 +22037,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Stella Han",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/hanstella/",
+          "xUrl": "https://x.com/hellastellah",
+          "source": "YC directory"
+        },
+        {
+          "name": "Carlos Trevi\u00f1o",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/carlos-trevino",
+          "xUrl": "https://x.com/rlostrevino",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -17664,6 +22104,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Avijit Sharma",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/avijitsharma/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -17722,6 +22171,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "credit_lending",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Ola Okeshola",
+          "title": "Founder",
+          "linkedinUrl": "http://www.linkedin.com/ola-okeshola",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Nikos Karamolegkos",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/nikolaoskaramolegkos/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -17796,6 +22261,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "ap_ar_billing",
         "cards_spend",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Chapman Snowden",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/chapmansnowden",
+          "xUrl": "https://x.com/ChapmanSnowden",
+          "source": "YC directory"
+        },
+        {
+          "name": "Drew Barrett",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jdrewbarrett/",
+          "xUrl": "https://x.com/jdrewbarrett",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -17866,6 +22347,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Ankit Khandelwal",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ankitkhandelwal1987/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Darpan Khurana",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/khuranadarpan/",
+          "xUrl": "https://x.com/me_DKhurana",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -17929,6 +22426,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crypto_finance",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Dusko Kelez",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/duskokelez/",
+          "xUrl": "https://x.com/duskokelez",
+          "source": "YC directory"
+        },
+        {
+          "name": "Billy Caballero",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/billycaballero/",
+          "xUrl": "https://x.com/Billy_Caballero",
+          "source": "YC directory"
+        },
+        {
+          "name": "Piero Sifuentes",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/pierosifuentes/",
+          "xUrl": "https://x.com/pierosifuentesp",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -17986,6 +22506,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "crypto_finance"
+      ],
+      "founders": [
+        {
+          "name": "Taylor Culbertson",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/taylorculbertson/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Colton Dillion",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/cadillion",
+          "xUrl": "https://www.twitter.com/cadillion",
+          "source": "YC directory"
+        },
+        {
+          "name": "Jason Dillion",
+          "title": "Co-Founder and COO",
+          "linkedinUrl": "https://www.linkedin.com/in/jason-dillion/",
+          "xUrl": "https://x.com/jadillionaire",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -18041,6 +22584,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Aditya Haripurkar",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/adityaharipurkar/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Nitin Muthyala",
+          "title": "Founder",
+          "linkedinUrl": "http://linkedin.com/in/nitinmuthyala/",
+          "xUrl": "https://x.com/nenuNitin",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -18102,6 +22661,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "insurance_benefits",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Camille Ang",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/camille-ang-19224647/",
+          "xUrl": "https://x.com/camilletanang",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -18165,6 +22733,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "cards_spend",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Hasan Nawaz",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/hasannawaz/",
+          "xUrl": "https://x.com/MrHasanNawaz",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ignacio Javierre",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ignaciojavierre/",
+          "xUrl": "https://x.com/ignajavierre",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -18215,6 +22799,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Ben Botvinick",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/botv",
+          "xUrl": "https://x.com/benbotvinick",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -18278,6 +22871,36 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Daniel Liechtenstein",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/daniel-liechtenstein-ba338370/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Eitan Frailich",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/eitan-frailich-81b69390/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Tomer Moshe",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/tomer-moshe-033a2b69",
+          "xUrl": "https://x.com/tomosher1",
+          "source": "YC directory"
+        },
+        {
+          "name": "David Yahalomi",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/david-yahalomi-441b3863/",
+          "xUrl": "https://x.com/DavidYahalomi",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -18336,6 +22959,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crypto_finance",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Amar Gautam",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/amargautam",
+          "xUrl": "https://x.com/iAmarGautam",
+          "source": "YC directory"
+        },
+        {
+          "name": "Kunal Kumar",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/engineer-kunal-kumar/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -18408,6 +23047,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "credit_lending",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Anta Pattabiraman",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/anantharaman-pattabiraman-87532a4/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -18466,6 +23114,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "James Vuong",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/jameslvuong/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -18518,6 +23175,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "banking_accounts"
+      ],
+      "founders": [
+        {
+          "name": "Yasir Shirazi",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/shirazi/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Zain Khan",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/zainmk",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -18569,6 +23242,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "banking_accounts"
+      ],
+      "founders": [
+        {
+          "name": "Kahlil Lalji",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/bykahlil/",
+          "xUrl": "https://x.com/bykahlil",
+          "source": "YC directory"
+        },
+        {
+          "name": "Vishal Dubey",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/vishaldubey01/",
+          "xUrl": "https://x.com/vishal_dubey1",
+          "source": "YC directory"
+        },
+        {
+          "name": "Eric Wang",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ericww2/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -18628,6 +23324,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crypto_finance",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "David Akinin",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/davidakinin/",
+          "xUrl": "https://x.com/davidakinin",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -18680,6 +23385,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Dhruv Goel",
+          "title": "Co-Founder / CEO",
+          "linkedinUrl": "https://es.linkedin.com/in/goeldhruv90",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ankur Solanki",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ankur-solanki",
+          "xUrl": "https://x.com/ankursolanki_",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -18736,6 +23457,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Phillip Daneshyar",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/phildaneshyar/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Richard Fleeman",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/richard-fleeman-9539b4166/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Rob Gallagher",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/rob-gallagher/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -18810,6 +23554,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "credit_lending",
         "money_transfer",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Pei-fu Hsieh",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/pei-fu-hsieh-a214b24/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -18863,6 +23616,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "cards_spend"
+      ],
+      "founders": [
+        {
+          "name": "Deepti Sanghi",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/deeptisanghi/",
+          "xUrl": "https://x.com/deeptisanghi",
+          "source": "YC directory"
+        },
+        {
+          "name": "Gaurav Thapa",
+          "title": "Co-Founder, CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/gaurav-thapa/",
+          "xUrl": "https://x.com/gaurav_",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -18912,6 +23681,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Akash Agrawal",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/akashagrawal1291/",
+          "xUrl": "https://x.com/aka1291",
+          "source": "YC directory"
+        },
+        {
+          "name": "Komal Kumar Gupta",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/komal-kumar-g-9a3198113/",
+          "xUrl": "https://x.com/ImkomalKGupta",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -18978,6 +23763,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "credit_lending",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Vijay Kumar",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/vijay-kumar-0359b55/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Yogesh Bathina",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/yogesh-bathina-23460a111/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -19034,6 +23835,36 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Javier Aldape",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/javier-aldape-359706110/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Hern\u00e1n Belden",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/hern\u00e1n-belden-de-la-garza-0a9082159/",
+          "xUrl": "https://x.com/Hernanbelden1",
+          "source": "YC directory"
+        },
+        {
+          "name": "JC Mercado",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jcmalpizar/",
+          "xUrl": "https://x.com/zenbakiak",
+          "source": "YC directory"
+        },
+        {
+          "name": "Fernando Nader Giacoman",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/fernando-nader-giacoman-133525102/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -19082,6 +23913,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "fintech_infra"
+      ],
+      "founders": [
+        {
+          "name": "Ridwan Olalere",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/darilldrems/",
+          "xUrl": "https://x.com/ridwan_olalere",
+          "source": "YC directory"
+        },
+        {
+          "name": "Rian Cochran",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/rian-p-cochran-a3a9404/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -19135,6 +23982,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Jon Fry",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jonfrysales/",
+          "xUrl": "https://x.com/jfrytx",
+          "source": "YC directory"
+        },
+        {
+          "name": "Matthew Watts",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/thewatts/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -19196,6 +24059,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Vladimir Korshin",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/vladimirkorshin/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Molly Hogan",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/mollyhogan/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Asa Schachar",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/asaschachar",
+          "xUrl": "https://x.com/asametrical",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -19251,6 +24137,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Salvador Rivero",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/salvador-rivero-3031182b/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Max Mergenthaler",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/mergenthaler/",
+          "xUrl": "https://x.com/MergenthalerMax",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -19335,6 +24237,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "payments",
         "payroll",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Cathy Han",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/cathyhan/",
+          "xUrl": "https://x.com/cathyxhan",
+          "source": "YC directory"
+        },
+        {
+          "name": "Abeer Agrawal",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/abeera/",
+          "xUrl": "https://x.com/abeerag",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -19396,6 +24314,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "crypto_finance"
+      ],
+      "founders": [
+        {
+          "name": "Anderson Ferminiano",
+          "title": "Founder",
+          "linkedinUrl": "http://www.linkedin.com/in/andferminiano",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -19454,6 +24381,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Charlie Correa",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/carloscorreavega/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "David Susa",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/davidsusa",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -19504,6 +24447,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Alex Vilhena",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/alexvilhena/",
+          "xUrl": "https://x.com/ElVilhena",
+          "source": "YC directory"
+        },
+        {
+          "name": "Thiago Garuti",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/thiago-garuti-6844b557/",
+          "xUrl": "https://x.com/thiago_garuti",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -19562,6 +24521,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Sharique Samsudheen",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/shariquesamsudheen/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Sooraj Elamana",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sooraje/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -19611,6 +24586,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Alan Karpovsky",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/alankarpovsky/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Alejandro Zecler",
+          "title": "Founder",
+          "linkedinUrl": "http://linkedin.com/in/alejandrozecler",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -19668,6 +24659,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Moritz Pail",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/moritz-pail/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Moritz Stephan",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/moritz-stephan/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -19733,6 +24740,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "credit_lending",
         "payroll"
+      ],
+      "founders": [
+        {
+          "name": "Leonardo Devincenzi",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/leonardo-devincenzi-5a57a8209/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -19786,6 +24802,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "banking_accounts"
+      ],
+      "founders": [
+        {
+          "name": "Abdulhamid Hassan",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ijbkid/",
+          "xUrl": "https://x.com/ijbkid",
+          "source": "YC directory"
+        },
+        {
+          "name": "Prakhar Singh",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/whoisprakhar/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -19840,6 +24872,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Andres Quintanilla",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/andres-quintanilla-440897125/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Karina Derbez",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/karinaderbez",
+          "xUrl": "https://x.com/karinaderbez",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -19893,6 +24941,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Derek Pankaew",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/dpankaew/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Eric Lafleche",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ericlafleche/",
+          "xUrl": "https://x.com/ericlafleche",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -19950,6 +25014,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "payroll"
+      ],
+      "founders": [
+        {
+          "name": "Dzung Dang",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/%F0%9F%94%AD-dzung-dang-1565425/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Thang Nguyen",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/thang-nguyen-92620557/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -20013,6 +25093,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "payments",
         "payroll"
+      ],
+      "founders": [
+        {
+          "name": "Don Pansacola",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/donpansacola/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Aldrich Tan",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/aldricht/",
+          "xUrl": "https://x.com/aldricht",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -20069,6 +25165,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "banking_accounts"
+      ],
+      "founders": [
+        {
+          "name": "Stefan Heule",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/stefan-heule-b46ab991/",
+          "xUrl": "https://x.com/stefan_heule",
+          "source": "YC directory"
+        },
+        {
+          "name": "Chen-Chen Huo",
+          "title": "Founder",
+          "linkedinUrl": "http://www.linkedin.com/in/chenchenhuo",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Konstantin Weitz",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/konstantin-weitz-75979443/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -20119,6 +25238,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Omar Kassim",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/okassim/",
+          "xUrl": "https://x.com/okassim",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -20171,6 +25299,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Ed Chin",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/echin6/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Amit Kumar",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/sainiamit",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -20255,6 +25399,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "credit_lending",
         "payments",
         "payroll"
+      ],
+      "founders": [
+        {
+          "name": "Gerardo Briones",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/gerardo-briones-58000813/",
+          "xUrl": "https://x.com/Briones2",
+          "source": "YC directory"
+        },
+        {
+          "name": "Carlos Cruz",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/carlos--cruz",
+          "xUrl": "https://www.twitter.com/soychuck",
+          "source": "YC directory"
+        },
+        {
+          "name": "LUIS FERNANDO DOSAL G",
+          "title": "Founder",
+          "linkedinUrl": "",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -20310,6 +25477,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "money_transfer",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Enrique Perezalonso",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/perezalonso/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Andrew Mason",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/andrew-s-mason/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -20368,6 +25551,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Zach Bijesse",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/zbijesse",
+          "xUrl": "https://x.com/ZachBijesse",
+          "source": "YC directory"
+        },
+        {
+          "name": "Chioma Okotcha",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/chiomaokotcha/",
+          "xUrl": "https://www.twitter.com/chiomaokotcha",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -20417,6 +25616,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Gega Tsurtsumia",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/gegat/",
+          "xUrl": "https://x.com/gegatsur",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -20479,6 +25687,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "payroll"
+      ],
+      "founders": [
+        {
+          "name": "Mostafa Ashour",
+          "title": "Founder",
+          "linkedinUrl": "http://www.linkedin.com/in/mostafaashour",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ahmed Abuelenien",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sa6ry/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -20538,6 +25762,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Tomer Molovinsky",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/tomermolo",
+          "xUrl": "https://x.com/tomermolo",
+          "source": "YC directory"
+        },
+        {
+          "name": "Doron Segal",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/doronsegal/",
+          "xUrl": "https://x.com/segaldoron",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -20587,6 +25827,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "James Savoldelli",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jamessavoldelli/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -20666,6 +25915,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "credit_lending",
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Akash Agarwal",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/akash29196/",
+          "xUrl": "https://x.com/akash29196",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -20726,6 +25984,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Carlos Tejeda",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/carlos-tejeda-b8096a2a/",
+          "xUrl": "https://x.com/carlostejeda",
+          "source": "YC directory"
+        },
+        {
+          "name": "Oscar Rydberg",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/oscar-rydberg-ba170b15",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Rafael Tejeda Elizondo",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/rafael-tejeda-elizondo-3853b5211/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -20776,6 +26057,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "banking_accounts"
+      ],
+      "founders": [
+        {
+          "name": "Frederik Obasi",
+          "title": "Founder",
+          "linkedinUrl": "http://ng.linkedin.com/in/frederikobasi",
+          "xUrl": "https://x.com/welldonefred",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -20822,6 +26112,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Anna Matalon",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/annamatalon/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Jon Sheller",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jon-sheller/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Brendan Tobin",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/brendanltobin/",
+          "xUrl": "https://x.com/btobbes",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -20876,6 +26189,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Roger Larach",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/larachr",
+          "xUrl": "https://x.com/rogerlarach",
+          "source": "YC directory"
+        },
+        {
+          "name": "Roger Teran",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/rteran/",
+          "xUrl": "https://x.com/rogteran",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -20927,6 +26256,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Kevin Fu",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/kevinfu93/",
+          "xUrl": "https://x.com/kevineffu",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -20981,6 +26319,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Mo Mahallawy",
+          "title": "Cofounder / CTO",
+          "linkedinUrl": "http://linkedin.com/in/mmahalwy",
+          "xUrl": "https://x.com/mofromyyz",
+          "source": "YC directory"
+        },
+        {
+          "name": "Justin Levine",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/justindlevine29/",
+          "xUrl": "https://x.com/justdlevine",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -21044,6 +26398,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Kate Hiscox",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/katehiscox/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Dani Conejo Rico",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/danielaconejo",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -21123,6 +26493,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "payments",
         "stablecoins",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Victor Cardenas",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/victor-d-cardenas/",
+          "xUrl": "https://x.com/victorcardenas",
+          "source": "YC directory"
+        },
+        {
+          "name": "Kevin Bai",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/kevinbai0",
+          "xUrl": "https://www.twitter.com/kevinbai0",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -21182,6 +26568,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Lawrence Lin Murata",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/lawrencelm",
+          "xUrl": "https://x.com/LawLM",
+          "source": "YC directory"
+        },
+        {
+          "name": "Alice Deng",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/alicedeng/",
+          "xUrl": "https://x.com/alicevdeng",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -21238,6 +26640,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "George Simons",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/georgeasimons/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -21297,6 +26708,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Tyler Richie",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/tyler-richie-1096b58/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -21373,6 +26793,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "crypto_finance",
         "fintech_infra",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Prashanth Balasubramanian",
+          "title": "Founder/CTO",
+          "linkedinUrl": "http://linkedin.com/in/pbio",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -21422,6 +26851,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Brian Anglin",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/anglinb/",
+          "xUrl": "https://x.com/BriansAngles",
+          "source": "YC directory"
+        },
+        {
+          "name": "Jake Mor",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jake-mor-3b397392/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -21486,6 +26931,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "credit_lending",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Sefa Ikyaator",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sefa-ikyaator-52617946/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -21554,6 +27008,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "cards_spend",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Talal Ahmad Gondal",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/talalgondal/",
+          "xUrl": "https://x.com/gondal36",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ahsan Khan",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ahsan-k-k/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -21607,6 +27077,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "crypto_finance"
+      ],
+      "founders": [
+        {
+          "name": "Sam Forman",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sam-forman",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -21677,6 +27156,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "credit_lending",
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Matheus Riolfi",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/mriolfi/",
+          "xUrl": "https://x.com/mriolfi",
+          "source": "YC directory"
+        },
+        {
+          "name": "J\u00e9r\u00f4me Selles",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jeromeselles/",
+          "xUrl": "https://x.com/jeromeselles",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -21743,6 +27238,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Francisca Noguera",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/francisca-noguera-toku/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Cristina Etcheberry",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/cristina-etcheberry-toku/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Enzo Tamburini",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/entamburini/",
+          "xUrl": "https://x.com/enzorrr",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -21799,6 +27317,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Carlos Guayara",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/cguayara/",
+          "xUrl": "https://x.com/carlosguayarar",
+          "source": "YC directory"
+        },
+        {
+          "name": "Luis Patt",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/luis-eduardo-patt-23463034/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -21864,6 +27398,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "payments",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "matthew smith",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/matthew-smith250/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -21925,6 +27468,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "payments",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Fahad Kamr",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/fahadk/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Shahjahan Warraich",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/shahjahanw/",
+          "xUrl": "https://x.com/shahjahanw",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -22000,6 +27559,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "crypto_finance",
         "money_transfer",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Perseus Mlambo",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/perseus",
+          "xUrl": "https://x.com/perseusmlambo",
+          "source": "YC directory"
+        },
+        {
+          "name": "Alessandra Martini",
+          "title": "Founder",
+          "linkedinUrl": "https://za.linkedin.com/in/alessandra-martini-5bb15991",
+          "xUrl": "https://x.com/AleMartiniM",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -22065,6 +27640,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "credit_lending",
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Rahul Mathur",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/rahul-jaideep-mathur/",
+          "xUrl": "https://x.com/Rahul_J_Mathur",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -22121,6 +27705,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Lucas Martins",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/lucasvbm/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Jorge Silveira",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jorgemlsilveira/?locale=en_US",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -22192,6 +27792,36 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "credit_lending",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Joao Pedro Thompson",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jo%C3%A3o-pedro-thompson-630666144/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Thiago Achatz",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/thiago-waddington-achatz-3280a297/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Mateus Craveiro",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/mccraveiro",
+          "xUrl": "https://x.com/mccraveiro",
+          "source": "YC directory"
+        },
+        {
+          "name": "Sophie Secaf",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sophie-secaf-b647b891",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -22246,6 +27876,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "crypto_finance"
+      ],
+      "founders": [
+        {
+          "name": "Arsh Shah Dilbagi",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/dilbagi",
+          "xUrl": "https://x.com/arshdilbagi",
+          "source": "YC directory"
+        },
+        {
+          "name": "Cole Bransford",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/cole-bransford-360b2013b/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ryan Ozminkowski",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/ryan-ozminkowski-85a3309a",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -22314,6 +27967,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "crypto_finance",
         "fintech_infra",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Sarah Toukan",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sarah-toukan-7821751a/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Andrew Gold",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/andrew-gold-b0509662/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Faisal Toukan",
+          "title": "Founder",
+          "linkedinUrl": "",
+          "xUrl": "https://x.com/FaisalToukan",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -22376,6 +28052,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Chaitanya Sarda",
+          "title": "CEO & co-founder",
+          "linkedinUrl": "http://www.linkedin.com/in/chaitanyasarda",
+          "xUrl": "https://x.com/sardachaitanya",
+          "source": "YC directory"
+        },
+        {
+          "name": "Rushabh Shah",
+          "title": "Founder/Co-CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/rushabh-shah-b7197198/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -22425,6 +28117,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Raghav Malik",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/raghav-malik-96a8932/",
+          "xUrl": "https://x.com/rogue_hft",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -22484,6 +28185,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Agni Bhattacharya",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/agnib/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Allison Bellows",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/allison-bellows-533212123/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -22541,6 +28258,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "crypto_finance"
+      ],
+      "founders": [
+        {
+          "name": "Elad Fouks",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/elad-fouks-478a95110/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Shahaf Gonen",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/shahaf-gonen-640998108/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -22593,6 +28326,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Yazin Alirhayim",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/yazin/",
+          "xUrl": "https://x.com/yazins",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -22652,6 +28394,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Debashish Bhadra",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/debashish-bhadra-9b14362a/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Gianfranco Gentille",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/gianfrancogentille/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -22729,6 +28487,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "credit_lending",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Segun Adeyemi",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/segunadeyemi/",
+          "xUrl": "https://x.com/segunhq",
+          "source": "YC directory"
+        },
+        {
+          "name": "GBEKELOLUWA OLUFOTEBI",
+          "title": "Founder",
+          "linkedinUrl": "https://nl.linkedin.com/in/olufotebig",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Olamide Sobowale",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/olamide-sobowale-4677a261/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -22788,6 +28569,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "fintech_infra",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Phuoc Tran",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/phuoc-tran-b9979611/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -22845,6 +28635,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crypto_finance",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Tanmaay K",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/tanmaay-k-413400217/",
+          "xUrl": "https://x.com/Tanmaay_K",
+          "source": "YC directory"
+        },
+        {
+          "name": "S G",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/shival-gupta-1782b6217/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -22913,6 +28719,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "credit_lending",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Nick Lombardo",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/nicholas-m-lombardo/",
+          "xUrl": "https://x.com/nicklom12",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -22978,6 +28793,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "ap_ar_billing",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Noe Branagan",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/noebranagan/",
+          "xUrl": "https://x.com/noeBranagan",
+          "source": "YC directory"
+        },
+        {
+          "name": "Luis Pellerano",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/luis-r-pellerano/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -23041,6 +28872,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "payments",
         "tax_accounting",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Alexandra Zwiener",
+          "title": "CEO & Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/alexandra-zwiener/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Toby Edward",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/tobias-milligan-3b963564/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -23109,6 +28956,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "credit_lending",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Parth Garg",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/parth29/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -23187,6 +29043,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "credit_lending",
         "fintech_infra",
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Blesson Abraham",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/blessonjabraham",
+          "xUrl": "https://x.com/Babraham_FI",
+          "source": "YC directory"
+        },
+        {
+          "name": "Jay Patel",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jay-patel-2017/",
+          "xUrl": "https://x.com/jay1jp",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -23255,6 +29127,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "credit_lending",
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Cameron Duncan",
+          "title": "Co-Founder & CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/cam-duncan/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Nihar Parikh",
+          "title": "Co-founder & CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/niharaparikh/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Armaan Sikand",
+          "title": "Founder",
+          "linkedinUrl": "http://www.linkedin.com/in/armaan-sikand",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -23318,6 +29213,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crypto_finance",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "MJ Kim",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/mjkim-tech/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -23386,6 +29290,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Noam Izhaki",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/noamizhaki/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Nitzan Gelbard",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/nitzan-guy-63ba9142/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Alon Peretz",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/alonp",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -23436,7 +29363,8 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
-      ]
+      ],
+      "founders": []
     },
     {
       "id": "25615",
@@ -23501,6 +29429,36 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "credit_lending",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Mehul Jindal",
+          "title": "Co-Founder & CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/mehuljindal18/",
+          "xUrl": "https://x.com/mehuljindal18",
+          "source": "YC directory"
+        },
+        {
+          "name": "Shyam Murugan",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/shyam-murugan/",
+          "xUrl": "https://x.com/_shyam_king_",
+          "source": "YC directory"
+        },
+        {
+          "name": "Eeshan Sharma",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sharma-eeshan/",
+          "xUrl": "https://mobile.twitter.com/eeshansharma19",
+          "source": "YC directory"
+        },
+        {
+          "name": "Siddharth Venu",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sidvenu",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -23566,6 +29524,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "crypto_finance"
+      ],
+      "founders": [
+        {
+          "name": "Kartik Sathappan",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/kartiksathappan/",
+          "xUrl": "https://x.com/sathaxe",
+          "source": "YC directory"
+        },
+        {
+          "name": "Samraaj Bath",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/samraajbath",
+          "xUrl": "https://x.com/samraaj",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -23634,6 +29608,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "crypto_finance",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Alexandre Roubaud",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/alexandreroubaud/",
+          "xUrl": "https://x.com/alexroubaud",
+          "source": "YC directory"
+        },
+        {
+          "name": "Kabir Sethi",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/kabir-sethi-02148ba5/",
+          "xUrl": "https://x.com/setkabir",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -23693,6 +29683,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Guy Shahar",
+          "title": "Founder",
+          "linkedinUrl": "http://www.linkedin.com/in/guy-shahar",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -23743,6 +29742,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Himanshu Minocha",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/himanshu-m-2a8329ab/",
+          "xUrl": "https://x.com/HimanshuMinocha",
+          "source": "YC directory"
+        },
+        {
+          "name": "Rohan Minocha",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/rohan-minocha-19bb42223/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -23806,6 +29821,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crypto_finance",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Robert Baron",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/robertbaronmonge/",
+          "xUrl": "https://x.com/rbaronmonge",
+          "source": "YC directory"
+        },
+        {
+          "name": "James Jara",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jamesjara",
+          "xUrl": "https://x.com/jamesjara",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -23880,6 +29911,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "cards_spend",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Alphas Sinja",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/alphas-sinja/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Robert Nyangate",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/robert-nyangate/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -23945,6 +29992,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "fintech_infra",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Tunde Adewole",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/tunde-adewole-b223729a/",
+          "xUrl": "https://x.com/llm_money",
+          "source": "YC directory"
+        },
+        {
+          "name": "Festus Owumi",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/owumi-festus-3151aa172/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -23994,6 +30057,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Bruno Jacob",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/bruno-jacob-40b6a9192/",
+          "xUrl": "https://x.com/bruno_supercool",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -24062,6 +30134,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "cards_spend",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Crist\u00f3bal Grinbergs",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/cgrinbergs",
+          "xUrl": "https://x.com/cgrinbergs",
+          "source": "YC directory"
+        },
+        {
+          "name": "Sebasti\u00e1n Hern\u00e1ndez",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sebasti\u00e1n-hern\u00e1ndez-cardda/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -24122,6 +30210,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "crypto_finance"
+      ],
+      "founders": [
+        {
+          "name": "Shashank Khanna",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/skhanna3/",
+          "xUrl": "https://x.com/shashankbuilds",
+          "source": "YC directory"
+        },
+        {
+          "name": "Rebecca Lee",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/rebeccablee1",
+          "xUrl": "https://x.com/beccablee",
+          "source": "YC directory"
+        },
+        {
+          "name": "Charlotte McGinn",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/charlottemcginn/",
+          "xUrl": "https://x.com/charmcgi",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -24177,6 +30288,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "fintech_infra",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Salomon Serfati",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/salomon-serfati-8ba836112/",
+          "xUrl": "https://x.com/SalomonSerfati",
+          "source": "YC directory"
+        },
+        {
+          "name": "Aaron Kahane",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/aaron-kahane-98a86013b/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Drew Schneider",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/andrew-schneider-130b77190/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -24245,6 +30379,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "credit_lending",
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Omar Said L\u00f3pez Tronco",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/omartronco/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Marisol S\u00e1nchez",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/marisolsn",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -24310,6 +30460,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Srinivas Sarkar",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/srinivas-sarkar/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Kushagra Manglik",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/kushagra-manglik-906399120/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -24375,6 +30541,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Max Cho",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/max-cho-0a376a24/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -24441,6 +30616,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "ap_ar_billing",
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Emiliano Musalem",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/emiliano-musalem-58463a135/",
+          "xUrl": "https://x.com/EmilianoMusalem",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -24507,6 +30691,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Henry Mascot",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/henrymascot",
+          "xUrl": "https://x.com/iamhenrymascot",
+          "source": "YC directory"
+        },
+        {
+          "name": "John Flash Dada",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/john-dada-16235b57/",
+          "xUrl": "https://x.com/DrFlash360",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -24576,6 +30776,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "crypto_finance",
         "payments",
         "stablecoins"
+      ],
+      "founders": [
+        {
+          "name": "Kuberan Marimuthu",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/kuberanmarimuthu/",
+          "xUrl": "https://x.com/ikuberan",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -24631,6 +30840,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Santiago Pezzoni",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/santiago-pezzoni",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Hernan Lopez Conde",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/hernan-lopez-conde-0882241/",
+          "xUrl": "https://x.com/Hernan__LC",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -24687,6 +30912,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Sultan Alkhayal",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sultanalkhayal/",
+          "xUrl": "https://x.com/sultankme",
+          "source": "YC directory"
+        },
+        {
+          "name": "Yasser Alshurihi",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/y1sser/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -24747,6 +30988,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "credit_lending",
         "payments",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Patrick McDougall",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/patrick-mcdougall-sterea/",
+          "xUrl": "https://x.com/patrickfromdrip",
+          "source": "YC directory"
+        },
+        {
+          "name": "Paulo Albuquerque",
+          "title": "Founder",
+          "linkedinUrl": "http://linkedin.com/in/p-albuqueqrue",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Bianca Orsini",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/bianca-orsini-de-oliveira/",
+          "xUrl": "https://x.com/bianca_orsini",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -24796,6 +31060,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "YC Fintech industry",
         "B2B payments in Africa (Venmo for B2B)"
+      ],
+      "founders": [
+        {
+          "name": "Yele Oyekola",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/yelew/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Tunde Akinnuwa",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/bbtunde",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -24868,6 +31148,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "payments",
         "payroll"
+      ],
+      "founders": [
+        {
+          "name": "Asher Adeniyi",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/asheradeniyi/",
+          "xUrl": "https://x.com/agtsih",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -24953,6 +31242,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "crypto_finance",
         "money_transfer",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Joao Victor Aguiar",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jo%C3%A3o-aguiar-8663b5230/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Vitor Gomes Miranda",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/vitorgomesmiranda/",
+          "xUrl": "https://x.com/vigmiranda",
+          "source": "YC directory"
+        },
+        {
+          "name": "Rodrigo Marino",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/rodrigomfogaca/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -25025,6 +31337,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "cards_spend",
         "payments",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Khalid Keenan",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/khalid-keenan-a381578a/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Youcef Oudjidane",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/feed/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -25078,6 +31406,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Uzair Mahmud",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/uzair-mahmud/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -25137,6 +31474,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Nishant Aggarwal",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/nishaggarwal",
+          "xUrl": "https://x.com/naggarwal1",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -25197,6 +31543,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Salem Abu-Hammour",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/salem-abu-hammour-8717a6100/",
+          "xUrl": "https://x.com/SalemAbuHammour",
+          "source": "YC directory"
+        },
+        {
+          "name": "Youssef Said",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/youssef--said",
+          "xUrl": "https://x.com/yucefucef",
+          "source": "YC directory"
+        },
+        {
+          "name": "Faris Yaghmour",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/farisyaghmour/",
+          "xUrl": "https://x.com/farisyagh1",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -25279,6 +31648,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crypto_finance",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Deepanshu .",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/deepanshu1/",
+          "xUrl": "https://x.com/deepanshuiitkgp",
+          "source": "YC directory"
+        },
+        {
+          "name": "Smit Patoliya",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/smit-patoliya",
+          "xUrl": "https://x.com/Smit_Patoliya",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -25335,6 +31720,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "banking_accounts"
+      ],
+      "founders": [
+        {
+          "name": "Manish Maryada",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/maryadamanishi/",
+          "xUrl": "https://x.com/maryadamanishi",
+          "source": "YC directory"
+        },
+        {
+          "name": "Shourya Lala",
+          "title": "Founder/President",
+          "linkedinUrl": "https://www.linkedin.com/in/shouryalala/",
+          "xUrl": "https://x.com/atShourya",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -25385,6 +31786,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Matthieu Capelle",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/matthieucapelle/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -25441,6 +31851,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "banking_accounts"
+      ],
+      "founders": [
+        {
+          "name": "Reinaldo Tendean",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/reinaldo-tendean/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -25498,6 +31917,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Reinhart Hermanus",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/reinhart-hermanus-6a149115/",
+          "xUrl": "https://x.com/reinharthrm",
+          "source": "YC directory"
+        },
+        {
+          "name": "Sebastian Yaphy",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/syaphy/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -25568,6 +32003,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "credit_lending",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Nadia Amalia",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/nadiaamalia/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Nadia Fadhila",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/nadia-fadhila-b9ba4675",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -25626,6 +32077,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Tzachi Davidovich",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/tzachidaviovich/",
+          "xUrl": "https://x.com/TzachiDav",
+          "source": "YC directory"
+        },
+        {
+          "name": "Etai Avrahami",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/etaia",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Jake Vacovec",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jake-p-vacovec-28417869/",
+          "xUrl": "https://x.com/jvacovec",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -25692,6 +32166,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "cards_spend",
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Alex Matsenov",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/alexmatsenov/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Abdullo Akhadov",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/abdulloakhadov/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -25754,6 +32244,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Quan Nguyen",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/quannguyen89/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -25822,6 +32321,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Anna Joo Fee",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/annajfee/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -25873,6 +32381,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crypto_finance",
         "bitcoin rewards / crypto finance"
+      ],
+      "founders": [
+        {
+          "name": "Mohammed Roshan",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/mohammed-roshan-25391a43/",
+          "xUrl": "https://x.com/roshanaslam21",
+          "source": "YC directory"
+        },
+        {
+          "name": "Roshni Aslam",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/roshni-aslam-b46a88130/",
+          "xUrl": "https://x.com/withRoshniAslam",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -25941,6 +32465,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "banking_accounts"
+      ],
+      "founders": [
+        {
+          "name": "Idorenyin Obong",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/kingidee/",
+          "xUrl": "https://www.twitter.com/kingidee",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -26005,6 +32538,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Naimisha Rao",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/naimisha-rao/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Dilip Jain",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/dilipjain09",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Manthan Shah",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/manthan-shah-12b38a45/",
+          "xUrl": "https://x.com/manthan197",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -26072,6 +32628,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "credit_lending",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Aditya Mehta",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/adityamehta1990/",
+          "xUrl": "https://x.com/adityamehta1990",
+          "source": "YC directory"
+        },
+        {
+          "name": "Amal Dani",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/amal-dani-cfa-845555107/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Omkar Ghaisas",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/omkar-ghaisas/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -26132,6 +32711,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "cards_spend",
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Kevin Ohana",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/kevin-ohana-0360a969/",
+          "xUrl": "https://x.com/ohana_kevin",
+          "source": "YC directory"
+        },
+        {
+          "name": "Yohan Elbase",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/yohan-elbase-4999bba1/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -26215,6 +32810,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "payments",
         "payroll",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Rene Saul",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/rene-saul-5044aa25/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Eder Echeverria",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/eder-echeverria-3246141a7",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Fernando Sandoval Oseguera",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/fernando-sandoval-oseguera-/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -26286,6 +32904,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Christophe Robilliard",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/chrobilliard/",
+          "xUrl": "https://x.com/CRobilliard",
+          "source": "YC directory"
+        },
+        {
+          "name": "Jose Palacios",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/thetex/",
+          "xUrl": "https://x.com/iamt3x",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -26349,6 +32983,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Sanjay Mandava",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/pub/sanjay-mandava/24/6aa/206",
+          "xUrl": "https://x.com/mandava_sanjay",
+          "source": "YC directory"
+        },
+        {
+          "name": "ZJ Lin",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/zjlin/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "J Richards",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jonathan-richards-26259bb6/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -26412,6 +33069,36 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "money_transfer",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Andrew Airelobhegbe",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/andrew-airelobhegbe-75194797/",
+          "xUrl": "https://x.com/andrewairelob",
+          "source": "YC directory"
+        },
+        {
+          "name": "Impact Airelobhegbe",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/impact-airelobhegbe-49187955",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Godstime Asine",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/godstime-asine-b089267b",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Praise Osagie",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/praise-osagie-1b607811a/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -26481,6 +33168,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Guido Galanter",
+          "title": "Founder",
+          "linkedinUrl": "https://ar.linkedin.com/in/guido-galanter-61771593",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Tom\u00e1s Gropper",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/tomasgropper",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Nicol\u00e1s Piqueras",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/nicol%C3%A1s-piqueras-38404226/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -26530,6 +33240,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Chetan Kulhari",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/chetankulhari/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -26597,6 +33316,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crypto_finance",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Bruno Faviero",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/faviero",
+          "xUrl": "https://x.com/bfaviero",
+          "source": "YC directory"
+        },
+        {
+          "name": "Arun Kirubarajan",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/arunkirubarajan/",
+          "xUrl": "https://x.com/arundotai",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -26658,6 +33393,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "fintech_infra",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Muhammad Shamoon Tariq",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/muhammad-shamoon-tariq-cfa-24b40a80/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -26744,6 +33488,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "insurance_benefits",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Lois Rogel Vence",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/lois-rogel-vence-54b49090/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Le\u00f3n Bartolom\u00e9 Carre\u00f1o",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/le%C3%B3n-bartolom%C3%A9-carre%C3%B1o-2097a4107",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Andr\u00e9s Guerrero \u00c1lvarez",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/andres-guerrero-alvarez-116972146/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -26810,6 +33577,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "money_transfer",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Shams Radjabaly",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/shams-radjabaly/",
+          "xUrl": "https://x.com/shamsradja",
+          "source": "YC directory"
+        },
+        {
+          "name": "Bilal Dahlab",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/bilal-dahlab-3a98a243/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Kuassi Jimmy Kumako",
+          "title": "Founder",
+          "linkedinUrl": "http://linkedin.com/in/jkumako",
+          "xUrl": "https://x.com/KuassiKumako",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -26876,6 +33666,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Sebastian Ortiz",
+          "title": "Founder",
+          "linkedinUrl": "https://co.linkedin.com/in/sebastian-ortiz-v%C3%A1squez-75b38590",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Juan Camilo Poveda",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/juan-camilo-poveda/",
+          "xUrl": "https://x.com/juanpoveda93",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -26949,6 +33755,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "payments",
         "tax_accounting",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Anthony Wagacha",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/wagachaanthony",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -27009,6 +33824,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "YC Fintech industry",
         "commercial real estate acquisition and investment analysis"
+      ],
+      "founders": [
+        {
+          "name": "Teddy Li",
+          "title": "Founder, CEO",
+          "linkedinUrl": "https://linkedin.com/in/theodorexli",
+          "xUrl": "https://x.com/theodorexli",
+          "source": "YC directory"
+        },
+        {
+          "name": "Weeks Mensah",
+          "title": "Co-Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/weeksmensah/",
+          "xUrl": "https://x.com/weeksmensah",
+          "source": "YC directory"
+        },
+        {
+          "name": "Kwadwo Nyarko",
+          "title": "Founder",
+          "linkedinUrl": "http://www.linkedin.com/pub/kwadwo-nyarko/11/b07/938",
+          "xUrl": "https://x.com/kjnyarko",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -27058,6 +33896,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "banking_accounts"
+      ],
+      "founders": [
+        {
+          "name": "Amer Baroudi",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/amer-baroudi/",
+          "xUrl": "https://x.com/Baroudi_Amer",
+          "source": "YC directory"
+        },
+        {
+          "name": "Abdallah AbuHashem",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/aabuhash/",
+          "xUrl": "https://x.com/aabuhashem",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -27118,6 +33972,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Mina Shahid",
+          "title": "Founder",
+          "linkedinUrl": "https://ug.linkedin.com/in/minashahid",
+          "xUrl": "https://x.com/_minashahid",
+          "source": "YC directory"
+        },
+        {
+          "name": "Catherine Denis",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/catherinedenis",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -27174,6 +34044,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Victor Santos",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/victordossantos/",
+          "xUrl": "https://x.com/victorsantos10x",
+          "source": "YC directory"
+        },
+        {
+          "name": "Douglas Lopes",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/douglasclopes/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Tiago Passinato",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/tiagopassinato/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -27225,6 +34118,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "banking_accounts"
+      ],
+      "founders": [
+        {
+          "name": "DY \u200b",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/dyyy/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Tim Qin",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/timothytqin/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -27299,6 +34208,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "payments",
         "stablecoins",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Piero del Risco",
+          "title": "Founder",
+          "linkedinUrl": "http://www.linkedin.com/in/yanpieronunez",
+          "xUrl": "http://www.twitter.com/piero09",
+          "source": "YC directory"
+        },
+        {
+          "name": "Luis Pe\u00f1a",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/lupena/",
+          "xUrl": "https://x.com/luismiguelpg",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -27353,6 +34278,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Yonathan Faber",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/yfaber/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Renan Pupin",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/renanpupin/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -27421,6 +34362,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "money_transfer",
         "payments",
         "stablecoins"
+      ],
+      "founders": [
+        {
+          "name": "Bashir Aminu",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/bashir-aminu-055a9987/",
+          "xUrl": "https://x.com/scozky",
+          "source": "YC directory"
+        },
+        {
+          "name": "Hakeem Adeyemi Orewole",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/eltneg/",
+          "xUrl": "https://x.com/Orewoley",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -27486,6 +34443,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Pauline Roteta",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/paulineroteta/",
+          "xUrl": "https://x.com/PaulineRoteta",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -27554,6 +34520,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "fintech_infra",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Juan Diego Galvez",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/juan-diego-galvez-a78659a7/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Federico Benavides",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/federico-benavides-06985016b/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -27618,6 +34600,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "credit_lending",
         "payments",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Aman Bhayana",
+          "title": "Founder",
+          "linkedinUrl": "http://linkedin.com/in/aman-bhayana-bab9ab164",
+          "xUrl": "https://x.com/BhayanaAman",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -27705,6 +34696,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "credit_lending",
         "crypto_finance",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Gajendra Khatri",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/gajendra-khatri-9955a14a/",
+          "xUrl": "https://x.com/gkhatri94",
+          "source": "YC directory"
+        },
+        {
+          "name": "Sagar Agarwal",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sagar-agarwal-625317a1/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -27773,6 +34780,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "ap_ar_billing",
         "payments",
         "tax_accounting"
+      ],
+      "founders": [
+        {
+          "name": "Saurabh Chauhan",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/saurabh-chauhan/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Dmitry Vedenyapin",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/dmitryvedenyapin/",
+          "xUrl": "https://x.com/dima_vedenyapin",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -27832,6 +34855,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Tooraj Arvajeh",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/toorajarvajeh/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -27884,6 +34916,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Brian Bristol",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/brianbristol~tech/",
+          "xUrl": "https://x.com/Lil_BEasyTwe1ve",
+          "source": "YC directory"
+        },
+        {
+          "name": "Kaben Clauson",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/kbclauson",
+          "xUrl": "https://x.com/kbclauson",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -27943,6 +34991,36 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Daniel van Leeuwen",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/dan-van-leeuwen-7429104/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Hendry Chou",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/hendry-chou-42251125/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Christian Hermawan",
+          "title": "Founder",
+          "linkedinUrl": "http://linkedin.com/in/christian-hermawan-26293952",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Fajar Kuntoro",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/fajar-kuntoro-35860354/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -28018,6 +35096,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "crypto_finance",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Mary Saracco",
+          "title": "Founder",
+          "linkedinUrl": "http://linkedin.com/in/marysaracco",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Pablo Orlando",
+          "title": "Founder",
+          "linkedinUrl": "http://www.linkedin.com/in/orlandopablo",
+          "xUrl": "https://x.com/orlandopablo",
+          "source": "YC directory"
+        },
+        {
+          "name": "Jack Saracco",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jacksaracco/",
+          "xUrl": "https://x.com/jacksaracco",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -28095,6 +35196,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "cards_spend",
         "fintech_infra",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Ijeoma Akwiwu",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ijeoma-akwiwu",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -28160,6 +35270,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "ap_ar_billing",
         "money_transfer",
         "stablecoins"
+      ],
+      "founders": [
+        {
+          "name": "Yinka Elujoba",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/yinka-elujoba",
+          "xUrl": "https://x.com/yinkaElujoba",
+          "source": "YC directory"
+        },
+        {
+          "name": "Eni Joshua",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/enijoshua/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -28219,6 +35345,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crypto_finance",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Joakim Bruchmann",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/joakim-bruchmann-87b6b653/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Oscar Vingtoft",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/oscar-vingtoft-17680160/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -28296,6 +35438,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "crypto_finance",
         "money_transfer",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Geoffrey See",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/geoffreysee/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Sean Ang",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/seanangsr/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Van Tran",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/tranngocvan210/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -28358,6 +35523,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Marcel Esser",
+          "title": "Founder",
+          "linkedinUrl": "",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Michael Fiedel",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/michaelfiedel/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -28432,6 +35613,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "payments",
         "stablecoins",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Prashant Upadhyay",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/prashant-upadhyay/",
+          "xUrl": "https://x.com/prashantupd",
+          "source": "YC directory"
+        },
+        {
+          "name": "Vivek Kumar",
+          "title": "Co-Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/vivek-kumar-578013119/",
+          "xUrl": "https://x.com/vivek_kumar_15",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -28483,6 +35680,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Spandana Nakka",
+          "title": "Founder & CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/spndn07/",
+          "xUrl": "https://www.twitter.com/spndn07/",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -28540,6 +35746,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "crypto_finance"
+      ],
+      "founders": [
+        {
+          "name": "Miles Saffran",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/miles-saffran-00468810b/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -28608,6 +35823,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Femi Iromini",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/femiiromini/",
+          "xUrl": "https://x.com/femi_iromini",
+          "source": "YC directory"
+        },
+        {
+          "name": "Adedapo Sobayo",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/adesobayo",
+          "xUrl": "https://x.com/adesobayo",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -28672,6 +35903,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "payments",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Nahuel Candia",
+          "title": "CEO & Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/nahuelcandia/",
+          "xUrl": "https://x.com/dncandia",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ariel Diaz Ailan",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/diazailan",
+          "xUrl": "https://www.twitter.com/diazailan",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -28724,6 +35971,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Marius Montmany",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/mmv1/",
+          "xUrl": "https://x.com/mmrtsv",
+          "source": "YC directory"
+        },
+        {
+          "name": "Oriol Hernandez i Fajula",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/oriolhf/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -28793,6 +36056,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "money_transfer",
         "payments",
         "stablecoins"
+      ],
+      "founders": [
+        {
+          "name": "Eudelio Garza",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/eudelio-garza-5abb7a13b/",
+          "xUrl": "https://x.com/leyogarza",
+          "source": "YC directory"
+        },
+        {
+          "name": "Javier Roberts",
+          "title": "Founder",
+          "linkedinUrl": "http://linkedin.com/in/javierroberts",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ricardo Villarreal Chapa",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ricardo-villarreal-chapa/",
+          "xUrl": "https://x.com/ricardo_vch",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -28859,6 +36145,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "money_transfer",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Ankit Parasher",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ankitparasher",
+          "xUrl": "https://x.com/AnkitParasher",
+          "source": "YC directory"
+        },
+        {
+          "name": "Udita Pal",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/uditapal/",
+          "xUrl": "https://x.com/i_Udita",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -28915,6 +36217,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Leon Punambolam",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/leonpunambolam/",
+          "xUrl": "https://x.com/punambolam",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -28976,6 +36287,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Pranay Shetty",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/pranayshetty/",
+          "xUrl": "https://x.com/notpranay",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ramkumar Venkataraman",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ramkumar-venkataraman-19202014",
+          "xUrl": "https://x.com/Ramthemaniac",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -29042,6 +36369,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "cards_spend",
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Trevor McKendrick",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/trevormckendrick",
+          "xUrl": "https://x.com/TrevMcKendrick",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -29098,6 +36434,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "fintech_infra"
+      ],
+      "founders": [
+        {
+          "name": "Gorka Aguirre",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/gorkaguirreh/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Juan coll Soler",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/juan-coll-soler-50734566/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -29159,6 +36511,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Brendan Lee Young",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/brendanleeyoung/",
+          "xUrl": "https://x.com/BrendanLeeYoung",
+          "source": "YC directory"
+        },
+        {
+          "name": "Brendan Wood",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/brendancalebwood/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -29223,6 +36591,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crypto_finance",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Michael Shattuck",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/mikeshattuck/",
+          "xUrl": "https://x.com/shattuckio",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -29299,6 +36676,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Oban MacTavish",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/oban/",
+          "xUrl": "https://x.com/Obanmact",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -29355,6 +36741,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Malcolm-Wiley Floyd",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/mwfloyd/",
+          "xUrl": "https://x.com/mwfloyd",
+          "source": "YC directory"
+        },
+        {
+          "name": "Scott Fritz",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/scott-fritz-396a8120/",
+          "xUrl": "https://x.com/scottfritz",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -29408,6 +36810,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Jake Ruth",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jakeruth/",
+          "xUrl": "https://x.com/JakeMRuth",
+          "source": "YC directory"
+        },
+        {
+          "name": "Daniel Pronk",
+          "title": "Founder",
+          "linkedinUrl": "http://www.linkedin.com/in/daniel-pronk-658356133",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -29459,6 +36877,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "banking_accounts"
+      ],
+      "founders": [
+        {
+          "name": "Mitul Mehta",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/mitul-mehta-37969a141",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Shiv Bidani",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/shivbidani/",
+          "xUrl": "https://x.com/shivbidani",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -29518,6 +36952,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Eilam Levitov",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/eilamlevitov",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -29592,6 +37035,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "credit_lending",
         "crypto_finance",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Guy Ziv",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/gyziv/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Leo Chanea",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/leo-chanea-12545a40/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Gil Peretz",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/gil-peretz-25404031/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -29648,6 +37114,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Alexander Kwan",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/alexanderkwan/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -29707,6 +37182,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "fintech_infra",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Dane Cook",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/dane-cook-b8402922/",
+          "xUrl": "https://x.com/danecooked",
+          "source": "YC directory"
+        },
+        {
+          "name": "Jad Rahbany",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jadrahbany/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Matthew Rybak",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/matthewrybak/",
+          "xUrl": "https://x.com/captainrybak",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -29761,6 +37259,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "crypto_finance"
+      ],
+      "founders": [
+        {
+          "name": "Alen Cvisic",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/alencvisic/",
+          "xUrl": "https://x.com/alencvisic",
+          "source": "YC directory"
+        },
+        {
+          "name": "Guillaume Simard",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/guisim/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -29818,6 +37332,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Jeevika Makani",
+          "title": "Co-Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jeevikamakani/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Celilsemi Sam Erkiner",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/cerkiner",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -29872,6 +37402,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Olamide Afolabi",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/afolabi-olamide-08847919/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Michael Oluwole",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/oluwole-michael-10992362/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "kabir Yabo",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/kabiru-yabo-401073112/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -29949,6 +37502,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "ap_ar_billing",
         "crypto_finance",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Philip Kelvin",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/philipkelvin",
+          "xUrl": "https://x.com/PKelvin7",
+          "source": "YC directory"
+        },
+        {
+          "name": "Beau Allison",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/beauallison/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -30005,6 +37574,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "banking_accounts"
+      ],
+      "founders": [
+        {
+          "name": "Edo Windratno",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/edowindratno/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Bondan Herumurti",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/bondanherumurti/",
+          "xUrl": "https://x.com/bondanherumurti",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -30071,6 +37656,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "credit_lending",
         "fintech_infra"
+      ],
+      "founders": [
+        {
+          "name": "Henson Orser",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/henson-orser/",
+          "xUrl": "https://x.com/HensonOrser1",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -30141,6 +37735,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "credit_lending",
         "crypto_finance"
+      ],
+      "founders": [
+        {
+          "name": "Wafa Taftazani",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/wafataftazani/",
+          "xUrl": "https://x.com/wafataftazani",
+          "source": "YC directory"
+        },
+        {
+          "name": "Alif Jafar Fatkhurrohman",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/alifjafar",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Hendri Wijaya",
+          "title": "Founder",
+          "linkedinUrl": "http://linkedin.com/in/hendri-wijaya-b556901a5",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -30198,6 +37815,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "fintech_infra"
+      ],
+      "founders": [
+        {
+          "name": "Alejandro Pozo",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/pozoalejandro/",
+          "xUrl": "https://x.com/pozofintech",
+          "source": "YC directory"
+        },
+        {
+          "name": "Sebastian Alvarado",
+          "title": "Co-Founder (CTO)",
+          "linkedinUrl": "http://linkedin.com/in/alvaradosebastian",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -30271,6 +37904,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "credit_lending",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Ravi Chachra",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/rchachra/",
+          "xUrl": "https://x.com/rchachra",
+          "source": "YC directory"
+        },
+        {
+          "name": "Vijay Lavhale",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/vijay-lavhale-86b06938/",
+          "xUrl": "https://www.twitter.com/vijay_lavhale1",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -30327,6 +37976,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "ap_ar_billing",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Kayode Disu",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/kayode-disu-55629a17",
+          "xUrl": "https://www.twitter.com/mrdisu",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -30377,6 +38035,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Jason Goldlist",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/goldlist/",
+          "xUrl": "https://x.com/goldlist",
+          "source": "YC directory"
+        },
+        {
+          "name": "Danilo Cabello",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/danilocabello/",
+          "xUrl": "https://x.com/cabellomania",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -30435,6 +38109,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Mitchell Stevens",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/mitchellstevens/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Declan Conlon",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/declanconlon/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -30507,6 +38197,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crypto_finance",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "David Abusaid",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/david-abusaid/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "George Marvin",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/gcookmarvin/",
+          "xUrl": "https://x.com/georgecook",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -30579,6 +38285,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "insurance_benefits",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Dominic Sumarli",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/dominicsumarli/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Frederick Widjaja",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/frw/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Agnes Lie",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/agneswlie/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -30654,6 +38383,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "credit_lending",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Ezequiel Bucai",
+          "title": "Founder",
+          "linkedinUrl": "https://ar.linkedin.com/pub/ezequiel-bucai/28/2a3/294/es",
+          "xUrl": "https://x.com/piojo.bucai",
+          "source": "YC directory"
+        },
+        {
+          "name": "Lucrecia Porta",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/lucrecia-porta",
+          "xUrl": "https://x.com/lucreporta",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -30733,6 +38478,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "credit_lending",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Pranjal Daga",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/pranjaldaga",
+          "xUrl": "https://x.com/pranjaldaga1",
+          "source": "YC directory"
+        },
+        {
+          "name": "Yutong Pei",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/yutong-pei-81006842",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Joseph Zhou",
+          "title": "Founder",
+          "linkedinUrl": "",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -30802,6 +38570,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "credit_lending",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "John Banner",
+          "title": "Founder & CEO",
+          "linkedinUrl": "https://linkedin.com/in/johnbanr",
+          "xUrl": "https://x.com/johnbanr",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -30865,6 +38642,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Parthi Duraisamy",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/parthiduraisamy",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Karun Kurien",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/karun-kurien-3020504b",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -30919,6 +38712,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Jackson Chen",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jchen8630/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -30980,6 +38782,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "cards_spend",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Selinay Parlak",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/selinayfilizparlak/",
+          "xUrl": "https://x.com/selinayfilizp",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ferhat Babacan",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ferhatbabacan/",
+          "xUrl": "https://x.com/ferhaatbabacaan",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -31050,6 +38868,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "fintech_infra",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Will Lawrence",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/lawrencewill",
+          "xUrl": "https://x.com/will_lawrenceTO",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -31118,6 +38945,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "payments",
         "payroll"
+      ],
+      "founders": [
+        {
+          "name": "Achille AROUKO",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/achille-arouko",
+          "xUrl": "https://x.com/alekaizer",
+          "source": "YC directory"
+        },
+        {
+          "name": "Samy Chiba",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/samychiba/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -31178,6 +39021,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Mitch Riley",
+          "title": "Co-founder / CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/mitchriley/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Scott Liddle",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/scott-liddle-890678195",
+          "xUrl": "https://x.com/ScottDRLiddle",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -31242,6 +39101,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Jack Chapman",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/jack-chapman-2b7b75153",
+          "xUrl": "https://x.com/chapolantern",
+          "source": "YC directory"
+        },
+        {
+          "name": "Muhammad Khattak",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/muhammad-khattak-b87a73156/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Grant Pease",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/grant-pease-306053180",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -31310,6 +39192,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Lukas Haffer",
+          "title": "CEO & Co-Founder",
+          "linkedinUrl": "https://linkedin.com/in/lukashaffer",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -31382,6 +39273,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Benedict Altier",
+          "title": "Founder",
+          "linkedinUrl": "https://uk.linkedin.com/in/benedict-altier-0041748b",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Lucas Schneider",
+          "title": "Co-Founder and CTO",
+          "linkedinUrl": "https://linkedin.com/in/lucas-sch",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -31430,6 +39337,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Fatih Celikbas",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/fatih-celikbas",
+          "xUrl": "https://x.com/clkbsfth",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -31501,6 +39417,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "money_transfer",
         "payments",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Sudhanshu Shekhar",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/sudshekhar02",
+          "xUrl": "https://x.com/sudshekhar02",
+          "source": "YC directory"
+        },
+        {
+          "name": "Manish Shukla",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/mkshukla",
+          "xUrl": "https://x.com/mani__shukla",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -31566,6 +39498,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Shashwat Shrikhande",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/shashwat-shrikhande",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Saurabh Gupta",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/saurabh-gupta2104",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -31647,6 +39595,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "cards_spend",
         "money_transfer"
+      ],
+      "founders": [
+        {
+          "name": "Abraham Kuri Vargas",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/abraham-kuri-vargas-b41a2126/",
+          "xUrl": "https://www.twitter.com/kurenn",
+          "source": "YC directory"
+        },
+        {
+          "name": "Eduardo Lopez De Leon",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/elopezdeleon/",
+          "xUrl": "https://x.com/edolopez",
+          "source": "YC directory"
+        },
+        {
+          "name": "Carlos Alberto Medellin Gonzalez",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/carlos-medellin-cfo",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -31697,6 +39668,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Ben Sender",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ben-sender-272813a4",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -31760,6 +39740,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Saif Farooqui",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sfarooqui1/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -31817,6 +39806,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Ash Rai",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/ashraioff",
+          "xUrl": "https://x.com/ashraioff",
+          "source": "YC directory"
+        },
+        {
+          "name": "Patrick Higgins",
+          "title": "Founder",
+          "linkedinUrl": "",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -31884,6 +39889,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "fintech_infra"
+      ],
+      "founders": [
+        {
+          "name": "Edoardo Maschio",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/edoardo-maschio-704",
+          "xUrl": "https://x.com/edoardo_maschio",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ahmed Gaber",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/ahmedsamygaber",
+          "xUrl": "https://x.com/i_sico",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -31943,6 +39964,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Max Wu",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/maxcwu",
+          "xUrl": "https://x.com/legitmaxwu",
+          "source": "YC directory"
+        },
+        {
+          "name": "Bowen Xue",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/bowenxue",
+          "xUrl": "https://x.com/xboxue",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -32002,6 +40039,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Moses Mukundi",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/mosesmukundi",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -32063,6 +40109,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "cards_spend"
+      ],
+      "founders": [
+        {
+          "name": "Katelyn Strobel",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/katelynstrobel",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Josh Strobel",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/joshuakcockrell",
+          "xUrl": "https://x.com/joshuakcockrell",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -32119,6 +40181,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Jason Fan",
+          "title": "Founder",
+          "linkedinUrl": "https://ca.linkedin.com/in/jason-fan-b59767104",
+          "xUrl": "https://x.com/jfan001",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ayan Bandyopadhyay",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ayan-bandyopadhyay-9a45b1103/",
+          "xUrl": "https://x.com/ayanicband",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -32163,6 +40241,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Shivam Bharuka",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/shivambharuka/",
+          "xUrl": "https://x.com/shivambharuka",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -32228,6 +40315,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "insurance_benefits",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Sam O'Keefe",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/samokeefe",
+          "xUrl": "https://www.twitter.com/samok",
+          "source": "YC directory"
+        },
+        {
+          "name": "Miguel Toledo",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/migueltol22/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -32289,6 +40392,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Thomas Stewart",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/thomasjstewart/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Allen Calderwood",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/androidallen/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Som Mohapatra",
+          "title": "Founder",
+          "linkedinUrl": "http://linkedin.com/in/som-mohapatra",
+          "xUrl": "https://x.com/som_mohapatra",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -32349,6 +40475,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "ap_ar_billing",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Ty Sharp",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ty-sharp-59b907123/",
+          "xUrl": "https://x.com/TySharp_iB",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ian Sharp",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ianwsharp/",
+          "xUrl": "https://x.com/iansharp_iB",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -32415,6 +40557,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "crypto_finance",
         "payments",
         "stablecoins"
+      ],
+      "founders": [
+        {
+          "name": "Ianai Urwicz",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ianai-urwicz-ab0b932/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Alejandro Rettig",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/alejandrorettig",
+          "xUrl": "https://x.com/AleRettig",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -32481,6 +40639,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "ap_ar_billing"
+      ],
+      "founders": [
+        {
+          "name": "Daniel Kivatinos",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/kivatinos/",
+          "xUrl": "http://x.com/danielkivatinos",
+          "source": "YC directory"
+        },
+        {
+          "name": "Anelya Grant",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/anelya/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Vinay Datta Pinnaka",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/vinaydatta2020",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -32556,6 +40737,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "crypto_finance",
         "money_transfer",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Ignacio Detmer",
+          "title": "Founder",
+          "linkedinUrl": "http://linkedin.com/in/ignaciodetmer",
+          "xUrl": "https://x.com/Ignaciodetmer",
+          "source": "YC directory"
+        },
+        {
+          "name": "Guillermo Acu\u00f1a",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/gjacuna/",
+          "xUrl": "https://x.com/gjacuna",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -32598,6 +40795,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Khurram Aslam",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/khurramaslam/",
+          "xUrl": "https://x.com/_khurramaslam",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -32665,6 +40871,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "credit_lending",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Stephanie Vasquez",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/svasquezruiz",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Dasha Cherepennikova",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/dasha-cherepennikova",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -32734,6 +40956,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "crypto_finance"
+      ],
+      "founders": [
+        {
+          "name": "Christian Knudsen",
+          "title": "Co-founder & CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/christian-knudsen-daccach-51915397/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Luis Huertas",
+          "title": "Co-founder & CPO",
+          "linkedinUrl": "https://www.linkedin.com/in/luiseduardohuertas/",
+          "xUrl": "https://x.com/lehuertas",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ivan Torroledo",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ivantorroledo/",
+          "xUrl": "https://x.com/ivantorroledo",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -32796,6 +41041,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "ap_ar_billing",
         "cards_spend",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Sai Arora",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/saiarora",
+          "xUrl": "https://x.com/Sarora27",
+          "source": "YC directory"
+        },
+        {
+          "name": "Sandeep Dinesh",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/dineshsandeep/",
+          "xUrl": "https://x.com/SandeepDinesh",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -32861,6 +41122,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "payments",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Toni Riera",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/triera/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Daniel Gomez",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/daniel-g\u00f3mez-86954a58/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Juan Luis Perez E",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/juan-luis-perez-escobar-079869104",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -32917,6 +41201,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "crowdfunding"
+      ],
+      "founders": [
+        {
+          "name": "Slava Solonitsyn",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/solonitsyn/",
+          "xUrl": "https://x.com/solonitsyn",
+          "source": "YC directory"
+        },
+        {
+          "name": "Mika Melchanka",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/mikamelchanka/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Dmitry Starodubtsev",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/dimastar/",
+          "xUrl": "https://x.com/dmitry_star",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -32975,6 +41282,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Jonathan Fudem",
+          "title": "Founder",
+          "linkedinUrl": "http://linkedin.com/in/jonathanfudem/",
+          "xUrl": "https://x.com/jfudem",
+          "source": "YC directory"
+        },
+        {
+          "name": "Daniel Brain",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/bluepnume/",
+          "xUrl": "https://x.com/bluepnume",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -33060,6 +41383,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "fintech_infra",
         "insurance_benefits",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Cipriano Echavarria",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/cipriano-echavarria-3729a9105/",
+          "xUrl": "https://x.com/ciprianoec11",
+          "source": "YC directory"
+        },
+        {
+          "name": "Nicolas Gomez del Campo",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ngomezdelcampo/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Felipe Monsalve",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/felipemon/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -33123,6 +41469,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Daniel Kwak",
+          "title": "Co-Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/dnlkwak/",
+          "xUrl": "https://x.com/dnlkwk",
+          "source": "YC directory"
+        },
+        {
+          "name": "Jack Hopkins",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jack-ww-hopkins/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ben Magolan",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ben-magolan-69537611a/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -33173,6 +41542,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Andres Richardson",
+          "title": "Founder",
+          "linkedinUrl": "http://www.linkedin.com/in/andres-richardson-41411a167",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Juan Chomali",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jchomali",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Aldo Piaggio",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/aldo-piaggio-59227418b",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -33240,6 +41632,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "cards_spend",
         "credit_lending",
         "crypto_finance"
+      ],
+      "founders": [
+        {
+          "name": "Carlos Reyes Stoneham",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/carlosreyes1/",
+          "xUrl": "https://x.com/theczarlos",
+          "source": "YC directory"
+        },
+        {
+          "name": "Brent Traut",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/btraut/",
+          "xUrl": "https://x.com/btraut",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -33300,6 +41708,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Hemant Gangolia",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/hemantgangolia/",
+          "xUrl": "https://x.com/hemantgangolia",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -33354,6 +41771,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "cards_spend"
+      ],
+      "founders": [
+        {
+          "name": "Shariar Kabir",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/shariar-kabir/",
+          "xUrl": "https://x.com/ShariarK8",
+          "source": "YC directory"
+        },
+        {
+          "name": "Miguel Acero",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/miguel-acero-238b88148/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Jordan Yaqoob",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jordan-yaqoob-49b7b1152/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -33414,6 +41854,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "banking_accounts"
+      ],
+      "founders": [
+        {
+          "name": "Benjamen Oladokun",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/benjamen-oladokun-74b19676",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Valentine Mayaki",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/valentine-mayaki",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Sanmi Olukanmi",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sanmi-olukanmi-25878837",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -33471,6 +41934,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Dani Penev",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/dani-penev",
+          "xUrl": "https://x.com/danipenev",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ivan Valkov",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/ivan-valkov",
+          "xUrl": "https://x.com/ivvalkov",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -33525,6 +42004,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "ap_ar_billing",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Joe DeMaria",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/joe-demaria-15a15943/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Arnold Villatoro",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/arnold-villatoro-85629330",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -33580,6 +42075,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "credit_lending",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Tony Yang",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/yucheng-tony-yang",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -33653,6 +42157,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "crypto_finance",
         "fintech_infra",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Vikas Choudhary",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/vikasch90/",
+          "xUrl": "https://x.com/vikasch",
+          "source": "YC directory"
+        },
+        {
+          "name": "Smeet Bhatt",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/smeetbhatt/",
+          "xUrl": "https://x.com/smeet_bhatt",
+          "source": "YC directory"
+        },
+        {
+          "name": "Sriram Bhargav Karnati",
+          "title": "Co-founder",
+          "linkedinUrl": "https://www.linkedin.com/in/srirambhargav",
+          "xUrl": "https://x.com/_sriramk_",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -33707,6 +42234,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Sam Stein",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/samsonstein/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Abe Wheeler",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/abrahamwheeler/",
+          "xUrl": "https://x.com/AbeWheeler5",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -33765,6 +42308,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Ntambwa Basambombo",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/ntambwa-basambombo-1371b952",
+          "xUrl": "https://x.com/ntambwabasa",
+          "source": "YC directory"
+        },
+        {
+          "name": "Christel Ilaka",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/christelilaka",
+          "xUrl": "https://x.com/chrisilaka",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -33826,6 +42385,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Sunny Singh",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sunnysng/",
+          "xUrl": "https://x.com/yetanothersunny",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -33900,6 +42468,36 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "cards_spend",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Rodrigo Vidal",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/rodrigovidal05",
+          "xUrl": "https://x.com/rodrividal_",
+          "source": "YC directory"
+        },
+        {
+          "name": "Tomas Bruzza",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/tomasbruzza/",
+          "xUrl": "https://x.com/tomasbruzza",
+          "source": "YC directory"
+        },
+        {
+          "name": "Braian Fritz",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/braian-nicolas-fritz-887966144/",
+          "xUrl": "https://x.com/braian_fritz",
+          "source": "YC directory"
+        },
+        {
+          "name": "Martin Gira",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/martintg",
+          "xUrl": "https://x.com/martin_tito_99",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -33961,6 +42559,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "payments",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Maxwell Obi",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/maxwellobi/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Emmanuel Igbodudu",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/emmanuel-igbodudu/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -34015,6 +42629,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Kirthi Banothu",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/kirthibanothu",
+          "xUrl": "https://x.com/kirthibanothu",
+          "source": "YC directory"
+        },
+        {
+          "name": "Xiaoyu Li",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/xiaoyuli240",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -34078,6 +42708,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "tax_accounting"
+      ],
+      "founders": [
+        {
+          "name": "Sebastian Janisch",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sebastianjanisch/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Misha van Beek",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/mishavanbeek/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -34142,6 +42788,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "crypto_finance",
         "payments",
         "stablecoins"
+      ],
+      "founders": [
+        {
+          "name": "Faiyam Rahman",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/faiyam-rahman",
+          "xUrl": "https://x.com/faiyamrahman?s=21",
+          "source": "YC directory"
+        },
+        {
+          "name": "Luc Succ\u00e8s",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/lucsucces",
+          "xUrl": "https://x.com/lucsucces",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -34203,6 +42865,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Aditya Joshi",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/adityajoshi101",
+          "xUrl": "https://x.com/Adityaj101",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ethan Hou",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/ethan-hou10",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Varun Verma",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/tranquilvarun",
+          "xUrl": "https://x.com/TranquilVarun",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -34262,6 +42947,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "crypto_finance"
+      ],
+      "founders": [
+        {
+          "name": "He Lu",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/he-lu-63666852",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Milan Shen",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/milan-shen-860b5062",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "James Wu",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/jameswu1991",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -34319,6 +43027,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crypto_finance",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Gray Newfield",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/gray-newfield-447b9b111/",
+          "xUrl": "https://x.com/gray_newfield",
+          "source": "YC directory"
+        },
+        {
+          "name": "Noah Newfield",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/noah-newfield-208a40129/",
+          "xUrl": "https://x.com/NoahNewfield",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -34372,6 +43096,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Pavel Gertsberg",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/pavel-gertsberg",
+          "xUrl": "https://x.com/grtspvl",
+          "source": "YC directory"
+        },
+        {
+          "name": "German Mikulski",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/german-mikulski/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -34444,6 +43184,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Tolu Alabi",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://linkedin.com/in/tolu-alabi-08697525",
+          "xUrl": "https://x.com/tolu_tols1",
+          "source": "YC directory"
+        },
+        {
+          "name": "Philip Abel",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://linkedin.com/in/abelphilip",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -34495,6 +43251,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Sean OBrien",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/sean-o-brien-412b28175",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -34552,6 +43317,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "payments",
         "stablecoins"
+      ],
+      "founders": [
+        {
+          "name": "David Lalor",
+          "title": "Co-Founder, CEO",
+          "linkedinUrl": "https://linkedin.com/in/davidlalor5",
+          "xUrl": "https://x.com/david_lalor",
+          "source": "YC directory"
+        },
+        {
+          "name": "Rakeeb Hossain",
+          "title": "Co-Founder, CTO",
+          "linkedinUrl": "https://linkedin.com/in/rakeebhossain",
+          "xUrl": "https://x.com/rakeeb_hossain",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -34622,6 +43403,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "fintech_infra",
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Nico Laqua",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/nico-laqua-302b17233",
+          "xUrl": "https://x.com/nico_laqua?lang=en",
+          "source": "YC directory"
+        },
+        {
+          "name": "Emily Yuan",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/emilyyuan96",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -34666,6 +43463,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Luke Bogus",
+          "title": "Co-Founder",
+          "linkedinUrl": "https://linkedin.com/in/lukebogus",
+          "xUrl": "https://x.com/lukebogus",
+          "source": "YC directory"
+        },
+        {
+          "name": "Nick Siscoe",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/nick-siscoe-58a1099b",
+          "xUrl": "https://x.com/siscoe_",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -34743,6 +43556,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "insurance_benefits",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Adria Ferrier",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/adria-ferrier-8b242836/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Rebecca Lee",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/rebeccablee1",
+          "xUrl": "https://x.com/beccablee",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -34798,7 +43627,8 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
-      ]
+      ],
+      "founders": []
     },
     {
       "id": "29735",
@@ -34856,6 +43686,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "YC Fintech industry",
         "growth software for financial advisors"
+      ],
+      "founders": [
+        {
+          "name": "Eden Ovadia",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/edenovadia",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Theodore Janson",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/theodore-janson",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Victoria Toli",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/victoria-toli/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -34923,6 +43776,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "credit_lending",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Mark Ricciardi",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/mark-ricciardi",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Gabriel Vincent Kho",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/%F0%9F%94%B0-gabriel-kho-924a6166/",
+          "xUrl": "https://x.com/gakho",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -34992,6 +43861,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "ap_ar_billing",
         "insurance_benefits",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Sho Sugihara",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/shoalexander",
+          "xUrl": "https://x.com/_ShoSugihara",
+          "source": "YC directory"
+        },
+        {
+          "name": "Oscar Wilsby",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/oscar-wilsby-71020931",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -35040,6 +43925,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "fintech_infra"
+      ],
+      "founders": [
+        {
+          "name": "Matt Tengtrakool",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/matt-tengtrakool",
+          "xUrl": "https://x.com/MattTtkool",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -35088,6 +43982,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Mamal Amini",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/mamal-amini-235810170",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Oliver Walerys",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/walerys",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -35145,6 +44055,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Dave Feldman",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/david-feldman",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Edward Schembor",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/edwardschembor",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -35199,6 +44125,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Priyang Shah",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/priyangshah",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -35268,6 +44203,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "investing_trading",
         "money_transfer",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Sourav Choraria",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/sourav-choraria-9b389776",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Sidharth Choraria",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sidharth-choraria-25411b65/details/experience/",
+          "xUrl": "https://x.com/sidharth9932",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -35325,6 +44276,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Rohan Parikh",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/parikhrohan/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Conor Brown",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/conor-brown-9a02849b/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Lalit Lal",
+          "title": "Cofounder, CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/lalitlal",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -35399,6 +44373,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "money_transfer",
         "payments",
         "stablecoins"
+      ],
+      "founders": [
+        {
+          "name": "jesus alberto Castillo ferrer",
+          "title": "CEO & Co-founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jesus-castillo-81a58b186/",
+          "xUrl": "https://x.com/jecastillof",
+          "source": "YC directory"
+        },
+        {
+          "name": "Gino Guatavita",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/gino-guatavita-7269139b",
+          "xUrl": "https://x.com/GinoGuatavita",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -35467,6 +44457,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "cards_spend",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Okiemute Avworhokai",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/okiemute-d-avworhokai-5b52a7a6?lipi=urn%253Ali%253Apage%253Ad_flagship3_profile_view_base_contact_details%253BgNZt1BAJRYa%252FInOsfn4KRw%253D%253D",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ini Udoh",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/iudoh",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -35545,6 +44551,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "crypto_finance",
         "money_transfer",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Walid Mahd",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/walidmahd/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Sam Yu",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://linkedin.com/in/yu-sam",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -35602,7 +44624,8 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
-      ]
+      ],
+      "founders": []
     },
     {
       "id": "29789",
@@ -35680,6 +44703,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "investing_trading",
         "money_transfer"
+      ],
+      "founders": [
+        {
+          "name": "Nitish Sahni",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/nitishsahni",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Sparsh Sharma",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sparsh-sharma-design/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -35761,6 +44800,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "crypto_finance",
         "money_transfer"
+      ],
+      "founders": [
+        {
+          "name": "Grant Ackerman",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/grant-a-391184a5",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Andrew Wang",
+          "title": "Founder & CTO",
+          "linkedinUrl": "",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -35826,6 +44881,36 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Kanishk Parashar",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/diamondk",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Soo Yung Cho",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/soo-yung-cho-53643811",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "David Goerz",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/davidgoerz3",
+          "xUrl": "https://x.com/StrategicCAPM",
+          "source": "YC directory"
+        },
+        {
+          "name": "Dominic Tully",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/dominic-tully-b9418292",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -35892,6 +44977,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Joseph Thalinjan",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/joseph-thalinjan",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Alix Maurin",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/alix-maurin-850610148/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -35957,6 +45058,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Andrei Craciunescu",
+          "title": "Founder & CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/andrei-craciunescu/",
+          "xUrl": "https://x.com/andreicscu",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -36030,6 +45140,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Amal Jolly",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://linkedin.com/in/amaljolly",
+          "xUrl": "https://x.com/theamaljolly",
+          "source": "YC directory"
+        },
+        {
+          "name": "Michael Ettlinger",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/michaelettlinger/",
+          "xUrl": "https://x.com/etticat",
+          "source": "YC directory"
+        },
+        {
+          "name": "Rohit Vaish",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/rohit-vaish/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -36084,6 +45217,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "fintech_infra"
+      ],
+      "founders": [
+        {
+          "name": "Alexandre Berkovic",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/alexandreberkovic",
+          "xUrl": "https://x.com/alexberkovic",
+          "source": "YC directory"
+        },
+        {
+          "name": "Chrisjan Wust",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/chrisjan-wust",
+          "xUrl": "https://x.com/ChrisWust",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -36135,6 +45284,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "banking_accounts"
+      ],
+      "founders": [
+        {
+          "name": "Stephen Walter",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/stephen-walter-sunset/",
+          "xUrl": "https://x.com/stephen_walter",
+          "source": "YC directory"
+        },
+        {
+          "name": "Kaela Worthen",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/kaelaworthen/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -36189,6 +45354,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Bruce Chi",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/bchi",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Jay Xiao",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/yjwxiao",
+          "xUrl": "https://x.com/yjwxiao",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -36261,6 +45442,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "ap_ar_billing",
         "insurance_benefits",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Derrick Wolbert",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/derrickwolbert",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Reuben Balik",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/reuben-balik",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Q Carlson",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/qcarlson",
+          "xUrl": "https://x.com/qcintheair",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -36325,6 +45529,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "crypto_finance"
+      ],
+      "founders": [
+        {
+          "name": "Colin Holter",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/colin-holter-ab1118116",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Amith Vanmane",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/amith-vanmane",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -36383,6 +45603,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "fintech_infra",
         "investing_trading",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Taryn Reardon",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/taryn-reardon/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Liam Breen",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/liam-b-456081124/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -36451,6 +45687,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "money_transfer",
         "payments",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Aniket Gupta",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/theaniketg",
+          "xUrl": "https://x.com/theaniketg",
+          "source": "YC directory"
+        },
+        {
+          "name": "Rakshit Bansal",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/rakshitbansal",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -36505,6 +45757,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Ashutosh Purohit",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/ashutoshpurohit97",
+          "xUrl": "https://x.com/ashutoshpuro97",
+          "source": "YC directory"
+        },
+        {
+          "name": "Aryan Agarwal",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/aryanag15",
+          "xUrl": "https://x.com/AryanAg15",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -36571,6 +45839,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "insurance_benefits",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Daniel Siryakov",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/daniel-siryakov-cfa-07071255/",
+          "xUrl": "https://x.com/danielzohan1",
+          "source": "YC directory"
+        },
+        {
+          "name": "Barak Ben Noon",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/barak-ben-noon/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -36620,6 +45904,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Deep Kapur",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/deepkkapur/",
+          "xUrl": "https://x.com/deepkkapur",
+          "source": "YC directory"
+        },
+        {
+          "name": "Louise Tanski",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/louise-tanski/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -36680,6 +45980,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Bruno Koba",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/bruno-koba/",
+          "xUrl": "https://x.com/brunokoba_",
+          "source": "YC directory"
+        },
+        {
+          "name": "Daniel Tulha Hochstetler",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/daniel-hochstetler",
+          "xUrl": "https://x.com/tulha_",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -36768,6 +46084,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crypto_finance",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Dillon Erb",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/dillonerb",
+          "xUrl": "https://x.com/dlnrb",
+          "source": "YC directory"
+        },
+        {
+          "name": "Daniel Kobran",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/daniel-kobran/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -36822,6 +46154,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Cornelius Schramm",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/cornelius-schramm-450759150/",
+          "xUrl": "https://x.com/cornelius_schra",
+          "source": "YC directory"
+        },
+        {
+          "name": "Bryan Guin",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/bryan-guin/",
+          "xUrl": "https://x.com/bryanguin",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -36877,6 +46225,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crypto_finance",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Henry Zhang",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/henryzhang03/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Preston Ellis",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/preellis/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -36945,6 +46309,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "crypto_finance",
         "payments",
         "stablecoins"
+      ],
+      "founders": [
+        {
+          "name": "Bernardo Simonassi",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/bernardosm",
+          "xUrl": "https://x.com/bebedaselva",
+          "source": "YC directory"
+        },
+        {
+          "name": "Joao Borges",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/joaoborgesjr/",
+          "xUrl": "https://x.com/joaocsb",
+          "source": "YC directory"
+        },
+        {
+          "name": "Gustavo Marinho",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/gustavomarinho/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -37004,6 +46391,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "insurance_benefits",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Maximilian Thoelen",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/maximilian-thoelen/",
+          "xUrl": "https://x.com/MaxThoelen",
+          "source": "YC directory"
+        },
+        {
+          "name": "Nico H\u00e4nggi",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/nicohaenggi/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Pascal K\u00fcng",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/pascalkueng/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -37060,6 +46470,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Spencer Brown",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/spencercbrown",
+          "xUrl": "https://x.com/spencerbrownx",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -37124,6 +46543,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Graham Sabin",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/grahamsabin/",
+          "xUrl": "https://x.com/GrahamSabin",
+          "source": "YC directory"
+        },
+        {
+          "name": "Abhi Balijepalli",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/a8hi/",
+          "xUrl": "https://x.com/a8hi_b",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -37188,6 +46623,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "insurance_benefits",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "James Chen",
+          "title": "Co-founder",
+          "linkedinUrl": "https://www.linkedin.com/in/james-chen-394ab67b/",
+          "xUrl": "https://x.com/James_R_Chen",
+          "source": "YC directory"
+        },
+        {
+          "name": "Bryant Le",
+          "title": "Co-Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/bryant-le-3884a7134",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -37241,6 +46692,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Edward Huang",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/edward-huang-cfa-8807b4149/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Robin Gan",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/robin-gan-180060126",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -37303,6 +46770,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crypto_finance",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Lihong Wang",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/lihong062/",
+          "xUrl": "https://x.com/Lihong062",
+          "source": "YC directory"
+        },
+        {
+          "name": "Bryan Reed",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/bryan1738/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -37350,6 +46833,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "YC Fintech industry",
         "YC launch: voice AI agents for financial services"
+      ],
+      "founders": [
+        {
+          "name": "Tunga Bayrak",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/tunga-bayrak/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Tomas Nepala",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/tomas-nepala",
+          "xUrl": "https://x.com/TomasNepala",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -37414,6 +46913,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "insurance_benefits",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Dakotah Rice",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/dakotahrice/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Tushar Nair",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/tushar-nair-100787144",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -37468,6 +46983,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "YC Fintech industry",
         "YC launch: AI agents for accounting firms"
+      ],
+      "founders": [
+        {
+          "name": "Rami Ghanem",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/ramighanem",
+          "xUrl": "https://www.twitter.com/ramigh",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -37530,6 +47054,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "payments",
         "stablecoins"
+      ],
+      "founders": [
+        {
+          "name": "Nikhil Srinivasan",
+          "title": "Cofounder & CEO",
+          "linkedinUrl": "https://linkedin.com/in/nikhilsrinivasan",
+          "xUrl": "https://x.com/nvs",
+          "source": "YC directory"
+        },
+        {
+          "name": "Raj Lad",
+          "title": "Cofounder & CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/rajlad/",
+          "xUrl": "https://x.com/rajlad_",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -37582,6 +47122,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Fern Morrison",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/elizabeth-fern-morrison/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Gabriele Pozzato",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/gabriele-pozzato-ph-d-2167a2107/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -37655,6 +47211,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Hugo Markland",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/hugo-markland-cfa-712409125/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Jeanot Dawson",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jeanot-dawson-67191b17?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Oliver Lambson",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/oliverlambson/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -37725,6 +47304,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "crypto_finance",
         "stablecoins"
+      ],
+      "founders": [
+        {
+          "name": "Shahryar Hasnani",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/shahryar-hasnani/",
+          "xUrl": "https://x.com/0xLilShah",
+          "source": "YC directory"
+        },
+        {
+          "name": "Dale Wilson",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/dalewilson21/",
+          "xUrl": "https://x.com/0xdwil",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -37789,6 +47384,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "cards_spend",
         "money_transfer"
+      ],
+      "founders": [
+        {
+          "name": "Khalid Ashmawy",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/khalidashmawy/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -37841,6 +47445,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "crypto_finance"
+      ],
+      "founders": [
+        {
+          "name": "Pete Stevenson",
+          "title": "Founder / CEO",
+          "linkedinUrl": "https://linkedin.com/in/etepnosnevets",
+          "xUrl": "https://x.com/pax_pax_pax",
+          "source": "YC directory"
+        },
+        {
+          "name": "Benjamin Kilimnik",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/benkilimnik",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -37898,6 +47518,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "crypto_finance"
+      ],
+      "founders": [
+        {
+          "name": "Ronit Jain",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ronitjain5",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Aarav Patel",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/aaravpatel04",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -37971,6 +47607,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "investing_trading",
         "money_transfer",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Annanay Kapila",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/annanay-kapila/",
+          "xUrl": "https://x.com/annanay",
+          "source": "YC directory"
+        },
+        {
+          "name": "Joshua Wharton",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/joshua-wharton/",
+          "xUrl": "https://x.com/joshuawharton",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -38046,6 +47698,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "payments",
         "payroll",
         "tax_accounting"
+      ],
+      "founders": [
+        {
+          "name": "Nick Telecki",
+          "title": "Founder & CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/nick-telecki",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Thiago Peres",
+          "title": "Founder & CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/thiagoperespm/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -38100,6 +47768,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Arjun Lalwani",
+          "title": "Co-Founder & CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/arjun-lalwani",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Helly Shah",
+          "title": "Co-Founder & CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/hellyshah",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -38165,6 +47849,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "crypto_finance",
         "payments",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Alec Howard",
+          "title": "Co-Founder & CEO",
+          "linkedinUrl": "https://linkedin.com/in/alexandermhoward",
+          "xUrl": "https://x.com/alecmhoward",
+          "source": "YC directory"
+        },
+        {
+          "name": "Michael Mason",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/mason-michael/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -38203,6 +47903,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Nimit Maru",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/nimit/",
+          "xUrl": "http://x.com/nimit",
+          "source": "YC directory"
+        },
+        {
+          "name": "Rush Sadiwala",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/rushabh-sadiwala/",
+          "xUrl": "https://x.com/updating_priors",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -38253,6 +47969,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Amandeep Singh",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/amandeep-singh0/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ramakant Yadav",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ramakant-yadav1/",
+          "xUrl": "https://x.com/yoursRY",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -38310,6 +48042,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "banking_accounts"
+      ],
+      "founders": [
+        {
+          "name": "Paula Gutierrez",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/paula-gutierrez-/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Joel Tomas Pimentel",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/joel-tomas-pimentel",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -38382,6 +48130,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "money_transfer",
         "payments",
         "payroll"
+      ],
+      "founders": [
+        {
+          "name": "Daivik Goel",
+          "title": "CEO & Co-Founder",
+          "linkedinUrl": "https://linkedin.com/in/daivikg",
+          "xUrl": "https://x.com/daivikgoel",
+          "source": "YC directory"
+        },
+        {
+          "name": "Avi Konduru",
+          "title": "Co-founder",
+          "linkedinUrl": "https://linkedin.com/in/kumaravinash-avi-konduru-54b3a6bb",
+          "xUrl": "https://x.com/avikonduru",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -38440,6 +48204,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "insurance_benefits",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Herman B\u00e5verud Olsson",
+          "title": "CEO & Co-founder",
+          "linkedinUrl": "https://www.linkedin.com/in/hermanbaverudolsson/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Sorena Amini",
+          "title": "COO & Co-founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sorenaamini",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Linus Malm\u00e9n",
+          "title": "Co-founder and CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/linus-malm\u00e9n-2588406a/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -38499,6 +48286,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Love Redin",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/love-redin/",
+          "xUrl": "https://x.com/redinvantel",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ulme Wennberg",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ulme-wennberg/",
+          "xUrl": "https://x.com/UlmeW",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -38569,6 +48372,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "ap_ar_billing",
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Joshua March",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/joshuamarch/",
+          "xUrl": "https://www.x.com/joshuamarch",
+          "source": "YC directory"
+        },
+        {
+          "name": "David Schlesinger",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/davidschles/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Joseph Stein",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/josephstein1",
+          "xUrl": "https://www.x.com/josephstein",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -38629,6 +48455,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Can Zehebi",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/canzehebi/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ilkan Gezer",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ilkan-gezer-4a16a6268",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -38685,6 +48527,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "cards_spend"
+      ],
+      "founders": [
+        {
+          "name": "Karen Serfaty",
+          "title": "CEO & Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/keyserfaty/",
+          "xUrl": "https://x.com/keyserfaty",
+          "source": "YC directory"
+        },
+        {
+          "name": "Felipe Abello",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/pipe-abello-2512b9195",
+          "xUrl": "https://x.com/PipeAbellos",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -38745,6 +48603,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech_and_payments",
       "auditEvidence": [
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Dasmer Singh",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/dasmer",
+          "xUrl": "https://x.com/dasmersingh",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -38810,6 +48677,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Ryan Samadi",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ryan-samadi/",
+          "xUrl": "https://x.com/SamadiRyan",
+          "source": "YC directory"
+        },
+        {
+          "name": "Michael Wachsman",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/michael-wachsman-a0912a1ab/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -38865,6 +48748,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Eric Zhu",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/eric-zhu-774a4918b/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ian Wang",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ian-wang-m1n1",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -38921,6 +48820,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "fintech_infra"
+      ],
+      "founders": [
+        {
+          "name": "Charu Sharma",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/charusharma1/",
+          "xUrl": "https://x.com/charu1603",
+          "source": "YC directory"
+        },
+        {
+          "name": "Michael M",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/fiveseventyeleven/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -38975,6 +48890,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crypto_finance",
         "exchange/trading product for attention as an asset class"
+      ],
+      "founders": [
+        {
+          "name": "Owen Botkin",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/owen-botkin",
+          "xUrl": "https://x.com/owenbotkin",
+          "source": "YC directory"
+        },
+        {
+          "name": "Joseph Thomas",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/joseph-philip-thomas/",
+          "xUrl": "https://x.com/josephpthomas",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -39050,6 +48981,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "money_transfer",
         "payments",
         "payroll"
+      ],
+      "founders": [
+        {
+          "name": "Lotanna Ezeike",
+          "title": "CEO, Co-founder",
+          "linkedinUrl": "https://linkedin.com/in/lottsnomad",
+          "xUrl": "https://x.com/lottsnomad",
+          "source": "YC directory"
+        },
+        {
+          "name": "James Heaney",
+          "title": "Founder, CTO",
+          "linkedinUrl": "https://linkedin.com/in/jvheaney",
+          "xUrl": "https://x.com/jvheaney",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -39100,6 +49047,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Max Church",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/max-church/",
+          "xUrl": "https://x.com/DevMaxC",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ali Tabba",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/alitabba",
+          "xUrl": "https://x.com/alitabba_",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -39162,6 +49125,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Luke Button",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/lukebutton/",
+          "xUrl": "https://x.com/lukebbutton",
+          "source": "YC directory"
+        },
+        {
+          "name": "Luke Rosa",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/luke-rosa-4a2717160",
+          "xUrl": "https://x.com/lukerosa_",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -39226,6 +49205,36 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "payments",
         "payroll",
         "stablecoins"
+      ],
+      "founders": [
+        {
+          "name": "Peter Volnov",
+          "title": "co-founder & CEO",
+          "linkedinUrl": "https://linkedin.com/in/pvolnov",
+          "xUrl": "https://x.com/p_volnov",
+          "source": "YC directory"
+        },
+        {
+          "name": "Nik Briuzgin",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/nikitadigital",
+          "xUrl": "https://x.com/Nikitadigital10",
+          "source": "YC directory"
+        },
+        {
+          "name": "Pavel Mitsevich",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/pasha-mitsevich-a417682a0/",
+          "xUrl": "https://x.com/mywonder_here",
+          "source": "YC directory"
+        },
+        {
+          "name": "Andrei Zhevlakov",
+          "title": "Co-Founder CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/azbang",
+          "xUrl": "https://x.com/azbang_",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -39289,6 +49298,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Paulien Jeunesse",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/paulienjeunesse",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Alex Musy",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/alexandre-musy-653012148/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -39356,6 +49381,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crypto_finance",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Joon Won Song",
+          "title": "Co-Founder, CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/mericsong",
+          "xUrl": "https://x.com/mericsong",
+          "source": "YC directory"
+        },
+        {
+          "name": "Eunju Moon",
+          "title": "Co-Founder, CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/eunju-moon-a65823202/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -39417,6 +49458,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Jeremie Cohen",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jeremcoh/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -39477,6 +49527,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Adrian Del Bosque",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/adriandelbosque/",
+          "xUrl": "https://x.com/adriandelb",
+          "source": "YC directory"
+        },
+        {
+          "name": "Mauricio Ortiz",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ortizmauricio01/",
+          "xUrl": "https://x.com/ortizmauricio_",
+          "source": "YC directory"
+        },
+        {
+          "name": "Jack Zumwalt",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jack-zumwalt/",
+          "xUrl": "https://x.com/jackzumwalt",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -39566,6 +49639,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "credit_lending",
         "crypto_finance"
+      ],
+      "founders": [
+        {
+          "name": "Carmel Limcaoco",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/carmellimcaoco/",
+          "xUrl": "https://x.com/carmelkita",
+          "source": "YC directory"
+        },
+        {
+          "name": "Rhea Malhotra",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/rhea-malhotra-198744142",
+          "xUrl": "https://x.com/_rheamalhotra_",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -39633,6 +49722,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Ines Boutemadja",
+          "title": "Co-Founder & CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/inesboutemadja",
+          "xUrl": "https://x.com/inesboutem",
+          "source": "YC directory"
+        },
+        {
+          "name": "Julien Catonnet",
+          "title": "Co-founder & CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/julien-catonnet-18624162/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -39687,6 +49792,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "YC Fintech industry"
+      ],
+      "founders": [
+        {
+          "name": "Drake Goodman",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/drake-goodman/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Kent Goodman",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/kent-goodman",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Esteban Vizcaino",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/esteban-vizcaino-9920a5210/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -39753,6 +49881,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crypto_finance",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Utkarsh Sinha",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/utksn15/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Parth Maheshwari",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/parthm1801",
+          "xUrl": "https://x.com/_ParthVader_",
+          "source": "YC directory"
+        },
+        {
+          "name": "Chetan Manda",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/chetanmanda/",
+          "xUrl": "https://x.com/theblackmanda",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -39829,6 +49980,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Fabian Amherd",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/fabianamherd/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "John Bachmann",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/john-bachmann-844978301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -39884,6 +50051,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "banking_accounts",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Sam Lushtak",
+          "title": "Founder and CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/samuel-lushtak",
+          "xUrl": "https://x.com/Sam_Lushtak",
+          "source": "YC directory"
+        },
+        {
+          "name": "Michael Gonzalez",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/mogonzal",
+          "xUrl": "https://x.com/michaelatpalus",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -39945,6 +50128,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "insurance_benefits",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Vincent Chen",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/zihong-chen",
+          "xUrl": "https://x.com/dsdvincent",
+          "source": "YC directory"
+        },
+        {
+          "name": "Frank Wang",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jiangdawang/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -40005,6 +50204,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "credit_lending"
+      ],
+      "founders": [
+        {
+          "name": "Wye Yew Ho",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/wyeyew/",
+          "xUrl": "https://x.com/WyeYew",
+          "source": "YC directory"
+        },
+        {
+          "name": "Zi Zhang",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/zizixcm/",
+          "xUrl": "https://x.com/zizixcm",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -40056,6 +50271,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Oscar Levy",
+          "title": "Co-Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/oscar-levy/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Antonin Parrot",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/antonin-parrot-a16625196",
+          "xUrl": "https://x.com/antonin_parrot",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -40107,6 +50338,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crypto_finance",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Peter Bai",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/peter-bai/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Muhammad Awan",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/muhammad-awan0",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -40169,6 +50416,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Adam Ron",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/adammron",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Cameron Spiller",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/cameron-spiller-b316b850/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -40231,6 +50494,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "banking_accounts",
         "payments",
         "stablecoins"
+      ],
+      "founders": [
+        {
+          "name": "Zsika Phillip",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/zsika/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Thomas Cesare-Herriau",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/thomascesareherriau/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -40284,6 +50563,15 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Michael Royzen",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/michaelroyzen/",
+          "xUrl": "https://x.com/michaelroyzen",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -40339,6 +50627,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crypto_finance",
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Eric Liu",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ericliujt/",
+          "xUrl": "https://x.com/ericliujt",
+          "source": "YC directory"
+        },
+        {
+          "name": "Pravesh Mansharamani",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/pravesh-mansharamani/",
+          "xUrl": "https://x.com/ImTheBigP",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -40392,6 +50696,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "crypto_finance",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Timothy Chung",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/timchunght",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Hau Chu",
+          "title": "Founder/Chief Engineer",
+          "linkedinUrl": "https://www.linkedin.com/in/hauchu1998",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Quang Huynh",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/quang-huynh-468488305/",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -40468,6 +50795,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "credit_lending",
         "crypto_finance",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Saket Joshi",
+          "title": "Founder",
+          "linkedinUrl": "",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Mordi Shadpour",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/mordi-shadpour",
+          "xUrl": "https://x.com/MordiShadpour",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -40532,6 +50875,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Sarth Garg",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/sarkgarg/",
+          "xUrl": "https://x.com/gargsarthak678",
+          "source": "YC directory"
+        },
+        {
+          "name": "Gaurav Paliwal",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/qaurav/",
+          "xUrl": "https://x.com/qavrav",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -40578,6 +50937,29 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Neo Wang",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/nwatx/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Daniel Kasabov-Nouvion",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/daniel-kasabov-nouvion-a717931a8/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Arthur Zhou",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/arthurzhou",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -40631,6 +51013,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "insurance_benefits"
+      ],
+      "founders": [
+        {
+          "name": "Evan Rankin",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/evan-rankin-/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Jad Bousselham",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/jad-bousselham/",
+          "xUrl": "https://x.com/jadbousselham",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -40685,6 +51083,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "cleanScope": "fintech",
       "auditEvidence": [
         "investing_trading"
+      ],
+      "founders": [
+        {
+          "name": "Karim Bouri",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/karim-bouri-7a570824a/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Pierre Depuydt",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/pierre-depuydt-887779280",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -40731,6 +51145,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
       "auditEvidence": [
         "ap_ar_billing",
         "payments"
+      ],
+      "founders": [
+        {
+          "name": "Gabe Roeloffs",
+          "title": "Founder",
+          "linkedinUrl": "https://linkedin.com/in/gabe-roeloffs",
+          "xUrl": "https://x.com/gaberoeloffs",
+          "source": "YC directory"
+        },
+        {
+          "name": "Ryan Elliott",
+          "title": "Founder",
+          "linkedinUrl": "https://www.linkedin.com/in/ryanelliott-10",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     },
     {
@@ -40799,6 +51229,22 @@ window.YC_FINTECH_WAVE_MAP_DATA = {
         "ap_ar_billing",
         "credit_lending",
         "treasury_ledger"
+      ],
+      "founders": [
+        {
+          "name": "Isabela Rodriguez",
+          "title": "Founder/CEO",
+          "linkedinUrl": "https://www.linkedin.com/in/isabela-rodriguez-438785170/",
+          "xUrl": "",
+          "source": "YC directory"
+        },
+        {
+          "name": "Tony Montes",
+          "title": "Founder/CTO",
+          "linkedinUrl": "https://www.linkedin.com/in/t-montes",
+          "xUrl": "",
+          "source": "YC directory"
+        }
       ]
     }
   ]

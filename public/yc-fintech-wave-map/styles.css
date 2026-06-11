@@ -636,6 +636,58 @@ tbody tr:hover {
   color: var(--ink);
 }
 
+.founder-list {
+  display: grid;
+  gap: 8px;
+}
+
+.founder-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 10px;
+  background: var(--panel-2);
+}
+
+.founder-card strong,
+.founder-card span {
+  display: block;
+}
+
+.founder-card span {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.founder-links {
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.founder-links a,
+.founder-links span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 0 8px;
+  background: var(--panel);
+  color: var(--ink);
+  font-size: 0.78rem;
+  text-decoration: none;
+}
+
+.founder-links span {
+  color: var(--muted);
+}
+
 .empty-state {
   border: 1px dashed var(--line);
   border-radius: var(--radius);
@@ -692,5 +744,14 @@ tbody tr:hover {
 
   .detail-grid {
     grid-template-columns: 1fr;
+  }
+
+  .founder-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .founder-links {
+    justify-content: flex-start;
   }
 }
