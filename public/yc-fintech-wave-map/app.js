@@ -18,6 +18,7 @@
       words: document.getElementById("wordsView"),
       spreadsheet: document.getElementById("spreadsheetView"),
     },
+    locationMapWrap: document.getElementById("locationMapWrap"),
     locationNote: document.getElementById("locationNote"),
     locationGrid: document.getElementById("locationGrid"),
     wordsNote: document.getElementById("wordsNote"),
@@ -163,6 +164,134 @@
     "MG, Brazil": "Minas Gerais, Brazil",
     "N.L., Mexico": "Nuevo León, Mexico",
     "United States": "USA",
+  };
+
+  // Display coordinates (lat, lng) for every normalized location key in the
+  // dataset. State/region keys use centroids; country-only keys use the
+  // country's geographic center. A key missing here (e.g. after a data
+  // refresh) is reported under the map instead of breaking it.
+  const CITY_COORDS = {
+    "San Francisco, CA, USA": [37.7749, -122.4194],
+    "New York, NY, USA": [40.7128, -74.006],
+    "Bengaluru, KA, India": [12.9716, 77.5946],
+    "London, United Kingdom": [51.5074, -0.1278],
+    "Mexico City, CDMX, Mexico": [19.4326, -99.1332],
+    "Lagos, Nigeria": [6.5244, 3.3792],
+    Singapore: [1.3521, 103.8198],
+    "São Paulo, SP, Brazil": [-23.5505, -46.6333],
+    "Los Angeles, CA, USA": [34.0522, -118.2437],
+    "Miami, FL, USA": [25.7617, -80.1918],
+    "Jakarta, Indonesia": [-6.2088, 106.8456],
+    "Palo Alto, CA, USA": [37.4419, -122.143],
+    "Austin, TX, USA": [30.2672, -97.7431],
+    "Mountain View, CA, USA": [37.3861, -122.0839],
+    "Boston, MA, USA": [42.3601, -71.0589],
+    "Maharashtra, India": [19.7515, 75.7139],
+    "Paris, Île-de-France, France": [48.8566, 2.3522],
+    "Bogotá, Bogota, Colombia": [4.711, -74.0721],
+    "Dubai, United Arab Emirates": [25.2048, 55.2708],
+    "Toronto, ON, Canada": [43.6532, -79.3832],
+    "Oakland, CA, USA": [37.8044, -122.2712],
+    "Gurugram, HR, India": [28.4595, 77.0266],
+    "Nairobi, Nairobi County, Kenya": [-1.2921, 36.8219],
+    "Santiago, Santiago Metropolitan Region, Chile": [-33.4489, -70.6693],
+    "Chicago, IL, USA": [41.8781, -87.6298],
+    "Tel Aviv-Yafo, Tel Aviv District, Israel": [32.0853, 34.7818],
+    "Cairo, Cairo Governorate, Egypt": [30.0444, 31.2357],
+    "Buenos Aires, CABA, Argentina": [-34.6037, -58.3816],
+    "Monterrey, N.L., Mexico": [25.6866, -100.3161],
+    "Atlanta, GA, USA": [33.749, -84.388],
+    "Sindh, Pakistan": [25.8943, 68.5247],
+    "Delhi, DL, India": [28.7041, 77.1025],
+    "Seattle, WA, USA": [47.6062, -122.3321],
+    "Santa Clara, CA, USA": [37.3541, -121.9552],
+    "Redwood City, CA, USA": [37.4852, -122.2364],
+    "Dakar, Dakar Region, Senegal": [14.7167, -17.4677],
+    "Berkeley, CA, USA": [37.8715, -122.273],
+    "San Diego, CA, USA": [32.7157, -117.1611],
+    "Dallas, TX, USA": [32.7767, -96.797],
+    "Lima, Peru": [-12.0464, -77.0428],
+    "Panama City, Panama": [8.9824, -79.5199],
+    "Minneapolis, MN, USA": [44.9778, -93.265],
+    "New Delhi, DL, India": [28.6139, 77.209],
+    "Copenhagen, Denmark": [55.6761, 12.5683],
+    "Seoul, South Korea": [37.5665, 126.978],
+    "Barcelona, CT, Spain": [41.3851, 2.1734],
+    "Delaware City, DE, USA": [39.5779, -75.5891],
+    "Ho Chi Minh City, Vietnam": [10.8231, 106.6297],
+    "Hyderabad, Telangana, India": [17.385, 78.4867],
+    "Hanoi, Vietnam": [21.0278, 105.8342],
+    "Islamabad, Islamabad Capital Territory, Pakistan": [33.6844, 73.0479],
+    "Riyadh, Riyadh Province, Saudi Arabia": [24.7136, 46.6753],
+    "Wilmington, DE, USA": [39.7391, -75.5398],
+    "Sydney, NSW, Australia": [-33.8688, 151.2093],
+    "Redmond, WA, USA": [47.674, -122.1215],
+    "Culver City, CA, USA": [34.0211, -118.3965],
+    "Ottawa, ON, Canada": [45.4215, -75.6972],
+    "Waterloo, ON, Canada": [43.4643, -80.5204],
+    "South San Francisco, CA, USA": [37.6547, -122.4077],
+    "Sterling, VA, USA": [39.0062, -77.4286],
+    "Troy, MI, USA": [42.6064, -83.1498],
+    "Emeryville, CA, USA": [37.8313, -122.2852],
+    "McLean, VA, USA": [38.9339, -77.1773],
+    "Pittsburgh, PA, USA": [40.4406, -79.9959],
+    "Silver Spring, MD, USA": [38.9907, -77.0261],
+    "Distrito Federal, Brazil": [-15.7998, -47.8645],
+    USA: [39.8283, -98.5795],
+    "Sunnyvale, CA, USA": [37.3688, -122.0363],
+    "England, United Kingdom": [52.3555, -1.1743],
+    "Denver, CO, USA": [39.7392, -104.9903],
+    "San Mateo, CA, USA": [37.563, -122.3255],
+    Seychelles: [-4.6191, 55.4513],
+    "Taguig, NCR, Philippines": [14.5176, 121.0509],
+    "Cali, Valle del Cauca, Colombia": [3.4516, -76.532],
+    "Louisville, KY, USA": [38.2527, -85.7585],
+    "Abuja, Federal Capital Territory, Nigeria": [9.0765, 7.3986],
+    "Little Rock, AR, USA": [34.7465, -92.2896],
+    "Minas Gerais, Brazil": [-18.5122, -44.555],
+    "Haryana, India": [29.0588, 76.0856],
+    "Williamsburg, VA, USA": [37.2707, -76.7075],
+    "Accra, Greater Accra Region, Ghana": [5.6037, -0.187],
+    "Vancouver, BC, Canada": [49.2827, -123.1207],
+    "Abidjan, Abidjan Autonomous District, Ivory Coast": [5.36, -4.0083],
+    "Honolulu, HI, USA": [21.3099, -157.8581],
+    "Cape Town, WC, South Africa": [-33.9249, 18.4241],
+    "San Jose, CA, USA": [37.3382, -121.8863],
+    "Manila, NCR, Philippines": [14.5995, 120.9842],
+    "Santa Monica, CA, USA": [34.0195, -118.4912],
+    "Windhoek, Khomas Region, Namibia": [-22.5609, 17.0658],
+    "Birmingham, England, United Kingdom": [52.4862, -1.8904],
+    "Nuevo León, Mexico": [25.5922, -99.9962],
+    "Rio de Janeiro, RJ, Brazil": [-22.9068, -43.1729],
+    "Kochi, KL, India": [9.9312, 76.2673],
+    "Makati, NCR, Philippines": [14.5547, 121.0244],
+    "Tbilisi, Georgia": [41.7151, 44.8271],
+    "Provo, UT, USA": [40.2338, -111.6585],
+    "Tallinn, Harju County, Estonia": [59.437, 24.7536],
+    "Karachi, Sindh, Pakistan": [24.8607, 67.0011],
+    "Lusaka, Lusaka Province, Zambia": [-15.3875, 28.3228],
+    "Navi Mumbai, MH, India": [19.033, 73.0297],
+    "Manama, Capital Governorate, Bahrain": [26.2285, 50.586],
+    "San José, San José Province, Costa Rica": [9.9281, -84.0907],
+    "Manaus, AM, Brazil": [-3.119, -60.0217],
+    "Claymont, DE, USA": [39.8007, -75.4596],
+    "Mumbai, MH, India": [19.076, 72.8777],
+    "Kampala, Central Region, Uganda": [0.3476, 32.5825],
+    "Catalonia, Spain": [41.5912, 1.5209],
+    "Kitchener, ON, Canada": [43.4516, -80.4925],
+    "Madrid, Community of Madrid, Spain": [40.4168, -3.7038],
+    "Fredericton, NB, Canada": [45.9636, -66.6431],
+    "Salt Lake City, UT, USA": [40.7608, -111.891],
+    "Norwalk, CT, USA": [41.1177, -73.4082],
+    "Córdoba, Cordoba, Argentina": [-31.4201, -64.1888],
+    "Surat, GJ, India": [21.1702, 72.8311],
+    "Aspen, CO, USA": [39.1911, -106.8175],
+    "Medellín, Antioquia, Colombia": [6.2476, -75.5658],
+    "Kinshasa, Democratic Republic of the Congo": [-4.4419, 15.2663],
+    "Montreal, QC, Canada": [45.5017, -73.5673],
+    "Columbus, OH, USA": [39.9612, -82.9988],
+    "Ikeja, LA, Nigeria": [6.6018, 3.3515],
+    "Berlin, Germany": [52.52, 13.405],
   };
 
   function normalizeLocation(raw) {
@@ -628,6 +757,361 @@
       .join("");
   }
 
+  /* Location map — city bubbles over the projected world in map-geo.js.
+     The page works without that file; the view then falls back to cards only. */
+
+  const geoData = window.YC_FINTECH_WAVE_MAP_GEO || null;
+  const MAP_MAX_ZOOM = 12;
+  const mapState = { zoom: 1, cx: 0, cy: 0, dragMoved: false };
+  const mapEls = {};
+  let lastLocationEntries = [];
+
+  // Natural Earth I projection — must stay identical to scripts/build-map-geo.mjs,
+  // which bakes the same projection into the land path.
+  function projectCity(lat, lng) {
+    const l = (lng * Math.PI) / 180;
+    const p = (lat * Math.PI) / 180;
+    const p2 = p * p;
+    const p4 = p2 * p2;
+    const x = l * (0.8707 - 0.131979 * p2 + p4 * (-0.013791 + p4 * (0.003971 * p2 - 0.001529 * p4)));
+    const y = p * (1.007226 + p2 * (0.015085 + p4 * (-0.044475 + 0.028874 * p2 - 0.005916 * p4)));
+    return [geoData.cx + geoData.k * x, geoData.cy - geoData.k * y];
+  }
+
+  function graticulePath() {
+    const lines = [];
+    const polyline = (points) =>
+      `M${points.map(([x, y]) => `${x.toFixed(1)} ${y.toFixed(1)}`).join("L")}`;
+    for (let lon = -180; lon <= 180; lon += 30) {
+      const points = [];
+      for (let lat = geoData.latClip; lat <= 84; lat += 2) points.push(projectCity(lat, lon));
+      lines.push(polyline(points));
+    }
+    for (let lat = -40; lat <= 80; lat += 20) {
+      const points = [];
+      for (let lon = -180; lon <= 180; lon += 3) points.push(projectCity(lat, lon));
+      lines.push(polyline(points));
+    }
+    return lines.join("");
+  }
+
+  function buildLocationMap() {
+    if (!geoData || !els.locationMapWrap) return;
+    els.locationMapWrap.hidden = false;
+    els.locationMapWrap.innerHTML = `
+      <svg class="map-svg" viewBox="0 0 ${geoData.width} ${geoData.height}" role="img"
+        aria-label="World map of company locations; bubble area scales with company count">
+        <path class="map-graticule" d="${graticulePath()}" vector-effect="non-scaling-stroke"></path>
+        <path class="map-land" d="${geoData.land}" fill-rule="evenodd" vector-effect="non-scaling-stroke"></path>
+        <g class="map-bubbles" id="mapBubbles" data-hoverable></g>
+        <g class="map-labels" id="mapLabels" aria-hidden="true"></g>
+      </svg>
+      <div class="map-controls">
+        <button type="button" class="map-ctrl" id="mapZoomIn" aria-label="Zoom in">+</button>
+        <button type="button" class="map-ctrl" id="mapZoomOut" aria-label="Zoom out">&minus;</button>
+        <button type="button" class="map-ctrl map-ctrl-reset" id="mapZoomReset" aria-label="Reset map view">&#10227;</button>
+      </div>
+      <div class="map-foot" id="mapFoot"></div>`;
+    mapEls.svg = els.locationMapWrap.querySelector(".map-svg");
+    mapEls.bubbles = document.getElementById("mapBubbles");
+    mapEls.labels = document.getElementById("mapLabels");
+    mapEls.foot = document.getElementById("mapFoot");
+    mapEls.zoomOut = document.getElementById("mapZoomOut");
+    mapEls.zoomReset = document.getElementById("mapZoomReset");
+    // Lock the element's aspect to the viewBox so client px map 1:1 onto
+    // viewBox units (no letterboxing math in clientToMap).
+    mapEls.svg.style.aspectRatio = `${geoData.width} / ${geoData.height}`;
+    mapState.cx = geoData.width / 2;
+    mapState.cy = geoData.height / 2;
+    bindMapEvents();
+    applyMapView();
+  }
+
+  function applyMapView() {
+    const viewW = geoData.width / mapState.zoom;
+    const viewH = geoData.height / mapState.zoom;
+    mapState.cx = Math.min(geoData.width - viewW / 2, Math.max(viewW / 2, mapState.cx));
+    mapState.cy = Math.min(geoData.height - viewH / 2, Math.max(viewH / 2, mapState.cy));
+    mapEls.svg.setAttribute(
+      "viewBox",
+      `${(mapState.cx - viewW / 2).toFixed(2)} ${(mapState.cy - viewH / 2).toFixed(2)} ${viewW.toFixed(2)} ${viewH.toFixed(2)}`,
+    );
+    const zoomed = mapState.zoom > 1.001;
+    els.locationMapWrap.classList.toggle("is-zoomed", zoomed);
+    // While zoomed the drag pans the map, so claim touch gestures; at world
+    // view leave them to the page scroll.
+    mapEls.svg.style.touchAction = zoomed ? "none" : "";
+    mapEls.zoomOut.disabled = !zoomed;
+    mapEls.zoomReset.disabled = !zoomed;
+  }
+
+  function setMapZoom(zoom, focusX, focusY) {
+    const next = Math.min(MAP_MAX_ZOOM, Math.max(1, zoom));
+    if (focusX != null) {
+      const ratio = next === 0 ? 1 : mapState.zoom / next;
+      mapState.cx = focusX - (focusX - mapState.cx) * ratio;
+      mapState.cy = focusY - (focusY - mapState.cy) * ratio;
+    }
+    const changed = next !== mapState.zoom;
+    mapState.zoom = next;
+    applyMapView();
+    if (changed) renderMapMarkers();
+  }
+
+  function clientToMap(event) {
+    const rect = mapEls.svg.getBoundingClientRect();
+    if (!rect.width || !rect.height) return [mapState.cx, mapState.cy];
+    const viewW = geoData.width / mapState.zoom;
+    const viewH = geoData.height / mapState.zoom;
+    return [
+      mapState.cx - viewW / 2 + ((event.clientX - rect.left) / rect.width) * viewW,
+      mapState.cy - viewH / 2 + ((event.clientY - rect.top) / rect.height) * viewH,
+    ];
+  }
+
+  function plottedBubbles() {
+    const plotted = [];
+    lastLocationEntries.forEach(([key, list]) => {
+      const coords = CITY_COORDS[key];
+      if (!coords) return;
+      const [x, y] = projectCity(coords[0], coords[1]);
+      plotted.push({ key, list, x, y, count: list.length });
+    });
+    return plotted; // keeps the by-count ordering of the entries
+  }
+
+  function renderMapMarkers() {
+    if (!mapEls.svg) return;
+    const plotted = plottedBubbles();
+
+    // If a filter change left every bubble outside the zoomed view (e.g. the
+    // user zoomed to the US, then filtered to Africa), snap back to the world.
+    if (mapState.zoom > 1.001 && plotted.length) {
+      const viewW = geoData.width / mapState.zoom;
+      const viewH = geoData.height / mapState.zoom;
+      const anyVisible = plotted.some(
+        (bubble) =>
+          Math.abs(bubble.x - mapState.cx) <= viewW / 2 &&
+          Math.abs(bubble.y - mapState.cy) <= viewH / 2,
+      );
+      if (!anyVisible) {
+        mapState.zoom = 1;
+        applyMapView();
+      }
+    }
+
+    const maxCount = plotted.reduce((max, bubble) => Math.max(max, bubble.count), 1);
+    // On screen, bubbles grow slowly while zooming (zoom^0.45) and stop at
+    // 2.2× their base size (~zoom 5.7), so the cities under a dense cluster
+    // spread apart instead of disappearing beneath one giant circle.
+    const attenuation = Math.pow(mapState.zoom, 0.55);
+    const radius = (count) => {
+      const base = 3 + 23 * Math.sqrt(count / maxCount);
+      return Math.min(base / attenuation, (2.2 * base) / mapState.zoom);
+    };
+
+    mapEls.bubbles.innerHTML = plotted
+      .map(
+        (bubble) =>
+          `<circle class="map-bubble" data-loc-key="${escapeHtml(bubble.key)}" cx="${bubble.x.toFixed(1)}" cy="${bubble.y.toFixed(1)}" r="${radius(bubble.count).toFixed(2)}" vector-effect="non-scaling-stroke"></circle>`,
+      )
+      .join("");
+
+    const labelLimit =
+      mapState.zoom < 1.8 ? 8 : mapState.zoom < 3.2 ? 20 : mapState.zoom < 5.5 ? 48 : plotted.length;
+    const fontSize = 11.5 / Math.pow(mapState.zoom, 0.92);
+    // Greedy collision pass, biggest city first: a label is dropped rather
+    // than drawn over an earlier one (DM Mono advance ≈ 0.62em).
+    const placedLabels = [];
+    mapEls.labels.innerHTML = plotted
+      .slice(0, labelLimit)
+      .map((bubble) => {
+        const title = cityMeta(bubble.key).title;
+        const x = bubble.x + radius(bubble.count) + fontSize * 0.35;
+        const rect = {
+          left: x,
+          right: x + title.length * fontSize * 0.62,
+          top: bubble.y - fontSize * 0.55,
+          bottom: bubble.y + fontSize * 0.55,
+        };
+        const collides = placedLabels.some(
+          (other) =>
+            rect.left < other.right &&
+            rect.right > other.left &&
+            rect.top < other.bottom &&
+            rect.bottom > other.top,
+        );
+        if (collides) return "";
+        placedLabels.push(rect);
+        return `<text class="map-label" x="${x.toFixed(1)}" y="${bubble.y.toFixed(1)}" dy="0.35em" font-size="${fontSize.toFixed(2)}" stroke-width="${(fontSize * 0.3).toFixed(2)}">${escapeHtml(title)}</text>`;
+      })
+      .join("");
+  }
+
+  function renderMapFoot() {
+    if (!mapEls.foot) return;
+    const pills = [];
+    ["__remote__", "__unlisted__"].forEach((key) => {
+      const entry = lastLocationEntries.find(([entryKey]) => entryKey === key);
+      if (!entry) return;
+      pills.push(
+        `<button type="button" class="map-offmap-pill" data-loc-key="${escapeHtml(key)}">${escapeHtml(cityMeta(key).title)} <strong>${entry[1].length}</strong></button>`,
+      );
+    });
+    const missing = lastLocationEntries.filter(
+      ([key]) => !key.startsWith("__") && !CITY_COORDS[key],
+    );
+    if (missing.length) {
+      pills.push(
+        `<span class="map-missing">${missing.length} ${missing.length === 1 ? "place has" : "places have"} no map coordinates yet</span>`,
+      );
+    }
+    mapEls.foot.innerHTML =
+      pills.join("") +
+      '<span class="map-hint">Double-click or ctrl + scroll to zoom &middot; drag to pan</span>';
+  }
+
+  function renderLocationMap(entries) {
+    lastLocationEntries = entries;
+    if (!mapEls.svg) return;
+    renderMapMarkers();
+    renderMapFoot();
+  }
+
+  function jumpToLocationCard(key) {
+    const card = els.locationGrid.querySelector(
+      `.location-card[data-loc-key="${key.replace(/[\\"]/g, "\\$&")}"]`,
+    );
+    if (!card) return;
+    try {
+      const top = card.getBoundingClientRect().top + window.scrollY - railOffset() - 6;
+      window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
+    } catch {
+      /* jsdom and older browsers */
+    }
+    card.classList.remove("is-flash");
+    void card.offsetWidth; // restart the animation when re-clicked
+    card.classList.add("is-flash");
+    card.addEventListener("animationend", () => card.classList.remove("is-flash"), {
+      once: true,
+    });
+  }
+
+  function showCityTooltip(key, event) {
+    const entry = lastLocationEntries.find(([entryKey]) => entryKey === key);
+    if (!entry) return;
+    const meta = cityMeta(key);
+    const list = entry[1];
+    const sample = list
+      .slice(0, 3)
+      .map((company) => company.name)
+      .join(", ");
+    const more = list.length > 3 ? ` +${list.length - 3} more` : "";
+    const subtitle = [meta.subtitle, `${pct(list.length, lastRows.length)} of matching companies`]
+      .filter(Boolean)
+      .join(" · ");
+    els.tooltip.innerHTML = `
+      <div class="tooltip-inner">
+        <div class="tooltip-head">
+          <span class="tooltip-name">${escapeHtml(meta.title)}</span>
+          <span class="tooltip-citycount">${list.length} ${list.length === 1 ? "company" : "companies"}</span>
+        </div>
+        <p class="tooltip-oneliner">${escapeHtml(subtitle)}</p>
+        <p class="tooltip-signals"><strong>Companies</strong> · ${escapeHtml(sample + more)}</p>
+        <p class="tooltip-maphint">Click the bubble for the full city card</p>
+      </div>`;
+    els.tooltip.classList.add("is-visible");
+    positionTooltip(event);
+  }
+
+  function bindMapEvents() {
+    els.locationMapWrap.addEventListener("click", (event) => {
+      const control = event.target.closest(".map-ctrl");
+      if (control) {
+        if (control.id === "mapZoomIn") setMapZoom(mapState.zoom * 1.7);
+        else if (control.id === "mapZoomOut") setMapZoom(mapState.zoom / 1.7);
+        else setMapZoom(1);
+        return;
+      }
+      if (mapState.dragMoved) {
+        mapState.dragMoved = false;
+        return;
+      }
+      const target = event.target.closest("[data-loc-key]");
+      if (target) jumpToLocationCard(target.getAttribute("data-loc-key"));
+    });
+
+    mapEls.svg.addEventListener("mouseover", (event) => {
+      const bubble = event.target.closest(".map-bubble");
+      if (bubble) showCityTooltip(bubble.getAttribute("data-loc-key"), event);
+    });
+    mapEls.svg.addEventListener("mousemove", positionTooltip);
+    mapEls.svg.addEventListener("mouseout", (event) => {
+      if (!event.target.closest(".map-bubble")) return;
+      const next = event.relatedTarget;
+      if (!next || !next.closest || !next.closest(".map-bubble")) hideTooltip();
+    });
+
+    let dragStart = null;
+    mapEls.svg.addEventListener("pointerdown", (event) => {
+      if (mapState.zoom <= 1.001) return;
+      const rect = mapEls.svg.getBoundingClientRect();
+      if (!rect.width) return;
+      dragStart = {
+        x: event.clientX,
+        y: event.clientY,
+        cx: mapState.cx,
+        cy: mapState.cy,
+        scale: geoData.width / mapState.zoom / rect.width,
+      };
+      mapState.dragMoved = false;
+      mapEls.svg.classList.add("is-dragging");
+      if (mapEls.svg.setPointerCapture && event.pointerId !== undefined) {
+        try {
+          mapEls.svg.setPointerCapture(event.pointerId);
+        } catch {
+          /* pointer already released */
+        }
+      }
+      event.preventDefault();
+    });
+    mapEls.svg.addEventListener("pointermove", (event) => {
+      if (!dragStart) return;
+      const dx = event.clientX - dragStart.x;
+      const dy = event.clientY - dragStart.y;
+      if (Math.hypot(dx, dy) > 4) mapState.dragMoved = true;
+      mapState.cx = dragStart.cx - dx * dragStart.scale;
+      mapState.cy = dragStart.cy - dy * dragStart.scale;
+      applyMapView();
+    });
+    ["pointerup", "pointercancel"].forEach((type) =>
+      mapEls.svg.addEventListener(type, () => {
+        dragStart = null;
+        mapEls.svg.classList.remove("is-dragging");
+      }),
+    );
+
+    // Trackpad pinches arrive as ctrl+wheel, so this covers pinch and
+    // ctrl/cmd+scroll without hijacking normal page scrolling.
+    mapEls.svg.addEventListener(
+      "wheel",
+      (event) => {
+        if (!event.ctrlKey && !event.metaKey) return;
+        event.preventDefault();
+        const [focusX, focusY] = clientToMap(event);
+        setMapZoom(mapState.zoom * Math.exp(-event.deltaY * 0.0016), focusX, focusY);
+      },
+      { passive: false },
+    );
+
+    mapEls.svg.addEventListener("dblclick", (event) => {
+      // Bubbles own single-click (jump to card); only open water/land zooms.
+      if (event.target.closest(".map-bubble")) return;
+      const [focusX, focusY] = clientToMap(event);
+      setMapZoom(event.shiftKey ? mapState.zoom / 1.8 : mapState.zoom * 1.8, focusX, focusY);
+    });
+  }
+
   /* Location view */
 
   const expandedLocations = new Set();
@@ -645,6 +1129,7 @@
       (a, b) =>
         b[1].length - a[1].length || cityMeta(a[0]).title.localeCompare(cityMeta(b[0]).title),
     );
+    renderLocationMap(entries);
 
     const placeCount = entries.filter(([key]) => !key.startsWith("__")).length;
     const countries = new Set();
@@ -675,7 +1160,7 @@
               }</button>`
             : "";
         return `
-          <article class="location-card">
+          <article class="location-card" data-loc-key="${escapeHtml(key)}">
             <div class="location-head">
               <h2>${escapeHtml(meta.title)}</h2>
               <span class="location-count">${list.length}</span>
@@ -1331,6 +1816,7 @@
 
   renderChrome();
   renderFilters();
+  buildLocationMap();
   renderViews();
   setView("timeline");
 })();

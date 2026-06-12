@@ -6,6 +6,7 @@ import { dirname, join } from "node:path";
 const dir = join(dirname(fileURLToPath(import.meta.url)), "..", "public", "yc-fintech-wave-map");
 const html = readFileSync(`${dir}/index.html`, "utf8");
 const dataSrc = readFileSync(`${dir}/data.js`, "utf8");
+const geoSrc = readFileSync(`${dir}/map-geo.js`, "utf8");
 const appSrc = readFileSync(`${dir}/app.js`, "utf8");
 
 const dom = new JSDOM(html, {
@@ -17,6 +18,7 @@ const { window } = dom;
 const { document } = window;
 
 window.eval(dataSrc);
+window.eval(geoSrc);
 window.eval(appSrc);
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -228,6 +230,70 @@ check("location mini-card opens drawer", document.getElementById("drawer").class
 check("drawer shows clicked company", document.querySelector("#drawerContent h2").textContent, locMiniName);
 document.dispatchEvent(new window.KeyboardEvent("keydown", { key: "Escape", bubbles: true }));
 check("drawer closed before words checks", document.getElementById("drawer").classList.contains("is-open"), false);
+
+// Location map (map-geo.js + CITY_COORDS)
+const mapWrap = document.getElementById("locationMapWrap");
+check("map wrap unhidden when geo data loads", mapWrap.hidden, false);
+const mapSvg = mapWrap.querySelector("svg.map-svg");
+check("map svg renders", Boolean(mapSvg), true);
+check("land path carries real geometry", (mapWrap.querySelector(".map-land").getAttribute("d") || "").length > 50000, true);
+check("graticule present", Boolean(mapWrap.querySelector(".map-graticule")), true);
+const bubbles = () => Array.from(mapWrap.querySelectorAll(".map-bubble"));
+check("every distinct place gets a bubble (121)", bubbles().length, 121);
+check("no places missing map coordinates", mapWrap.querySelectorAll(".map-missing").length, 0);
+const maxBubble = bubbles().reduce((a, b) => (Number(b.getAttribute("r")) > Number(a.getAttribute("r")) ? b : a));
+check("largest bubble is San Francisco", maxBubble.getAttribute("data-loc-key"), "San Francisco, CA, USA");
+const labels = Array.from(mapWrap.querySelectorAll(".map-label")).map((t) => t.textContent);
+check("top-tier city labels at world zoom", labels.length, 8);
+check("San Francisco labeled", labels.includes("San Francisco"), true);
+const remotePill = mapWrap.querySelector('.map-offmap-pill[data-loc-key="__remote__"]');
+check("remote pill shows distributed count", remotePill && remotePill.textContent.includes("145"), true);
+const unlistedPill = mapWrap.querySelector('.map-offmap-pill[data-loc-key="__unlisted__"]');
+check("unlisted pill shows count", unlistedPill && unlistedPill.textContent.includes("27"), true);
+
+// Bubble hover -> city tooltip
+const sfBubble = bubbles().find((b) => b.getAttribute("data-loc-key") === "San Francisco, CA, USA");
+sfBubble.dispatchEvent(new window.MouseEvent("mouseover", { bubbles: true, clientX: 120, clientY: 120 }));
+check("city tooltip shows on bubble hover", document.getElementById("tooltip").classList.contains("is-visible"), true);
+check("city tooltip names the city", document.querySelector("#tooltip .tooltip-name").textContent, "San Francisco");
+check("city tooltip counts companies", document.querySelector("#tooltip .tooltip-citycount").textContent, "182 companies");
+sfBubble.dispatchEvent(new window.MouseEvent("mouseout", { bubbles: true, relatedTarget: document.body }));
+check("city tooltip hides on leave", document.getElementById("tooltip").classList.contains("is-visible"), false);
+
+// Bubble click -> jumps to (flashes) the matching city card
+sfBubble.dispatchEvent(new window.MouseEvent("click", { bubbles: true }));
+check("bubble click flashes the city card", cardByTitle("San Francisco").classList.contains("is-flash"), true);
+remotePill.dispatchEvent(new window.MouseEvent("click", { bubbles: true }));
+check("remote pill flashes the Remote card", cardByTitle("Remote").classList.contains("is-flash"), true);
+
+// Zoom controls rewrite the viewBox and re-scale bubbles
+const baseViewBox = mapSvg.getAttribute("viewBox");
+const baseRadius = Number(sfBubble.getAttribute("r"));
+check("zoom-out disabled at world view", document.getElementById("mapZoomOut").disabled, true);
+document.getElementById("mapZoomIn").click();
+check("zoom-in narrows the viewBox", mapSvg.getAttribute("viewBox") !== baseViewBox, true);
+check("map marked zoomed", mapWrap.classList.contains("is-zoomed"), true);
+const zoomedRadius = Number(
+  bubbles().find((b) => b.getAttribute("data-loc-key") === "San Francisco, CA, USA").getAttribute("r"),
+);
+check("bubbles counter-scale while zooming", zoomedRadius < baseRadius, true);
+document.getElementById("mapZoomReset").click();
+check("reset restores the world viewBox", mapSvg.getAttribute("viewBox"), baseViewBox);
+check("zoomed class cleared on reset", mapWrap.classList.contains("is-zoomed"), false);
+
+// Region filter narrows the map (Africa cohort spans 16 plottable places
+// once co-located offices like SF and London are counted, plus Remote)
+document.getElementById("regionFilterButton").click();
+const africaMapCb = document.querySelector('#regionFilterMenu input[value="africa"]');
+africaMapCb.checked = true;
+africaMapCb.dispatchEvent(new window.Event("change", { bubbles: true }));
+check("africa filter narrows bubbles", bubbles().length, 16);
+check("africa filter keeps remote pill", Boolean(mapWrap.querySelector('.map-offmap-pill[data-loc-key="__remote__"]')), true);
+check("africa filter drops unlisted pill", mapWrap.querySelector('.map-offmap-pill[data-loc-key="__unlisted__"]'), null);
+const lagosBubble = bubbles().find((b) => b.getAttribute("data-loc-key") === "Lagos, Nigeria");
+check("Lagos bubble present under africa filter", Boolean(lagosBubble), true);
+document.getElementById("clearAll").click();
+check("clearing filters restores 121 bubbles", bubbles().length, 121);
 
 // Words view
 document.querySelector('[data-view="words"]').click();

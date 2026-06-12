@@ -18,11 +18,18 @@ tracks the wave currently in view; click or drag along it to jump between waves.
 
 - **Timeline** — companies grouped by wave, newest wave first.
 - **Category** — one card per theme with per-wave bars and keyword signals.
-- **Location** — one card per city, sorted by company count. YC's location strings are
-  kept verbatim in `data.js`; duplicate spellings ("New York City" vs "New York",
-  "Lagos, LA, Nigeria" vs "LA, Nigeria") are merged at display time by
-  `normalizeLocation()` in `app.js`. Companies with offices in several places appear
-  under each one; distributed teams group under **Remote**.
+- **Location** — a zoomable world map (city bubbles sized by company count) above one
+  card per city, sorted by company count. The land geometry is a Natural Earth
+  projection pre-baked into `map-geo.js`; city dots are projected at runtime from the
+  `CITY_COORDS` table in `app.js`. Hovering a bubble shows the city's count and sample
+  companies; clicking it jumps to the matching city card. Zoom with the on-map
+  controls, double-click, or ctrl/⌘ + scroll, and drag to pan once zoomed — bubble
+  labels reveal progressively (with collision culling) as you zoom. Remote and
+  no-location cohorts appear as pills under the map since they can't be plotted.
+  YC's location strings are kept verbatim in `data.js`; duplicate spellings
+  ("New York City" vs "New York", "Lagos, LA, Nigeria" vs "LA, Nigeria") are merged at
+  display time by `normalizeLocation()` in `app.js`. Companies with offices in several
+  places appear under each one; distributed teams group under **Remote**.
 - **Words** — a tag cloud of recurring terms from YC one-liners and long descriptions.
   Counts are document frequency (each company votes once per word) with English function
   words and generic startup-speak filtered out. Click a word to run it through search and
@@ -70,11 +77,31 @@ console.log(bad+' mismatches');"
 Keep `data.js` verbatim — display normalization (duplicate city spellings, bare state
 codes) belongs in `app.js` (`LOCATION_ALIASES`, `normalizeLocation`).
 
+### World map geometry
+
+`map-geo.js` is a build artifact: world-atlas `land-50m.json` (Natural Earth data,
+public domain) decoded from TopoJSON, Antarctica dropped, antimeridian-wrapping rings
+split, projected with Natural Earth I, Douglas-Peucker simplified, and written as SVG
+path data in viewBox pixels. Regenerate it with:
+
+```bash
+node scripts/build-map-geo.mjs            # downloads land-50m.json from jsdelivr
+node scripts/build-map-geo.mjs local.json # or use a local copy
+```
+
+The file also carries the projection constants (`k`, `cx`, `cy`) that `app.js` uses to
+plot cities, so the projection formula in `projectCity()` must stay identical to the
+one in the build script. New cities only need a `CITY_COORDS` entry in `app.js`
+(lat/lng keyed by normalized location); a missing entry degrades to a note under the
+map, and a missing `map-geo.js` degrades the Location view to cards only.
+
 ## Testing
 
-`scripts/smoke.test.mjs` (repo root) boots this page in jsdom — real `data.js` plus
-`app.js`, no browser needed — and asserts the chrome, all five views, search, filters,
-drawer, sorting, tooltips, the wave rail, and the location/word acceptance counts:
+`scripts/smoke.test.mjs` (repo root) boots this page in jsdom — real `data.js`,
+`map-geo.js`, and `app.js`, no browser needed — and asserts the chrome, all five views,
+search, filters, drawer, sorting, tooltips, the wave rail, the location/word acceptance
+counts, and the location map (bubble counts, labels, city tooltips, zoom controls,
+off-map pills):
 
 ```bash
 npm install --no-save jsdom
