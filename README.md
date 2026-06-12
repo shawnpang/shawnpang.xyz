@@ -83,6 +83,8 @@ app/<slug>/
 
 - `/x` → `/howxworks` (short alias)
 - `/x-algorithm` → `/howxworks` (legacy URL from the intermediate restructure)
+- `/yc-fintech-map` → `/yc-fintech-wave-map/index.html` (short alias)
+- `/yc-fintech-wave-map` → `/yc-fintech-wave-map/index.html` (bare folder path would 404)
 
 ## License
 

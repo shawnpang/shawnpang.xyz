@@ -1,6 +1,7 @@
 # YC Fintech Wave Map
 
-Standalone static map hosted at `/yc-fintech-wave-map/index.html`.
+Standalone static map hosted at `/yc-fintech-wave-map/index.html`, with the short
+alias `/yc-fintech-map` redirecting to it (see `next.config.ts`).
 
 ## Design
 
