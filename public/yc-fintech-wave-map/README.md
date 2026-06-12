@@ -22,18 +22,25 @@ tracks the wave currently in view; click or drag along it to jump between waves.
   card per city, sorted by company count. The land geometry is a Natural Earth
   projection pre-baked into `map-geo.js`; city dots are projected at runtime from the
   `CITY_COORDS` table in `app.js`. Hovering a bubble shows the city's count and sample
-  companies; clicking it jumps to the matching city card. Zoom with the on-map
+  companies; clicking it opens a panel directly under the map listing that city's
+  companies (click any mini-card for the full drawer). Zoom with the on-map
   controls, double-click, or ctrl/⌘ + scroll, and drag to pan once zoomed — bubble
   labels reveal progressively (with collision culling) as you zoom. Remote and
-  no-location cohorts appear as pills under the map since they can't be plotted.
+  no-location cohorts appear as clickable pills under the map since they can't be
+  plotted.
   YC's location strings are kept verbatim in `data.js`; duplicate spellings
   ("New York City" vs "New York", "Lagos, LA, Nigeria" vs "LA, Nigeria") are merged at
   display time by `normalizeLocation()` in `app.js`. Companies with offices in several
   places appear under each one; distributed teams group under **Remote**.
-- **Words** — a tag cloud of recurring terms from YC one-liners and long descriptions.
-  Counts are document frequency (each company votes once per word) with English function
-  words and generic startup-speak filtered out. Click a word to run it through search and
-  narrow every view.
+- **Words** — a tag cloud of signature terms from YC one-liners and long descriptions.
+  Words are scored by distinctiveness, not raw frequency: document-frequency lift of the
+  current cohort over the whole corpus, times how concentrated the word is in a single
+  wave (era peak), damped at low support. Corpus-generic vocabulary ("financial",
+  "platform") scores ~1 on both factors and sinks; era and cohort markers ("agents",
+  "bitcoin", "crowdfunding", "latam") rise. Plurals fold onto corpus singulars so a
+  concept doesn't split its vote; each company still votes once per word, and English
+  function words plus generic startup-speak are filtered out. Click a word to search the
+  whole map with it and list the matching companies right under the cloud.
 - **Table** — sortable spreadsheet (company, year, wave, status, subindustry, location,
   themes).
 

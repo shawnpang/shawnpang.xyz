@@ -260,11 +260,33 @@ check("city tooltip counts companies", document.querySelector("#tooltip .tooltip
 sfBubble.dispatchEvent(new window.MouseEvent("mouseout", { bubbles: true, relatedTarget: document.body }));
 check("city tooltip hides on leave", document.getElementById("tooltip").classList.contains("is-visible"), false);
 
-// Bubble click -> jumps to (flashes) the matching city card
+// Bubble click -> city panel under the map lists that city's companies
+const cityPanel = document.getElementById("mapCityPanel");
+check("city panel hidden before any click", cityPanel.hidden, true);
 sfBubble.dispatchEvent(new window.MouseEvent("click", { bubbles: true }));
-check("bubble click flashes the city card", cardByTitle("San Francisco").classList.contains("is-flash"), true);
+check("bubble click opens the city panel", cityPanel.hidden, false);
+check("city panel names the city", cityPanel.querySelector(".panel-title").textContent, "San Francisco");
+check("city panel counts companies", cityPanel.querySelector(".location-count").textContent, "182");
+check("city panel previews 24 mini-cards", cityPanel.querySelectorAll(".mini-card").length, 24);
+check(
+  "selected bubble is highlighted",
+  bubbles().find((b) => b.getAttribute("data-loc-key") === "San Francisco, CA, USA").classList.contains("is-selected"),
+  true,
+);
+cityPanel.querySelector("[data-panel-expand]").click();
+check("city panel expands to all 182", cityPanel.querySelectorAll(".mini-card").length, 182);
+const panelMini = cityPanel.querySelector(".mini-card");
+const panelMiniName = panelMini.querySelector(".mini-card-name").textContent;
+panelMini.click();
+check("city panel mini-card opens drawer", document.getElementById("drawer").classList.contains("is-open"), true);
+check("drawer shows panel company", document.querySelector("#drawerContent h2").textContent, panelMiniName);
+document.dispatchEvent(new window.KeyboardEvent("keydown", { key: "Escape", bubbles: true }));
 remotePill.dispatchEvent(new window.MouseEvent("click", { bubbles: true }));
-check("remote pill flashes the Remote card", cardByTitle("Remote").classList.contains("is-flash"), true);
+check("remote pill switches the panel to Remote", cityPanel.querySelector(".panel-title").textContent, "Remote");
+check("remote panel counts distributed teams", cityPanel.querySelector(".location-count").textContent, "145");
+cityPanel.querySelector("[data-panel-close]").click();
+check("city panel closes", cityPanel.hidden, true);
+check("no bubble stays selected after close", bubbles().some((b) => b.classList.contains("is-selected")), false);
 
 // Zoom controls rewrite the viewBox and re-scale bubbles
 const baseViewBox = mapSvg.getAttribute("viewBox");
@@ -295,16 +317,34 @@ check("Lagos bubble present under africa filter", Boolean(lagosBubble), true);
 document.getElementById("clearAll").click();
 check("clearing filters restores 121 bubbles", bubbles().length, 121);
 
-// Words view
+// Words view — distinctiveness-scored cloud (lift × era peak, not raw counts)
 document.querySelector('[data-view="words"]').click();
 check("words tab activates panel", document.getElementById("wordsView").classList.contains("is-active"), true);
 const chips = Array.from(document.querySelectorAll(".word-chip"));
 check("cloud renders at least 20 words", chips.length >= 20, true);
 const cloudWords = chips.map((chip) => chip.dataset.word);
+console.log(`INFO  top words: ${cloudWords.slice(0, 12).join(", ")}`);
 check("no function-word stopwords in cloud", ["the", "and", "for", "with", "from"].some((word) => cloudWords.includes(word)), false);
 check("no pure numbers in cloud", cloudWords.some((word) => /^\d+$/.test(word)), false);
-check("domain words surface", ["payments", "financial", "banking"].every((word) => cloudWords.includes(word)), true);
+check("no url artifacts in cloud", ["com", "www"].some((word) => cloudWords.includes(word)), false);
+check("era markers surface", ["mobile", "agent", "bitcoin", "ai-native"].every((word) => cloudWords.includes(word)), true);
+check(
+  "corpus-generic words stay out of the top 8",
+  ["financial", "payment", "platform", "bank"].some((word) => cloudWords.slice(0, 8).includes(word)),
+  false,
+);
+check(
+  "plurals fold into a single chip",
+  cloudWords.filter((word) => word === "payment" || word === "payments").length <= 1,
+  true,
+);
+const paymentChip = chips.find((chip) => chip.dataset.word === "payment");
+check("folded chip displays the common surface form", paymentChip && paymentChip.textContent.startsWith("payments"), true);
 check("top words are emphasized", document.querySelectorAll(".word-chip.is-top").length, 8);
+
+// Word drill-down panel
+const wordPanel = document.getElementById("wordCompanies");
+check("word panel hidden before any click", wordPanel.hidden, true);
 const drillChip = chips[0];
 const drillWord = drillChip.dataset.word;
 const drillFreq = Number(drillChip.querySelector(".word-freq").textContent);
@@ -313,8 +353,23 @@ check("word click fills the search box", document.getElementById("searchInput").
 const drillCount = Number(document.getElementById("resultCount").textContent.trim().split(" ")[0]);
 console.log(`INFO  word "${drillWord}" (doc freq ${drillFreq}) -> ${drillCount} companies`);
 check("word click narrows results", drillCount >= drillFreq && drillCount < 666, true);
-document.getElementById("clearAll").click();
-check("clear after word drill-down restores 666", document.getElementById("resultCount").textContent.trim(), "666 companies shown");
+check("word panel opens on click", wordPanel.hidden, false);
+check("word panel counts the matches", Number(wordPanel.querySelector(".location-count").textContent), drillCount);
+check("word panel previews capped mini-cards", wordPanel.querySelectorAll(".mini-card").length, Math.min(drillCount, 24));
+if (drillCount > 24) {
+  wordPanel.querySelector("[data-panel-expand]").click();
+  check("word panel expands to every match", wordPanel.querySelectorAll(".mini-card").length, drillCount);
+}
+const wordMini = wordPanel.querySelector(".mini-card");
+const wordMiniName = wordMini.querySelector(".mini-card-name").textContent;
+wordMini.click();
+check("word panel mini-card opens drawer", document.getElementById("drawer").classList.contains("is-open"), true);
+check("drawer shows word panel company", document.querySelector("#drawerContent h2").textContent, wordMiniName);
+document.dispatchEvent(new window.KeyboardEvent("keydown", { key: "Escape", bubbles: true }));
+wordPanel.querySelector("[data-panel-close]").click();
+check("word panel close clears the search", document.getElementById("searchInput").value, "");
+check("word panel hidden after close", wordPanel.hidden, true);
+check("word panel close restores 666", document.getElementById("resultCount").textContent.trim(), "666 companies shown");
 
 console.log(failures ? `\n${failures} FAILURES` : "\nALL CHECKS PASSED");
 process.exit(failures ? 1 : 0);

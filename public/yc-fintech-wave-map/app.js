@@ -19,10 +19,12 @@
       spreadsheet: document.getElementById("spreadsheetView"),
     },
     locationMapWrap: document.getElementById("locationMapWrap"),
+    mapCityPanel: document.getElementById("mapCityPanel"),
     locationNote: document.getElementById("locationNote"),
     locationGrid: document.getElementById("locationGrid"),
     wordsNote: document.getElementById("wordsNote"),
     wordCloud: document.getElementById("wordCloud"),
+    wordCompanies: document.getElementById("wordCompanies"),
     searchInput: document.getElementById("searchInput"),
     filters: Array.from(document.querySelectorAll(".filter")),
     filterButtons: {
@@ -913,7 +915,7 @@
     mapEls.bubbles.innerHTML = plotted
       .map(
         (bubble) =>
-          `<circle class="map-bubble" data-loc-key="${escapeHtml(bubble.key)}" cx="${bubble.x.toFixed(1)}" cy="${bubble.y.toFixed(1)}" r="${radius(bubble.count).toFixed(2)}" vector-effect="non-scaling-stroke"></circle>`,
+          `<circle class="map-bubble${bubble.key === selectedCityKey ? " is-selected" : ""}" data-loc-key="${escapeHtml(bubble.key)}" cx="${bubble.x.toFixed(1)}" cy="${bubble.y.toFixed(1)}" r="${radius(bubble.count).toFixed(2)}" vector-effect="non-scaling-stroke"></circle>`,
       )
       .join("");
 
@@ -976,25 +978,70 @@
     if (!mapEls.svg) return;
     renderMapMarkers();
     renderMapFoot();
+    renderCityPanel();
   }
 
-  function jumpToLocationCard(key) {
-    const card = els.locationGrid.querySelector(
-      `.location-card[data-loc-key="${key.replace(/[\\"]/g, "\\$&")}"]`,
-    );
-    if (!card) return;
+  /* City panel — clicking a bubble (or an off-map pill) lists that city's
+     companies directly under the map instead of making the user hunt for
+     the matching card in the grid below. */
+
+  let selectedCityKey = null;
+  let cityPanelExpanded = false;
+  const PANEL_PREVIEW = 24;
+
+  function panelCardsHtml(list, expanded) {
+    const shown = expanded ? list : list.slice(0, PANEL_PREVIEW);
+    const toggle =
+      list.length > PANEL_PREVIEW
+        ? `<button type="button" class="location-more" data-panel-expand>${
+            expanded ? "Show fewer" : `Show all ${list.length}`
+          }</button>`
+        : "";
+    return `<div class="location-companies" data-hoverable>${shown.map(miniCardHtml).join("")}</div>${toggle}`;
+  }
+
+  function revealPanel(panel) {
     try {
-      const top = card.getBoundingClientRect().top + window.scrollY - railOffset() - 6;
-      window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
+      panel.scrollIntoView({ behavior: "smooth", block: "nearest" });
     } catch {
       /* jsdom and older browsers */
     }
-    card.classList.remove("is-flash");
-    void card.offsetWidth; // restart the animation when re-clicked
-    card.classList.add("is-flash");
-    card.addEventListener("animationend", () => card.classList.remove("is-flash"), {
-      once: true,
-    });
+  }
+
+  function renderCityPanel() {
+    if (!els.mapCityPanel) return;
+    const entry = selectedCityKey
+      ? lastLocationEntries.find(([key]) => key === selectedCityKey)
+      : null;
+    if (!entry) {
+      selectedCityKey = null; // the filters may have dropped the city
+      els.mapCityPanel.hidden = true;
+      els.mapCityPanel.innerHTML = "";
+      return;
+    }
+    const meta = cityMeta(selectedCityKey);
+    const list = entry[1];
+    els.mapCityPanel.hidden = false;
+    els.mapCityPanel.innerHTML = `
+      <div class="panel-head">
+        <h2 class="panel-title">${escapeHtml(meta.title)}</h2>
+        <span class="location-count">${list.length}</span>
+        <button type="button" class="panel-close" data-panel-close aria-label="Close ${escapeHtml(meta.title)} list">✕</button>
+      </div>
+      <p class="panel-sub">${escapeHtml(meta.subtitle || "")}${meta.subtitle ? " · " : ""}${list.length === 1 ? "1 company" : `${list.length} companies`} across the current filters.</p>
+      ${panelCardsHtml(list, cityPanelExpanded)}`;
+  }
+
+  function selectCity(key) {
+    if (selectedCityKey === key) {
+      selectedCityKey = null;
+    } else {
+      selectedCityKey = key;
+      cityPanelExpanded = false;
+    }
+    renderMapMarkers();
+    renderCityPanel();
+    if (selectedCityKey) revealPanel(els.mapCityPanel);
   }
 
   function showCityTooltip(key, event) {
@@ -1018,7 +1065,7 @@
         </div>
         <p class="tooltip-oneliner">${escapeHtml(subtitle)}</p>
         <p class="tooltip-signals"><strong>Companies</strong> · ${escapeHtml(sample + more)}</p>
-        <p class="tooltip-maphint">Click the bubble for the full city card</p>
+        <p class="tooltip-maphint">Click the bubble to list its companies below the map</p>
       </div>`;
     els.tooltip.classList.add("is-visible");
     positionTooltip(event);
@@ -1038,7 +1085,18 @@
         return;
       }
       const target = event.target.closest("[data-loc-key]");
-      if (target) jumpToLocationCard(target.getAttribute("data-loc-key"));
+      if (target) selectCity(target.getAttribute("data-loc-key"));
+    });
+
+    els.mapCityPanel.addEventListener("click", (event) => {
+      if (event.target.closest("[data-panel-close]")) {
+        selectCity(selectedCityKey);
+        return;
+      }
+      if (event.target.closest("[data-panel-expand]")) {
+        cityPanelExpanded = !cityPanelExpanded;
+        renderCityPanel();
+      }
     });
 
     mapEls.svg.addEventListener("mouseover", (event) => {
@@ -1184,7 +1242,7 @@
       "could should shall may might must being been because both each few more most other " +
       "others some such only own same very too also just into onto over under about above " +
       "below between through during before after again against all any once here from " +
-      "across does did " +
+      "across does did com www http https " +
       "doing done don't doesn't isn't aren't wasn't weren't won't can't couldn't wouldn't " +
       "shouldn't it's we're they're you're that's what's there's here's let's i'm we've " +
       "you've they've we'll you'll they'll via per etc and/or one two three " +
@@ -1200,47 +1258,142 @@
     ).split(/\s+/),
   );
 
-  function renderWords(rows) {
-    const counts = new Map();
-    rows.forEach((company) => {
+  /* Words are scored by distinctiveness, not raw frequency: how over-
+     represented a word is among the matching companies vs all of YC fintech
+     (lift) times how concentrated it is in a single wave (era peak). Corpus-
+     generic vocabulary ("financial", "platform") scores ~1 on both and sinks;
+     era and cohort markers ("agents", "bitcoin", "crowdfunding") rise. */
+
+  const wordStats = (() => {
+    // Doc frequency: each company votes once per word, so one verbose
+    // description can't dominate the cloud.
+    const rawSets = companies.map((company) => {
       const text = `${company.oneLiner || ""} ${company.longDescription || ""}`.toLowerCase();
       const seen = new Set();
-      (text.match(/[a-z0-9'-]+/g) || []).forEach((raw) => {
-        const word = raw.replace(/^['-]+|['-]+$/g, "");
+      (text.match(/[a-z0-9'-]+/g) || []).forEach((token) => {
+        const word = token.replace(/^['-]+|['-]+$/g, "");
         if (word.length < 3) return;
         if (/^\d+$/.test(word)) return;
         if (STOPWORDS.has(word)) return;
         seen.add(word);
       });
-      // Doc frequency: each company votes once per word, so one verbose
-      // description can't dominate the cloud.
-      seen.forEach((word) => counts.set(word, (counts.get(word) || 0) + 1));
+      return seen;
+    });
+    const surfaceDf = new Map();
+    rawSets.forEach((set) =>
+      set.forEach((word) => surfaceDf.set(word, (surfaceDf.get(word) || 0) + 1)),
+    );
+    // Fold plurals onto singulars that exist in the corpus ("payments" ->
+    // "payment") so a concept doesn't split its vote across two chips.
+    const fold = (word) =>
+      word.length >= 5 && word.endsWith("s") && !word.endsWith("ss") && surfaceDf.has(word.slice(0, -1))
+        ? word.slice(0, -1)
+        : word;
+    const df = new Map();
+    companies.forEach((company, index) => {
+      const folded = new Set();
+      rawSets[index].forEach((word) => folded.add(fold(word)));
+      company._words = folded;
+      folded.forEach((word) => df.set(word, (df.get(word) || 0) + 1));
+    });
+    // Chips display whichever surface form is more common in the corpus,
+    // while data-word keeps the folded key (a substring of both forms, so
+    // clicking it search-matches companies that use either).
+    const display = new Map();
+    df.forEach((count, word) => {
+      const plural = `${word}s`;
+      display.set(word, (surfaceDf.get(plural) || 0) > (surfaceDf.get(word) || 0) ? plural : word);
+    });
+    return { df, display };
+  })();
+
+  function renderWords(rows) {
+    const total = companies.length;
+    const cohortSize = rows.length;
+    const df = new Map();
+    const waveDf = new Map();
+    const waveSizes = new Map();
+    rows.forEach((company) => {
+      waveSizes.set(company.wave, (waveSizes.get(company.wave) || 0) + 1);
+      company._words.forEach((word) => {
+        df.set(word, (df.get(word) || 0) + 1);
+        let perWave = waveDf.get(word);
+        if (!perWave) waveDf.set(word, (perWave = new Map()));
+        perWave.set(company.wave, (perWave.get(company.wave) || 0) + 1);
+      });
     });
 
-    const top = Array.from(counts.entries())
-      .filter(([, count]) => count >= 2)
-      .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    const scored = [];
+    df.forEach((count, word) => {
+      if (count < 2) return;
+      const lift =
+        ((count + 0.5) / (cohortSize + 1)) /
+        (((wordStats.df.get(word) || count) + 0.5) / (total + 1));
+      let peak = 1;
+      waveDf.get(word).forEach((waveCount, waveId) => {
+        const expected = count * (waveSizes.get(waveId) / cohortSize);
+        const ratio = (waveCount + 0.5) / (expected + 0.5);
+        if (ratio > peak) peak = ratio;
+      });
+      // Damp low-support spikes so two lucky mentions can't outrank real terms.
+      const support = Math.min(1, count / 8);
+      const oddity = 1 + (lift * peak - 1) * support;
+      scored.push({ word, count, lift, score: Math.sqrt(count) * Math.pow(Math.log2(1 + oddity), 2) });
+    });
+
+    const top = scored
+      .sort((a, b) => b.score - a.score || a.word.localeCompare(b.word))
       .slice(0, 60);
 
     if (!top.length) {
       els.wordsNote.textContent = "";
       els.wordCloud.innerHTML = `<div class="cloud-empty">No recurring words for these filters.</div>`;
+      renderWordPanel(rows);
       return;
     }
 
     els.wordsNote.textContent =
-      `Top ${top.length} terms across ${rows.length} YC company descriptions, ` +
-      "sized by how many companies use each one — click a word to search the map.";
+      `Top ${top.length} signature terms across ${rows.length} YC company descriptions — ` +
+      "sized by how distinctive a word is for this cohort and its era, not just how often " +
+      "it appears. Click a word to see the matching companies.";
 
-    const max = top[0][1];
+    const maxScore = top[0].score;
     els.wordCloud.innerHTML = top
-      .map(([word, count], index) => {
-        const size = (13 + Math.sqrt(count / max) * 23).toFixed(1);
+      .map(({ word, count, lift, score }, index) => {
+        const size = (13 + Math.sqrt(score / maxScore) * 23).toFixed(1);
         const isTop = index < 8;
-        const opacity = isTop ? 1 : (0.45 + (count / max) * 0.55).toFixed(2);
-        return `<button type="button" class="word-chip${isTop ? " is-top" : ""}" data-word="${escapeHtml(word)}" style="font-size:${size}px;--word-opacity:${opacity}">${escapeHtml(word)}<sup class="word-freq">${count}</sup></button>`;
+        const opacity = isTop ? 1 : (0.45 + (score / maxScore) * 0.55).toFixed(2);
+        const surface = wordStats.display.get(word) || word;
+        const title = `${count} of ${rows.length} matching ${count === 1 ? "company" : "companies"} · ${lift.toFixed(1)}× the all-YC rate`;
+        return `<button type="button" class="word-chip${isTop ? " is-top" : ""}" data-word="${escapeHtml(word)}" title="${escapeHtml(title)}" style="font-size:${size}px;--word-opacity:${opacity}">${escapeHtml(surface)}<sup class="word-freq">${count}</sup></button>`;
       })
       .join("");
+    renderWordPanel(rows);
+  }
+
+  /* Word panel — clicking a chip lists the matching companies right under
+     the cloud (the chip also fills the search box, narrowing every view). */
+
+  let selectedWord = null;
+  let wordPanelExpanded = false;
+
+  function renderWordPanel(rows) {
+    if (!els.wordCompanies) return;
+    if (!selectedWord || state.search.trim().toLowerCase() !== selectedWord) {
+      els.wordCompanies.hidden = true;
+      els.wordCompanies.innerHTML = "";
+      return;
+    }
+    const surface = wordStats.display.get(selectedWord) || selectedWord;
+    els.wordCompanies.hidden = false;
+    els.wordCompanies.innerHTML = `
+      <div class="panel-head">
+        <h2 class="panel-title">“${escapeHtml(surface)}”</h2>
+        <span class="location-count">${rows.length}</span>
+        <button type="button" class="panel-close" data-panel-close aria-label="Clear the word filter">✕</button>
+      </div>
+      <p class="panel-sub">${rows.length === 1 ? "1 company matches" : `${rows.length} companies match`} “${escapeHtml(selectedWord)}” — the same filter is applied to every view.</p>
+      ${panelCardsHtml(rows, wordPanelExpanded)}`;
   }
 
   /* Table view */
@@ -1612,6 +1765,7 @@
     clearTimeout(searchTimer);
     searchTimer = setTimeout(() => {
       state.search = value;
+      if (value.trim().toLowerCase() !== selectedWord) selectedWord = null;
       renderViews();
     }, 120);
   });
@@ -1672,6 +1826,7 @@
     state.regions = [];
     state.statuses = [];
     state.search = "";
+    selectedWord = null;
     els.searchInput.value = "";
     renderFilters();
     renderViews();
@@ -1695,7 +1850,14 @@
     return el ? byId[el.dataset.companyId] : null;
   }
 
-  [els.timeline, els.categoryGrid, els.locationGrid, els.tableBody].forEach((container) => {
+  [
+    els.timeline,
+    els.categoryGrid,
+    els.locationGrid,
+    els.tableBody,
+    els.mapCityPanel,
+    els.wordCompanies,
+  ].forEach((container) => {
     container.addEventListener("click", (event) => {
       const company = companyFromEvent(event);
       if (company) openDrawer(company.id);
@@ -1717,12 +1879,29 @@
   els.wordCloud.addEventListener("click", (event) => {
     const chip = event.target.closest("[data-word]");
     if (!chip) return;
+    selectedWord = chip.dataset.word;
+    wordPanelExpanded = false;
     state.search = chip.dataset.word;
     els.searchInput.value = chip.dataset.word;
     renderViews();
+    revealPanel(els.wordCompanies);
   });
 
-  [els.timeline, els.categoryGrid, els.locationGrid].forEach((container) => {
+  els.wordCompanies.addEventListener("click", (event) => {
+    if (event.target.closest("[data-panel-close]")) {
+      selectedWord = null;
+      state.search = "";
+      els.searchInput.value = "";
+      renderViews();
+      return;
+    }
+    if (event.target.closest("[data-panel-expand]")) {
+      wordPanelExpanded = !wordPanelExpanded;
+      renderWordPanel(lastRows);
+    }
+  });
+
+  [els.timeline, els.categoryGrid, els.locationGrid, els.mapCityPanel, els.wordCompanies].forEach((container) => {
     container.addEventListener("mouseover", (event) => {
       const company = companyFromEvent(event);
       if (company) showTooltip(company, event);
