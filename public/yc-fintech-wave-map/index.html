@@ -4,103 +4,163 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>YC Fintech Wave Map</title>
+    <meta
+      name="description"
+      content="Every Y Combinator fintech, payments, and stablecoin startup, mapped across five waves — from payment rails to AI-native finance."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Mono:wght@400;500&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="app-shell">
-      <header class="topbar">
-        <div>
-          <p class="eyebrow">YC fintech and payments</p>
-          <h1>Wave comparison map</h1>
+    <header class="hero">
+      <span class="bracket bracket-tl" aria-hidden="true"></span>
+      <span class="bracket bracket-br" aria-hidden="true"></span>
+      <div class="hero-inner">
+        <div class="hero-top">
+          <img class="brand-wordmark" src="./assets/allscale-wordmark.png" alt="AllScale" />
+          <div class="meta-pills">
+            <span class="meta-pill" id="companyCountPill">666 companies</span>
+            <span class="meta-pill">YC status only</span>
+            <span class="meta-pill" id="updatedPill">Updated 2026-06-11</span>
+          </div>
         </div>
-        <div class="meta-strip" id="metaStrip"></div>
-      </header>
+        <p class="eyebrow">YC Fintech &middot; Payments &middot; Stablecoins</p>
+        <h1>Five waves of fintech, from payment rails to AI&#8209;native finance.</h1>
+        <p class="hero-lede">
+          Every Y&nbsp;Combinator fintech, payments, and stablecoin startup, mapped across two
+          decades of the financial stack being rebuilt &mdash; and the wave now rewriting it with
+          AI. Open any company for the full picture, or filter the map below.
+        </p>
+        <div class="wave-spine as-scroll" id="waveSpine"></div>
+      </div>
+    </header>
 
-      <section class="controls" aria-label="Filters and view controls">
-        <div class="segmented" role="tablist" aria-label="Views">
+    <section class="controls" aria-label="Filters and view controls">
+      <div class="controls-inner">
+        <div class="view-tabs" role="tablist" aria-label="Views">
           <button class="view-tab is-active" type="button" data-view="timeline" role="tab" aria-selected="true">Timeline</button>
           <button class="view-tab" type="button" data-view="category" role="tab" aria-selected="false">Category</button>
-          <button class="view-tab" type="button" data-view="spreadsheet" role="tab" aria-selected="false">Spreadsheet</button>
+          <button class="view-tab" type="button" data-view="spreadsheet" role="tab" aria-selected="false">Table</button>
         </div>
+
         <label class="search">
-          <span>Search</span>
-          <input id="searchInput" type="search" placeholder="Company, keyword, tag, market..." autocomplete="off" />
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" stroke="#83968F" stroke-width="2"></circle>
+            <path d="M20 20l-3.2-3.2" stroke="#83968F" stroke-width="2" stroke-linecap="round"></path>
+          </svg>
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Search company, founder, market, keyword&hellip;"
+            autocomplete="off"
+            aria-label="Search companies"
+          />
         </label>
-        <div class="multi-filter" data-filter="wave">
-          <span class="filter-label">Wave</span>
+
+        <div class="filter" data-filter="wave">
           <button class="filter-button" id="waveFilterButton" type="button" aria-expanded="false" aria-controls="waveFilterMenu">
-            <span id="waveFilterValue">All waves</span>
+            <span class="filter-value" id="waveFilterValue">All waves</span>
             <span class="chevron" aria-hidden="true"></span>
           </button>
-          <div class="filter-menu" id="waveFilterMenu" role="group" aria-label="Wave filter"></div>
+          <div class="filter-menu" id="waveFilterMenu" role="group" aria-label="Wave filter" hidden></div>
         </div>
-        <div class="multi-filter" data-filter="theme">
-          <span class="filter-label">Theme</span>
+
+        <div class="filter" data-filter="theme">
           <button class="filter-button" id="themeFilterButton" type="button" aria-expanded="false" aria-controls="themeFilterMenu">
-            <span id="themeFilterValue">All themes</span>
+            <span class="filter-value" id="themeFilterValue">All themes</span>
             <span class="chevron" aria-hidden="true"></span>
           </button>
-          <div class="filter-menu" id="themeFilterMenu" role="group" aria-label="Theme filter"></div>
+          <div class="filter-menu filter-menu-theme" id="themeFilterMenu" role="group" aria-label="Theme filter" hidden></div>
         </div>
-        <div class="multi-filter" data-filter="status">
-          <span class="filter-label">Status</span>
-          <button class="filter-button" id="statusFilterButton" type="button" aria-expanded="false" aria-controls="statusFilterMenu">
-            <span id="statusFilterValue">All statuses</span>
+
+        <div class="filter" data-filter="status">
+          <button class="filter-button filter-button-status" id="statusFilterButton" type="button" aria-expanded="false" aria-controls="statusFilterMenu">
+            <span class="filter-value" id="statusFilterValue">All statuses</span>
             <span class="chevron" aria-hidden="true"></span>
           </button>
-          <div class="filter-menu" id="statusFilterMenu" role="group" aria-label="Status filter"></div>
+          <div class="filter-menu filter-menu-status" id="statusFilterMenu" role="group" aria-label="Status filter" hidden></div>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <div class="state-panel" id="statePanel" hidden>
+        <div class="state-error">
+          <div class="state-error-icon" aria-hidden="true">!</div>
+          <p class="state-error-title">Could not load the dataset.</p>
+          <p class="state-error-hint">The dataset script failed to load. Check your connection, then reload the page.</p>
+        </div>
+      </div>
+
+      <section class="summary-band" id="summaryBand" aria-label="Dataset summary"></section>
+
+      <div class="result-row">
+        <span class="result-count" id="resultCount"></span>
+        <button class="clear-all" id="clearAll" type="button" hidden>Clear filters &#10005;</button>
+      </div>
+
+      <section class="view-panel is-active" id="timelineView" aria-label="Timeline view">
+        <div class="timeline" id="timeline"></div>
+      </section>
+
+      <section class="view-panel" id="categoryView" aria-label="Category view">
+        <div class="category-grid" id="categoryGrid"></div>
+      </section>
+
+      <section class="view-panel" id="spreadsheetView" aria-label="Table view">
+        <div class="table-wrap as-scroll">
+          <table id="companyTable">
+            <thead>
+              <tr>
+                <th data-sort="name">Company <span class="sort-arrow"></span></th>
+                <th data-sort="year">Year <span class="sort-arrow"></span></th>
+                <th data-sort="waveLabel">Wave <span class="sort-arrow"></span></th>
+                <th data-sort="status">Status <span class="sort-arrow"></span></th>
+                <th data-sort="subindustry">Subindustry <span class="sort-arrow"></span></th>
+                <th data-sort="themesText">Themes <span class="sort-arrow"></span></th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <div class="table-empty" id="tableEmpty" hidden>No companies match these filters.</div>
         </div>
       </section>
 
-      <main>
-        <section class="summary-band" id="summaryBand" aria-label="Dataset summary"></section>
-
-        <section class="view-panel is-active" id="timelineView" aria-label="Timeline view">
-          <div class="timeline" id="timeline"></div>
-        </section>
-
-        <section class="view-panel" id="categoryView" aria-label="Category view">
-          <div class="category-grid" id="categoryGrid"></div>
-        </section>
-
-        <section class="view-panel" id="spreadsheetView" aria-label="Spreadsheet view">
-          <div class="table-wrap">
-            <table id="companyTable">
-              <thead>
-                <tr>
-                  <th data-sort="name">Company</th>
-                  <th data-sort="year">Year</th>
-                  <th data-sort="waveLabel">Wave</th>
-                  <th data-sort="status">Status</th>
-                  <th data-sort="subindustry">Subindustry</th>
-                  <th data-sort="themesText">Themes</th>
-                </tr>
-              </thead>
-              <tbody></tbody>
-            </table>
-          </div>
-        </section>
-      </main>
-
       <footer class="site-footer">
-        <div class="footer-credit">
-          <strong>Built by Shawn Pang from <a href="https://allscale.io" target="_blank" rel="noreferrer">AllScale</a>.</strong>
-          <span>
+        <div class="footer-brand">
+          <img class="footer-wordmark" src="./assets/allscale-wordmark.png" alt="AllScale" />
+          <p class="footer-credit">
+            Built by <strong>Shawn Pang</strong> at
+            <a href="https://allscale.io" target="_blank" rel="noreferrer">AllScale</a>.
+          </p>
+          <div class="footer-social">
             <a href="https://x.com/0xshawnpang" target="_blank" rel="noreferrer">X</a>
             <a href="https://www.linkedin.com/in/shawnshunxinpang/" target="_blank" rel="noreferrer">LinkedIn</a>
-          </span>
+          </div>
         </div>
-        <div class="footer-source" id="footerSource"></div>
+        <p class="footer-source">
+          Source: YC public company data from
+          <a href="https://yc-oss.github.io/api/companies/all.json" target="_blank" rel="noreferrer">yc-oss companies/all.json</a>
+          and
+          <a href="https://yc-oss.github.io/api/meta.json" target="_blank" rel="noreferrer">meta.json</a>.
+          YC API last updated <span class="footer-updated" id="footerUpdated">2026-06-11</span>.
+          Founder LinkedIn / X links are parsed only from public YC directory pages; no social
+          profiles are inferred.
+        </p>
       </footer>
-    </div>
+    </main>
 
     <div class="tooltip" id="tooltip" role="status" aria-live="polite"></div>
 
-    <aside class="drawer" id="drawer" aria-hidden="true">
-      <button class="drawer-close" type="button" id="drawerClose" aria-label="Close details">x</button>
+    <div class="scrim" id="scrim"></div>
+    <aside class="drawer as-scroll" id="drawer" aria-hidden="true">
       <div id="drawerContent"></div>
     </aside>
-    <div class="scrim" id="scrim"></div>
 
     <script src="./data.js"></script>
     <script src="./app.js"></script>

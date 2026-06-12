@@ -20,6 +20,17 @@ export type SiteItem = {
 
 export const siteItems: SiteItem[] = [
   {
+    title: "YC Fintech Wave Map",
+    href: "/yc-fintech-wave-map/index.html",
+    kind: "data-map",
+    status: "Live",
+    date: "June 2026",
+    description:
+      "All 666 YC fintech, payments, and stablecoin companies mapped across five waves, from payment rails to AI-native finance.",
+    tags: ["fintech", "YC", "stablecoins"],
+    featured: true,
+  },
+  {
     title: "North America Fintech VC Map",
     href: "/fintechvcmaps",
     kind: "data-map",

@@ -2,6 +2,14 @@
 
 Standalone static map hosted at `/yc-fintech-wave-map/index.html`.
 
+## Design
+
+AllScale-branded interface: Archivo for UI, DM Mono for data, Playfair Display for the
+narrative headline, with green `#009859` as the only accent on warm gray-green neutrals.
+The hero frames the five waves with the corner-bracket logo motif and a non-interactive
+wave spine; filtering lives entirely in the sticky controls bar (Timeline / Category /
+Table views, search, and multi-select wave/theme/status filters).
+
 ## Source Data
 
 The map is generated from the clean YC fintech/payments/stablecoin company dataset and enriched with public YC directory data.

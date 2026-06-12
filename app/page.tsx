@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 import { siteItems, type SiteItem, type SiteItemKind } from "./_content/siteItems";
 
 const sections: { title: string; kinds: SiteItemKind[] }[] = [
@@ -20,6 +21,31 @@ function metaForItem(item: SiteItem) {
   return item.status === "Live" ? item.date : item.status;
 }
 
+// Static pages in public/ are served outside the app router, so plain anchors
+// avoid a pointless client-side navigation attempt.
+function ItemLink({
+  href,
+  className,
+  children,
+}: {
+  href: string;
+  className?: string;
+  children: ReactNode;
+}) {
+  if (href.endsWith(".html")) {
+    return (
+      <a className={className} href={href}>
+        {children}
+      </a>
+    );
+  }
+  return (
+    <Link className={className} href={href}>
+      {children}
+    </Link>
+  );
+}
+
 function ItemList({ items }: { items: SiteItem[] }) {
   if (items.length === 0) {
     return <p className="home-empty">More soon.</p>;
@@ -29,13 +55,13 @@ function ItemList({ items }: { items: SiteItem[] }) {
     <ul className="home-list">
       {items.map((item) => (
         <li key={item.href}>
-          <Link href={item.href}>
+          <ItemLink href={item.href}>
             <span className="home-list-main">
               <span className="home-list-title">{item.title}</span>
               <span className="home-list-desc">{item.description}</span>
             </span>
             <span className="home-list-meta">{metaForItem(item)}</span>
-          </Link>
+          </ItemLink>
         </li>
       ))}
     </ul>
@@ -52,7 +78,7 @@ function FeaturedItems({ items }: { items: SiteItem[] }) {
       <h2 className="home-section-title">Featured</h2>
       <div className="home-feature-grid">
         {items.map((item) => (
-          <Link className="home-feature-card" href={item.href} key={item.href}>
+          <ItemLink className="home-feature-card" href={item.href} key={item.href}>
             <span className="home-feature-kicker">
               {kindLabels[item.kind]} - {item.status} - {item.date}
             </span>
@@ -63,7 +89,7 @@ function FeaturedItems({ items }: { items: SiteItem[] }) {
                 <span key={tag}>{tag}</span>
               ))}
             </span>
-          </Link>
+          </ItemLink>
         ))}
       </div>
     </section>
