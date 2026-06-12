@@ -33,6 +33,8 @@
       theme: document.getElementById("themeFilterValue"),
       status: document.getElementById("statusFilterValue"),
     },
+    controls: document.querySelector(".controls"),
+    waveRail: document.getElementById("waveRail"),
     timeline: document.getElementById("timeline"),
     categoryGrid: document.getElementById("categoryGrid"),
     tableBody: document.querySelector("#companyTable tbody"),
@@ -356,7 +358,7 @@
           ? waveRows.map(companyCardHtml).join("")
           : `<div class="cloud-empty">No companies match these filters in this wave.</div>`;
         return `
-          <article class="wave-block">
+          <article class="wave-block" data-wave-id="${escapeHtml(wave.id)}">
             <div class="wave-head">
               <span class="wave-head-label">${escapeHtml(wave.label)}</span>
               <h2>${escapeHtml(wave.name)}</h2>
@@ -371,6 +373,8 @@
           </article>`;
       })
       .join("");
+
+    renderRail(visibleWaves);
   }
 
   /* Category view */
@@ -704,6 +708,69 @@
     els.scrim.classList.remove("is-visible");
   }
 
+  /* Wave rail — click or drag to jump between timeline waves */
+
+  let visibleWaveIds = [];
+
+  function railOffset() {
+    return els.controls.offsetHeight + 12;
+  }
+
+  function renderRail(visibleWaves) {
+    visibleWaveIds = visibleWaves.map((wave) => wave.id);
+    els.waveRail.innerHTML = visibleWaves
+      .map(
+        (wave) => `
+          <button type="button" class="wave-rail-node" data-wave-target="${escapeHtml(wave.id)}"
+            aria-label="Jump to ${escapeHtml(wave.label)} · ${escapeHtml(wave.name)}">
+            <span class="wave-rail-dot"></span>
+            <span class="wave-rail-label">${escapeHtml(wave.label)}</span>
+          </button>`,
+      )
+      .join("");
+    updateRailVisibility();
+    syncRailActive();
+  }
+
+  function updateRailVisibility() {
+    els.waveRail.hidden = state.view !== "timeline" || visibleWaveIds.length < 2;
+  }
+
+  function setRailActive(waveId) {
+    Array.from(els.waveRail.children).forEach((node) => {
+      node.classList.toggle("is-active", node.dataset.waveTarget === waveId);
+    });
+  }
+
+  function waveBlockFor(waveId) {
+    return els.timeline.querySelector(`.wave-block[data-wave-id="${waveId}"]`);
+  }
+
+  function syncRailActive() {
+    if (els.waveRail.hidden) return;
+    const threshold = railOffset() + 8;
+    let current = visibleWaveIds[0];
+    for (const waveId of visibleWaveIds) {
+      const block = waveBlockFor(waveId);
+      if (block && block.getBoundingClientRect().top <= threshold) {
+        current = waveId;
+      }
+    }
+    setRailActive(current);
+  }
+
+  function jumpToWave(waveId, smooth) {
+    const block = waveBlockFor(waveId);
+    if (!block) return;
+    const top = block.getBoundingClientRect().top + window.scrollY - railOffset() + 2;
+    try {
+      window.scrollTo({ top: Math.max(0, top), behavior: smooth ? "smooth" : "auto" });
+    } catch {
+      window.scrollTo(0, Math.max(0, top));
+    }
+    setRailActive(waveId);
+  }
+
   /* Render pipeline */
 
   function renderViews() {
@@ -725,6 +792,8 @@
     Object.entries(els.panels).forEach(([key, panel]) => {
       panel.classList.toggle("is-active", key === view);
     });
+    updateRailVisibility();
+    syncRailActive();
   }
 
   /* Events */
@@ -841,6 +910,64 @@
       if (!event.relatedTarget || !cloud.contains(event.relatedTarget)) hideTooltip();
     });
   });
+
+  els.waveRail.addEventListener("click", (event) => {
+    const node = event.target.closest("[data-wave-target]");
+    if (node) jumpToWave(node.dataset.waveTarget, true);
+  });
+
+  // Dragging along the rail scrubs through waves, like a contacts fast scroller.
+  let railDragging = false;
+  function railNodeFromY(clientY) {
+    let best = null;
+    let bestDistance = Infinity;
+    els.waveRail.querySelectorAll("[data-wave-target]").forEach((node) => {
+      const rect = node.getBoundingClientRect();
+      const distance = Math.abs(clientY - (rect.top + rect.height / 2));
+      if (distance < bestDistance) {
+        bestDistance = distance;
+        best = node;
+      }
+    });
+    return best;
+  }
+  els.waveRail.addEventListener("pointerdown", (event) => {
+    railDragging = true;
+    if (els.waveRail.setPointerCapture && event.pointerId !== undefined) {
+      try {
+        els.waveRail.setPointerCapture(event.pointerId);
+      } catch {
+        /* pointer already released */
+      }
+    }
+    event.preventDefault();
+  });
+  els.waveRail.addEventListener("pointermove", (event) => {
+    if (!railDragging) return;
+    const node = railNodeFromY(event.clientY);
+    if (node && !node.classList.contains("is-active")) {
+      jumpToWave(node.dataset.waveTarget, false);
+    }
+  });
+  ["pointerup", "pointercancel"].forEach((type) =>
+    els.waveRail.addEventListener(type, () => {
+      railDragging = false;
+    }),
+  );
+
+  let railScrollTick = false;
+  window.addEventListener(
+    "scroll",
+    () => {
+      if (railScrollTick) return;
+      railScrollTick = true;
+      requestAnimationFrame(() => {
+        railScrollTick = false;
+        syncRailActive();
+      });
+    },
+    { passive: true },
+  );
 
   els.scrim.addEventListener("click", closeDrawer);
   els.drawerContent.addEventListener("click", (event) => {

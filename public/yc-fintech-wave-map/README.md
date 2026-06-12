@@ -10,6 +10,9 @@ The hero frames the five waves with the corner-bracket logo motif and a non-inte
 wave spine; filtering lives entirely in the sticky controls bar (Timeline / Category /
 Table views, search, and multi-select wave/theme/status filters).
 
+In the Timeline view a floating wave rail (left edge on desktop, right edge on phones)
+tracks the wave currently in view; click or drag along it to jump between waves.
+
 ## Source Data
 
 The map is generated from the clean YC fintech/payments/stablecoin company dataset and enriched with public YC directory data.
