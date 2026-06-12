@@ -27,8 +27,9 @@ tracks the wave currently in view; click or drag along it to jump between waves.
   `CITY_COORDS` table in `app.js`. Hovering a bubble shows the city's count and sample
   companies; clicking it opens a panel directly under the map listing that city's
   companies (click any mini-card for the full drawer). Zoom with the on-map
-  controls, double-click, or ctrl/⌘ + scroll, and drag to pan once zoomed — bubble
-  labels reveal progressively (with collision culling) as you zoom. Remote and
+  controls, double-click, or scrolling (armed by clicking the map once, so page
+  scrolling is never hijacked; ctrl/⌘ + scroll always works), and drag to pan once
+  zoomed — bubble labels reveal progressively (with collision culling) as you zoom. Remote and
   no-location cohorts appear as clickable pills under the map since they can't be
   plotted.
   YC's location strings are kept verbatim in `data.js`; duplicate spellings

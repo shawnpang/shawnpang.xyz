@@ -975,7 +975,7 @@
     }
     mapEls.foot.innerHTML =
       pills.join("") +
-      '<span class="map-hint">Double-click or ctrl + scroll to zoom &middot; drag to pan</span>';
+      '<span class="map-hint">Click the map, then scroll or double-click to zoom &middot; drag to pan</span>';
   }
 
   function renderLocationMap(entries) {
@@ -1115,34 +1115,55 @@
       if (!next || !next.closest || !next.closest(".map-bubble")) hideTooltip();
     });
 
+    // Plain-wheel zoom is armed by interacting with the map once, so casual
+    // page scrolling over the map is never hijacked; ctrl/⌘ + wheel always works.
+    let wheelArmed = false;
+    function setWheelArmed(value) {
+      wheelArmed = value;
+      els.locationMapWrap.classList.toggle("is-armed", value);
+    }
+    els.locationMapWrap.addEventListener("mouseleave", () => setWheelArmed(false));
+    document.addEventListener("pointerdown", (event) => {
+      if (!els.locationMapWrap.contains(event.target)) setWheelArmed(false);
+    });
+
     let dragStart = null;
+    let dragging = false;
     mapEls.svg.addEventListener("pointerdown", (event) => {
+      setWheelArmed(true);
       if (mapState.zoom <= 1.001) return;
       const rect = mapEls.svg.getBoundingClientRect();
-      if (!rect.width) return;
       dragStart = {
         x: event.clientX,
         y: event.clientY,
         cx: mapState.cx,
         cy: mapState.cy,
-        scale: geoData.width / mapState.zoom / rect.width,
+        scale: geoData.width / mapState.zoom / (rect.width || geoData.width),
+        pointerId: event.pointerId,
       };
+      dragging = false;
       mapState.dragMoved = false;
-      mapEls.svg.classList.add("is-dragging");
-      if (mapEls.svg.setPointerCapture && event.pointerId !== undefined) {
-        try {
-          mapEls.svg.setPointerCapture(event.pointerId);
-        } catch {
-          /* pointer already released */
-        }
-      }
       event.preventDefault();
     });
     mapEls.svg.addEventListener("pointermove", (event) => {
       if (!dragStart) return;
       const dx = event.clientX - dragStart.x;
       const dy = event.clientY - dragStart.y;
-      if (Math.hypot(dx, dy) > 4) mapState.dragMoved = true;
+      if (!dragging) {
+        if (Math.hypot(dx, dy) <= 4) return;
+        // Capturing the pointer retargets the eventual click to the svg and
+        // would kill bubble clicks, so capture only once a real drag starts.
+        dragging = true;
+        mapState.dragMoved = true;
+        mapEls.svg.classList.add("is-dragging");
+        if (mapEls.svg.setPointerCapture && dragStart.pointerId !== undefined) {
+          try {
+            mapEls.svg.setPointerCapture(dragStart.pointerId);
+          } catch {
+            /* pointer already released */
+          }
+        }
+      }
       mapState.cx = dragStart.cx - dx * dragStart.scale;
       mapState.cy = dragStart.cy - dy * dragStart.scale;
       applyMapView();
@@ -1150,16 +1171,17 @@
     ["pointerup", "pointercancel"].forEach((type) =>
       mapEls.svg.addEventListener(type, () => {
         dragStart = null;
+        dragging = false;
         mapEls.svg.classList.remove("is-dragging");
       }),
     );
 
-    // Trackpad pinches arrive as ctrl+wheel, so this covers pinch and
-    // ctrl/cmd+scroll without hijacking normal page scrolling.
+    // Trackpad pinches arrive as ctrl+wheel, so this covers pinch, modifier
+    // scroll, and — once armed by a click — plain scrolling.
     mapEls.svg.addEventListener(
       "wheel",
       (event) => {
-        if (!event.ctrlKey && !event.metaKey) return;
+        if (!event.ctrlKey && !event.metaKey && !wheelArmed) return;
         event.preventDefault();
         const [focusX, focusY] = clientToMap(event);
         setMapZoom(mapState.zoom * Math.exp(-event.deltaY * 0.0016), focusX, focusY);

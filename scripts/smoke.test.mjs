@@ -304,6 +304,34 @@ const zoomedRadius = Number(
   bubbles().find((b) => b.getAttribute("data-loc-key") === "San Francisco, CA, USA").getAttribute("r"),
 );
 check("bubbles counter-scale while zooming", zoomedRadius < baseRadius, true);
+// Bubble clicks must survive zoom (regression: pointer capture on pointerdown
+// retargeted the click to the svg, so zoomed bubbles were dead)
+const zoomedSf = bubbles().find((b) => b.getAttribute("data-loc-key") === "San Francisco, CA, USA");
+zoomedSf.dispatchEvent(new window.MouseEvent("pointerdown", { bubbles: true, clientX: 200, clientY: 140 }));
+zoomedSf.dispatchEvent(new window.MouseEvent("pointerup", { bubbles: true, clientX: 200, clientY: 140 }));
+zoomedSf.dispatchEvent(new window.MouseEvent("click", { bubbles: true, clientX: 200, clientY: 140 }));
+check("zoomed bubble click opens the city panel", cityPanel.hidden, false);
+check("zoomed click selects the right city", cityPanel.querySelector(".panel-title").textContent, "San Francisco");
+cityPanel.querySelector("[data-panel-close]").click();
+// A real drag pans and swallows the click that follows it
+const preDragViewBox = mapSvg.getAttribute("viewBox");
+const dragSf = bubbles().find((b) => b.getAttribute("data-loc-key") === "San Francisco, CA, USA");
+dragSf.dispatchEvent(new window.MouseEvent("pointerdown", { bubbles: true, clientX: 200, clientY: 140 }));
+dragSf.dispatchEvent(new window.MouseEvent("pointermove", { bubbles: true, clientX: 240, clientY: 160 }));
+dragSf.dispatchEvent(new window.MouseEvent("pointerup", { bubbles: true, clientX: 240, clientY: 160 }));
+check("drag pans the viewBox", mapSvg.getAttribute("viewBox") !== preDragViewBox, true);
+dragSf.dispatchEvent(new window.MouseEvent("click", { bubbles: true, clientX: 240, clientY: 160 }));
+check("click after a drag is swallowed", cityPanel.hidden, true);
+// Clicking the map arms plain-wheel zoom; leaving disarms it
+check("map armed after pointerdown", mapWrap.classList.contains("is-armed"), true);
+const preWheelZoomViewBox = mapSvg.getAttribute("viewBox");
+mapSvg.dispatchEvent(new window.WheelEvent("wheel", { bubbles: true, cancelable: true, deltaY: -160 }));
+check("armed plain wheel zooms", mapSvg.getAttribute("viewBox") !== preWheelZoomViewBox, true);
+mapWrap.dispatchEvent(new window.MouseEvent("mouseleave"));
+check("leaving the map disarms wheel zoom", mapWrap.classList.contains("is-armed"), false);
+const disarmedViewBox = mapSvg.getAttribute("viewBox");
+mapSvg.dispatchEvent(new window.WheelEvent("wheel", { bubbles: true, cancelable: true, deltaY: -160 }));
+check("disarmed plain wheel scrolls the page instead", mapSvg.getAttribute("viewBox"), disarmedViewBox);
 document.getElementById("mapZoomReset").click();
 check("reset restores the world viewBox", mapSvg.getAttribute("viewBox"), baseViewBox);
 check("zoomed class cleared on reset", mapWrap.classList.contains("is-zoomed"), false);
