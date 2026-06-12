@@ -405,7 +405,12 @@
 
   function pct(numerator, denominator) {
     if (!denominator) return "0%";
-    return `${((numerator / denominator) * 100).toFixed(0)}%`;
+    const rounded = Math.round((numerator / denominator) * 100);
+    // Never round a real share to the absolutes: 2/666 is "<1%", not "0%",
+    // and 665/666 is ">99%", not "100%".
+    if (numerator > 0 && rounded === 0) return "<1%";
+    if (numerator < denominator && rounded === 100) return ">99%";
+    return `${rounded}%`;
   }
 
   function initials(name) {

@@ -259,6 +259,11 @@ check("city tooltip names the city", document.querySelector("#tooltip .tooltip-n
 check("city tooltip counts companies", document.querySelector("#tooltip .tooltip-citycount").textContent, "182 companies");
 sfBubble.dispatchEvent(new window.MouseEvent("mouseout", { bubbles: true, relatedTarget: document.body }));
 check("city tooltip hides on leave", document.getElementById("tooltip").classList.contains("is-visible"), false);
+// Small cities must not round their share down to "0%" (Hanoi: 2 of 666)
+const hanoiBubble = bubbles().find((b) => b.getAttribute("data-loc-key") === "Hanoi, Vietnam");
+hanoiBubble.dispatchEvent(new window.MouseEvent("mouseover", { bubbles: true, clientX: 120, clientY: 120 }));
+check("tiny share shows <1%, not 0%", document.querySelector("#tooltip .tooltip-oneliner").textContent.includes("<1% of matching"), true);
+hanoiBubble.dispatchEvent(new window.MouseEvent("mouseout", { bubbles: true, relatedTarget: document.body }));
 
 // Bubble click -> city panel under the map lists that city's companies
 const cityPanel = document.getElementById("mapCityPanel");
