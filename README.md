@@ -79,12 +79,16 @@ app/<slug>/
     filters.ts
 ```
 
-## Redirects
+## Redirects & rewrites
 
-- `/x` → `/howxworks` (short alias)
-- `/x-algorithm` → `/howxworks` (legacy URL from the intermediate restructure)
-- `/yc-fintech-map` → `/yc-fintech-wave-map/index.html` (short alias)
-- `/yc-fintech-wave-map` → `/yc-fintech-wave-map/index.html` (bare folder path would 404)
+- `/x` → `/howxworks` (short alias, redirect)
+- `/x-algorithm` → `/howxworks` (legacy URL from the intermediate restructure, redirect)
+- `/yc-fintech-map` ⇒ serves `/yc-fintech-wave-map/index.html` (rewrite — the short URL
+  is canonical and stays in the address bar; the page's asset paths are absolute)
+- `/yc-fintech-wave-map` → `/yc-fintech-map` (bare folder path would 404, redirect)
+- `/yc-fintech-wave-map/index.html` still serves directly for old links; it must never
+  redirect to the short URL (the short URL briefly shipped as a 308 to it, so the
+  reverse redirect could loop against cached 308s)
 
 ## License
 

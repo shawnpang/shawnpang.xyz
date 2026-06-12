@@ -21,7 +21,7 @@ export type SiteItem = {
 export const siteItems: SiteItem[] = [
   {
     title: "YC Fintech Wave Map",
-    href: "/yc-fintech-wave-map/index.html",
+    href: "/yc-fintech-map",
     kind: "data-map",
     status: "Live",
     date: "June 2026",
