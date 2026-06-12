@@ -162,6 +162,7 @@
     "DF, Brazil": "Distrito Federal, Brazil",
     "MG, Brazil": "Minas Gerais, Brazil",
     "N.L., Mexico": "Nuevo León, Mexico",
+    "United States": "USA",
   };
 
   function normalizeLocation(raw) {
@@ -627,6 +628,136 @@
       .join("");
   }
 
+  /* Location view */
+
+  const expandedLocations = new Set();
+  const LOCATION_PREVIEW = 12;
+
+  function renderLocation(rows) {
+    const groups = new Map();
+    rows.forEach((company) => {
+      locationEntries(company).forEach((key) => {
+        if (!groups.has(key)) groups.set(key, []);
+        groups.get(key).push(company);
+      });
+    });
+    const entries = Array.from(groups.entries()).sort(
+      (a, b) =>
+        b[1].length - a[1].length || cityMeta(a[0]).title.localeCompare(cityMeta(b[0]).title),
+    );
+
+    const placeCount = entries.filter(([key]) => !key.startsWith("__")).length;
+    const countries = new Set();
+    entries.forEach(([key]) => {
+      const country = cityMeta(key).country;
+      if (country) countries.add(country);
+    });
+    els.locationNote.textContent = entries.length
+      ? `${placeCount} locations · ${countries.size} countries — companies with offices in several places appear under each one.`
+      : "";
+
+    if (!entries.length) {
+      els.locationGrid.innerHTML = `<div class="cloud-empty">No companies match these filters.</div>`;
+      return;
+    }
+
+    const maxCity = entries[0][1].length;
+    els.locationGrid.innerHTML = entries
+      .map(([key, list]) => {
+        const meta = cityMeta(key);
+        const expanded = expandedLocations.has(key);
+        const shown = expanded ? list : list.slice(0, LOCATION_PREVIEW);
+        const widthPct = Math.max(2, Math.round((list.length / maxCity) * 100));
+        const toggle =
+          list.length > LOCATION_PREVIEW
+            ? `<button type="button" class="location-more" data-expand="${escapeHtml(key)}">${
+                expanded ? "Show fewer" : `Show all ${list.length}`
+              }</button>`
+            : "";
+        return `
+          <article class="location-card">
+            <div class="location-head">
+              <h2>${escapeHtml(meta.title)}</h2>
+              <span class="location-count">${list.length}</span>
+            </div>
+            ${meta.subtitle ? `<p class="location-subtitle">${escapeHtml(meta.subtitle)}</p>` : ""}
+            <span class="location-bar"><span class="location-bar-fill" style="width:${widthPct}%"></span></span>
+            <div class="location-companies" data-hoverable>${shown.map(miniCardHtml).join("")}</div>
+            ${toggle}
+          </article>`;
+      })
+      .join("");
+  }
+
+  /* Words view */
+
+  const STOPWORDS = new Set(
+    (
+      "the and for are but not nor you your yours our ours their theirs its his her hers him " +
+      "she they them than then there these those this that with without within while when " +
+      "where which what who whom whose why how has have had having was were will would can " +
+      "could should shall may might must being been because both each few more most other " +
+      "others some such only own same very too also just into onto over under about above " +
+      "below between through during before after again against all any once here from " +
+      "across does did " +
+      "doing done don't doesn't isn't aren't wasn't weren't won't can't couldn't wouldn't " +
+      "shouldn't it's we're they're you're that's what's there's here's let's i'm we've " +
+      "you've they've we'll you'll they'll via per etc and/or one two three " +
+      "company companies company's business businesses customer customers customer's user " +
+      "users people team teams startup startups founder founders founded product products " +
+      "service services solution solutions help helps helping helped build builds building " +
+      "built create creates creating created make makes making made use uses using used " +
+      "need needs needed want wants work works working provide provides providing offer " +
+      "offers offering enable enables enabling allow allows allowing get gets getting like " +
+      "new now today time times way ways world first best better easy easily simple fast " +
+      "faster every many much including include includes based focused currently well " +
+      "million billion combinator backed leading mission modern experience next"
+    ).split(/\s+/),
+  );
+
+  function renderWords(rows) {
+    const counts = new Map();
+    rows.forEach((company) => {
+      const text = `${company.oneLiner || ""} ${company.longDescription || ""}`.toLowerCase();
+      const seen = new Set();
+      (text.match(/[a-z0-9'-]+/g) || []).forEach((raw) => {
+        const word = raw.replace(/^['-]+|['-]+$/g, "");
+        if (word.length < 3) return;
+        if (/^\d+$/.test(word)) return;
+        if (STOPWORDS.has(word)) return;
+        seen.add(word);
+      });
+      // Doc frequency: each company votes once per word, so one verbose
+      // description can't dominate the cloud.
+      seen.forEach((word) => counts.set(word, (counts.get(word) || 0) + 1));
+    });
+
+    const top = Array.from(counts.entries())
+      .filter(([, count]) => count >= 2)
+      .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+      .slice(0, 60);
+
+    if (!top.length) {
+      els.wordsNote.textContent = "";
+      els.wordCloud.innerHTML = `<div class="cloud-empty">No recurring words for these filters.</div>`;
+      return;
+    }
+
+    els.wordsNote.textContent =
+      `Top ${top.length} terms across ${rows.length} YC company descriptions, ` +
+      "sized by how many companies use each one — click a word to search the map.";
+
+    const max = top[0][1];
+    els.wordCloud.innerHTML = top
+      .map(([word, count], index) => {
+        const size = (13 + Math.sqrt(count / max) * 23).toFixed(1);
+        const isTop = index < 8;
+        const opacity = isTop ? 1 : (0.45 + (count / max) * 0.55).toFixed(2);
+        return `<button type="button" class="word-chip${isTop ? " is-top" : ""}" data-word="${escapeHtml(word)}" style="font-size:${size}px;--word-opacity:${opacity}">${escapeHtml(word)}<sup class="word-freq">${count}</sup></button>`;
+      })
+      .join("");
+  }
+
   /* Table view */
 
   function renderTable(rows) {
@@ -669,6 +800,7 @@
             <td class="row-wave">${escapeHtml(company.waveLabel)}</td>
             <td>${statusPill(company.status, false)}</td>
             <td class="row-subindustry">${escapeHtml(company.subindustry || "—")}</td>
+            <td class="row-location">${escapeHtml(company.locationsText || "—")}</td>
             <td><div class="row-themes">${themeChips}</div></td>
           </tr>`;
       })
@@ -955,12 +1087,17 @@
 
   /* Render pipeline */
 
+  let lastRows = [];
+
   function renderViews() {
     const rows = filteredCompanies();
+    lastRows = rows;
     renderSummary(rows);
     renderResultRow(rows);
     renderTimeline(rows);
     renderCategory(rows);
+    renderLocation(rows);
+    renderWords(rows);
     renderTable(rows);
   }
 
@@ -1073,14 +1210,34 @@
     return el ? byId[el.dataset.companyId] : null;
   }
 
-  [els.timeline, els.categoryGrid, els.tableBody].forEach((container) => {
+  [els.timeline, els.categoryGrid, els.locationGrid, els.tableBody].forEach((container) => {
     container.addEventListener("click", (event) => {
       const company = companyFromEvent(event);
       if (company) openDrawer(company.id);
     });
   });
 
-  [els.timeline, els.categoryGrid].forEach((container) => {
+  els.locationGrid.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-expand]");
+    if (!button) return;
+    const key = button.dataset.expand;
+    if (expandedLocations.has(key)) {
+      expandedLocations.delete(key);
+    } else {
+      expandedLocations.add(key);
+    }
+    renderLocation(lastRows);
+  });
+
+  els.wordCloud.addEventListener("click", (event) => {
+    const chip = event.target.closest("[data-word]");
+    if (!chip) return;
+    state.search = chip.dataset.word;
+    els.searchInput.value = chip.dataset.word;
+    renderViews();
+  });
+
+  [els.timeline, els.categoryGrid, els.locationGrid].forEach((container) => {
     container.addEventListener("mouseover", (event) => {
       const company = companyFromEvent(event);
       if (company) showTooltip(company, event);

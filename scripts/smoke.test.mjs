@@ -1,7 +1,9 @@
 import { JSDOM } from "jsdom";
 import { readFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+import { dirname, join } from "node:path";
 
-const dir = "/home/user/shawnpang.xyz/public/yc-fintech-wave-map";
+const dir = join(dirname(fileURLToPath(import.meta.url)), "..", "public", "yc-fintech-wave-map");
 const html = readFileSync(`${dir}/index.html`, "utf8");
 const dataSrc = readFileSync(`${dir}/data.js`, "utf8");
 const appSrc = readFileSync(`${dir}/app.js`, "utf8");
@@ -152,6 +154,101 @@ check("rail hidden with single wave filter", rail.hidden, true);
 document.getElementById("clearAll").click();
 check("rail restored after clearing filters", rail.hidden, false);
 check("timeline blocks carry wave ids", document.querySelectorAll("#timeline .wave-block[data-wave-id]").length, 5);
+
+// Region filter (Africa cohort measured against data.js: 48 companies)
+const regionBtn = document.getElementById("regionFilterButton");
+regionBtn.click();
+check("region menu opens", document.getElementById("regionFilterMenu").hidden, false);
+const africaCb = document.querySelector('#regionFilterMenu input[value="africa"]');
+africaCb.checked = true;
+africaCb.dispatchEvent(new window.Event("change", { bubbles: true }));
+check("africa filter narrows to cohort", document.getElementById("resultCount").textContent.trim(), "48 companies shown");
+check("africa table rows match", document.querySelectorAll("#companyTable tbody tr").length, 48);
+check("region button label updates", document.getElementById("regionFilterValue").textContent, "Africa");
+document.getElementById("clearAll").click();
+check("clearing region restores 666", document.getElementById("resultCount").textContent.trim(), "666 companies shown");
+
+// Table: location column present, populated, sortable
+check("table has 7 header cells", document.querySelectorAll("#companyTable thead th").length, 7);
+const allRows7 = Array.from(document.querySelectorAll("#companyTable tbody tr")).every((tr) => tr.children.length === 7);
+check("every table row has 7 cells", allRows7, true);
+const sfCells = Array.from(document.querySelectorAll("#companyTable td.row-location")).filter(
+  (td) => td.textContent.split(", ").includes("San Francisco"),
+);
+check("182 rows list San Francisco in the location column", sfCells.length, 182);
+const locTh = document.querySelector('#companyTable th[data-sort="locationsText"]');
+locTh.click();
+// Unlisted companies display "—" but sort by their empty locationsText key
+const locTexts = Array.from(document.querySelectorAll("#companyTable td.row-location")).map(
+  (td) => (td.textContent === "—" ? "" : td.textContent),
+);
+const locSorted = locTexts.slice().sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: "base" }));
+check("location th sorts the table by location", locTexts.join("|"), locSorted.join("|"));
+check("location sort arrow shows", locTh.querySelector(".sort-arrow").textContent, "↑");
+
+// Location view
+document.querySelector('[data-view="location"]').click();
+check("location tab activates panel", document.getElementById("locationView").classList.contains("is-active"), true);
+check(
+  "location note totals",
+  document.getElementById("locationNote").textContent,
+  "121 locations · 41 countries — companies with offices in several places appear under each one.",
+);
+const cardByTitle = (title) =>
+  Array.from(document.querySelectorAll(".location-card")).find(
+    (card) => card.querySelector("h2").textContent === title,
+  );
+const countOf = (title) => {
+  const card = cardByTitle(title);
+  return card ? Number(card.querySelector(".location-count").textContent) : -1;
+};
+check("first location card is San Francisco", document.querySelector(".location-card h2").textContent, "San Francisco");
+check("San Francisco count", countOf("San Francisco"), 182);
+// Merged spellings (New York City->New York, Lagos LA->Lagos, London England->London,
+// Bengaluru<->Bengaluru KA). Lagos raw strings sum to 41 but 13 companies list both
+// spellings at once, so 28 distinct companies is the correct merged count.
+check("New York merged count", countOf("New York"), 104);
+check("Lagos merged count", countOf("Lagos"), 28);
+check("London merged count", countOf("London"), 30);
+check("Bengaluru merged count", countOf("Bengaluru"), 35);
+check("Remote group present", countOf("Remote"), 145);
+check("Unlisted group present", countOf("No location listed"), 27);
+const sfCard = cardByTitle("San Francisco");
+check("big city collapsed to 12 mini-cards", sfCard.querySelectorAll(".mini-card").length, 12);
+check("expander label shows total", sfCard.querySelector(".location-more").textContent, "Show all 182");
+sfCard.querySelector(".location-more").click();
+check("expander shows all companies", cardByTitle("San Francisco").querySelectorAll(".mini-card").length, 182);
+check("expander toggles to Show fewer", cardByTitle("San Francisco").querySelector(".location-more").textContent, "Show fewer");
+cardByTitle("San Francisco").querySelector(".location-more").click();
+check("expander collapses again", cardByTitle("San Francisco").querySelectorAll(".mini-card").length, 12);
+const locMini = cardByTitle("San Francisco").querySelector(".mini-card");
+const locMiniName = locMini.querySelector(".mini-card-name").textContent;
+locMini.click();
+check("location mini-card opens drawer", document.getElementById("drawer").classList.contains("is-open"), true);
+check("drawer shows clicked company", document.querySelector("#drawerContent h2").textContent, locMiniName);
+document.dispatchEvent(new window.KeyboardEvent("keydown", { key: "Escape", bubbles: true }));
+check("drawer closed before words checks", document.getElementById("drawer").classList.contains("is-open"), false);
+
+// Words view
+document.querySelector('[data-view="words"]').click();
+check("words tab activates panel", document.getElementById("wordsView").classList.contains("is-active"), true);
+const chips = Array.from(document.querySelectorAll(".word-chip"));
+check("cloud renders at least 20 words", chips.length >= 20, true);
+const cloudWords = chips.map((chip) => chip.dataset.word);
+check("no function-word stopwords in cloud", ["the", "and", "for", "with", "from"].some((word) => cloudWords.includes(word)), false);
+check("no pure numbers in cloud", cloudWords.some((word) => /^\d+$/.test(word)), false);
+check("domain words surface", ["payments", "financial", "banking"].every((word) => cloudWords.includes(word)), true);
+check("top words are emphasized", document.querySelectorAll(".word-chip.is-top").length, 8);
+const drillChip = chips[0];
+const drillWord = drillChip.dataset.word;
+const drillFreq = Number(drillChip.querySelector(".word-freq").textContent);
+drillChip.click();
+check("word click fills the search box", document.getElementById("searchInput").value, drillWord);
+const drillCount = Number(document.getElementById("resultCount").textContent.trim().split(" ")[0]);
+console.log(`INFO  word "${drillWord}" (doc freq ${drillFreq}) -> ${drillCount} companies`);
+check("word click narrows results", drillCount >= drillFreq && drillCount < 666, true);
+document.getElementById("clearAll").click();
+check("clear after word drill-down restores 666", document.getElementById("resultCount").textContent.trim(), "666 companies shown");
 
 console.log(failures ? `\n${failures} FAILURES` : "\nALL CHECKS PASSED");
 process.exit(failures ? 1 : 0);
