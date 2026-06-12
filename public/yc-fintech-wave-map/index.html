@@ -45,6 +45,8 @@
         <div class="view-tabs" role="tablist" aria-label="Views">
           <button class="view-tab is-active" type="button" data-view="timeline" role="tab" aria-selected="true">Timeline</button>
           <button class="view-tab" type="button" data-view="category" role="tab" aria-selected="false">Category</button>
+          <button class="view-tab" type="button" data-view="location" role="tab" aria-selected="false">Location</button>
+          <button class="view-tab" type="button" data-view="words" role="tab" aria-selected="false">Words</button>
           <button class="view-tab" type="button" data-view="spreadsheet" role="tab" aria-selected="false">Table</button>
         </div>
 
@@ -76,6 +78,14 @@
             <span class="chevron" aria-hidden="true"></span>
           </button>
           <div class="filter-menu filter-menu-theme" id="themeFilterMenu" role="group" aria-label="Theme filter" hidden></div>
+        </div>
+
+        <div class="filter" data-filter="region">
+          <button class="filter-button" id="regionFilterButton" type="button" aria-expanded="false" aria-controls="regionFilterMenu">
+            <span class="filter-value" id="regionFilterValue">All regions</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </button>
+          <div class="filter-menu" id="regionFilterMenu" role="group" aria-label="Region filter" hidden></div>
         </div>
 
         <div class="filter" data-filter="status">
@@ -112,6 +122,16 @@
         <div class="category-grid" id="categoryGrid"></div>
       </section>
 
+      <section class="view-panel" id="locationView" aria-label="Location view">
+        <p class="location-note" id="locationNote"></p>
+        <div class="location-grid" id="locationGrid"></div>
+      </section>
+
+      <section class="view-panel" id="wordsView" aria-label="Word cloud view">
+        <p class="location-note" id="wordsNote"></p>
+        <div class="word-cloud" id="wordCloud"></div>
+      </section>
+
       <section class="view-panel" id="spreadsheetView" aria-label="Table view">
         <div class="table-wrap as-scroll">
           <table id="companyTable">
@@ -122,6 +142,7 @@
                 <th data-sort="waveLabel">Wave <span class="sort-arrow"></span></th>
                 <th data-sort="status">Status <span class="sort-arrow"></span></th>
                 <th data-sort="subindustry">Subindustry <span class="sort-arrow"></span></th>
+                <th data-sort="locationsText">Location <span class="sort-arrow"></span></th>
                 <th data-sort="themesText">Themes <span class="sort-arrow"></span></th>
               </tr>
             </thead>

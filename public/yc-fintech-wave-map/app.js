@@ -14,23 +14,32 @@
     panels: {
       timeline: document.getElementById("timelineView"),
       category: document.getElementById("categoryView"),
+      location: document.getElementById("locationView"),
+      words: document.getElementById("wordsView"),
       spreadsheet: document.getElementById("spreadsheetView"),
     },
+    locationNote: document.getElementById("locationNote"),
+    locationGrid: document.getElementById("locationGrid"),
+    wordsNote: document.getElementById("wordsNote"),
+    wordCloud: document.getElementById("wordCloud"),
     searchInput: document.getElementById("searchInput"),
     filters: Array.from(document.querySelectorAll(".filter")),
     filterButtons: {
       wave: document.getElementById("waveFilterButton"),
       theme: document.getElementById("themeFilterButton"),
+      region: document.getElementById("regionFilterButton"),
       status: document.getElementById("statusFilterButton"),
     },
     filterMenus: {
       wave: document.getElementById("waveFilterMenu"),
       theme: document.getElementById("themeFilterMenu"),
+      region: document.getElementById("regionFilterMenu"),
       status: document.getElementById("statusFilterMenu"),
     },
     filterValues: {
       wave: document.getElementById("waveFilterValue"),
       theme: document.getElementById("themeFilterValue"),
+      region: document.getElementById("regionFilterValue"),
       status: document.getElementById("statusFilterValue"),
     },
     controls: document.querySelector(".controls"),
@@ -65,12 +74,163 @@
     waveMap[wave.id] = wave;
   });
 
-  const companies = data.companies.map((company) => ({
-    ...company,
-    themesText: (company.themes || [])
-      .map((themeId) => (themeMap[themeId] ? themeMap[themeId].label : themeId))
-      .join(", "),
-  }));
+  /* Geography — YC location strings are kept verbatim in data.js; the same
+     city appears under several spellings, so normalize at display time only. */
+
+  const REGION_ORDER = [
+    "us-canada",
+    "latam",
+    "europe",
+    "africa",
+    "mena",
+    "south-asia",
+    "se-east-asia",
+    "oceania",
+    "remote",
+    "unlisted",
+    "other",
+  ];
+  const REGION_LABELS = {
+    "us-canada": "US & Canada",
+    latam: "Latin America",
+    europe: "Europe",
+    africa: "Africa",
+    mena: "Middle East",
+    "south-asia": "South Asia",
+    "se-east-asia": "SE & East Asia",
+    oceania: "Oceania",
+    remote: "Remote",
+    unlisted: "No location listed",
+    other: "Other",
+  };
+  const COUNTRY_REGION = {
+    USA: "us-canada",
+    "United States": "us-canada",
+    Canada: "us-canada",
+    Mexico: "latam",
+    Brazil: "latam",
+    Colombia: "latam",
+    Chile: "latam",
+    Argentina: "latam",
+    Peru: "latam",
+    Panama: "latam",
+    "Costa Rica": "latam",
+    "United Kingdom": "europe",
+    France: "europe",
+    Spain: "europe",
+    Denmark: "europe",
+    Estonia: "europe",
+    Germany: "europe",
+    Georgia: "europe",
+    Nigeria: "africa",
+    Kenya: "africa",
+    Egypt: "africa",
+    Senegal: "africa",
+    Ghana: "africa",
+    "Ivory Coast": "africa",
+    "South Africa": "africa",
+    Namibia: "africa",
+    Zambia: "africa",
+    Uganda: "africa",
+    "Democratic Republic of the Congo": "africa",
+    Seychelles: "africa",
+    Israel: "mena",
+    "United Arab Emirates": "mena",
+    "Saudi Arabia": "mena",
+    Bahrain: "mena",
+    India: "south-asia",
+    Pakistan: "south-asia",
+    Singapore: "se-east-asia",
+    Indonesia: "se-east-asia",
+    Vietnam: "se-east-asia",
+    Philippines: "se-east-asia",
+    "South Korea": "se-east-asia",
+    Australia: "oceania",
+  };
+  // True duplicates and bare state codes in YC's own data
+  const LOCATION_ALIASES = {
+    "New York City, NY, USA": "New York, NY, USA",
+    "London, England, United Kingdom": "London, United Kingdom",
+    "Lagos, LA, Nigeria": "Lagos, Nigeria",
+    "LA, Nigeria": "Lagos, Nigeria",
+    "Bengaluru, India": "Bengaluru, KA, India",
+    "Lima, Callao Region, Peru": "Lima, Peru",
+    "Lima, Lima Province, Peru": "Lima, Peru",
+    "MH, India": "Maharashtra, India",
+    "HR, India": "Haryana, India",
+    "CT, Spain": "Catalonia, Spain",
+    "DF, Brazil": "Distrito Federal, Brazil",
+    "MG, Brazil": "Minas Gerais, Brazil",
+    "N.L., Mexico": "Nuevo León, Mexico",
+  };
+
+  function normalizeLocation(raw) {
+    if (raw === "Remote") return "__remote__";
+    let parts = raw.split(",").map((part) => part.trim()).filter(Boolean);
+    // Collapse "Dubai, Dubai, UAE" / "Panama City, Panama, Panama" shapes
+    if (parts.length >= 2 && parts[0] === parts[1]) parts.splice(1, 1);
+    if (parts.length >= 3 && parts[1] === parts[2]) parts.splice(1, 1);
+    if (parts.length === 2 && parts[0] === parts[1]) parts = [parts[0]];
+    const joined = parts.join(", ");
+    return LOCATION_ALIASES[joined] || joined;
+  }
+
+  function locationEntries(company) {
+    if (company._locs) return company._locs;
+    const parts = String(company.locations || "")
+      .split(";")
+      .map((part) => part.trim())
+      .filter(Boolean);
+    const keys = parts.length
+      ? Array.from(new Set(parts.map(normalizeLocation)))
+      : ["__unlisted__"];
+    company._locs = keys;
+    return keys;
+  }
+
+  const cityMetaCache = new Map();
+  function cityMeta(key) {
+    if (cityMetaCache.has(key)) return cityMetaCache.get(key);
+    let meta;
+    if (key === "__remote__") {
+      meta = { title: "Remote", subtitle: "Distributed teams", country: "", region: "remote" };
+    } else if (key === "__unlisted__") {
+      meta = { title: "No location listed", subtitle: "Not provided on YC", country: "", region: "unlisted" };
+    } else {
+      const parts = key.split(",").map((part) => part.trim());
+      const country = parts[parts.length - 1];
+      const region = COUNTRY_REGION[country] || "other";
+      meta = {
+        title: parts.length > 1 ? parts[0] : key,
+        subtitle: parts.length > 1 ? parts.slice(1).join(", ") : REGION_LABELS[region],
+        country,
+        region,
+      };
+    }
+    cityMetaCache.set(key, meta);
+    return meta;
+  }
+
+  function companyRegions(company) {
+    if (!company._regions) {
+      company._regions = new Set(locationEntries(company).map((key) => cityMeta(key).region));
+    }
+    return company._regions;
+  }
+
+  const companies = data.companies.map((company) => {
+    const enriched = {
+      ...company,
+      themesText: (company.themes || [])
+        .map((themeId) => (themeMap[themeId] ? themeMap[themeId].label : themeId))
+        .join(", "),
+    };
+    enriched.locationsText = locationEntries(enriched)
+      .map((key) => cityMeta(key).title)
+      .filter((title) => title !== "No location listed")
+      .join(", ");
+    return enriched;
+  });
   const byId = {};
   companies.forEach((company) => {
     byId[company.id] = company;
@@ -90,6 +250,7 @@
     search: "",
     waves: [],
     themes: [],
+    regions: [],
     statuses: [],
     openMenu: "",
     sortKey: "year",
@@ -182,6 +343,12 @@
       ) {
         return false;
       }
+      if (
+        state.regions.length &&
+        !state.regions.some((regionId) => companyRegions(company).has(regionId))
+      ) {
+        return false;
+      }
       if (state.statuses.length && !state.statuses.includes(company.status)) return false;
       if (query && !searchable(company).includes(query)) return false;
       return true;
@@ -218,6 +385,10 @@
 
   /* Filters */
 
+  const presentRegions = REGION_ORDER.filter((regionId) =>
+    companies.some((company) => companyRegions(company).has(regionId)),
+  );
+
   const filterOptions = {
     wave: () =>
       data.waves.map((wave) => ({
@@ -225,14 +396,21 @@
         label: `${wave.label} · ${wave.name}`,
       })),
     theme: () => data.themes.map((theme) => ({ value: theme.id, label: theme.label })),
+    region: () =>
+      presentRegions.map((regionId) => ({ value: regionId, label: REGION_LABELS[regionId] })),
     status: () => statusList.map((status) => ({ value: status, label: status })),
   };
-  const filterStateKey = { wave: "waves", theme: "themes", status: "statuses" };
-  const filterAllLabel = { wave: "All waves", theme: "All themes", status: "All statuses" };
-  const filterNoun = { wave: "waves", theme: "themes", status: "statuses" };
+  const filterStateKey = { wave: "waves", theme: "themes", region: "regions", status: "statuses" };
+  const filterAllLabel = {
+    wave: "All waves",
+    theme: "All themes",
+    region: "All regions",
+    status: "All statuses",
+  };
+  const filterNoun = { wave: "waves", theme: "themes", region: "regions", status: "statuses" };
 
   function renderFilters() {
-    ["wave", "theme", "status"].forEach((kind) => {
+    ["wave", "theme", "region", "status"].forEach((kind) => {
       const selected = state[filterStateKey[kind]];
       const options = filterOptions[kind]();
       const open = state.openMenu === kind;
@@ -297,7 +475,11 @@
     const noun = rows.length === 1 ? "company shown" : "companies shown";
     els.resultCount.innerHTML = `<strong>${rows.length}</strong> ${noun}`;
     const anyFilter = Boolean(
-      state.waves.length || state.themes.length || state.statuses.length || state.search.trim(),
+      state.waves.length ||
+        state.themes.length ||
+        state.regions.length ||
+        state.statuses.length ||
+        state.search.trim(),
     );
     els.clearAll.hidden = !anyFilter;
   }
@@ -865,6 +1047,7 @@
   els.clearAll.addEventListener("click", () => {
     state.waves = [];
     state.themes = [];
+    state.regions = [];
     state.statuses = [];
     state.search = "";
     els.searchInput.value = "";
