@@ -32,12 +32,12 @@ export const siteItems: SiteItem[] = [
   },
   {
     title: "North America Fintech VC Map",
-    href: "/fintechvcmaps",
+    href: "/fintech-investors-map",
     kind: "data-map",
     status: "Live",
     date: "June 2026",
     description:
-      "A sourced map of 150 fintech investors across the US and Canada, with stablecoin relevance and founder pitch paths.",
+      "A sourced map of 166 fintech investors across the US and Canada, with stablecoin relevance and founder pitch paths.",
     tags: ["fintech", "VC", "stablecoins"],
     featured: true,
   },

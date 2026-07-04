@@ -22,6 +22,10 @@ const nextConfig: NextConfig = {
   },
   async rewrites() {
     return [
+      {
+        source: "/fintech-investors-map",
+        destination: "/fintechvcmaps",
+      },
       // Canonical short URL for the static YC fintech wave map; the page's
       // asset references are absolute, so it renders from any mount point.
       {

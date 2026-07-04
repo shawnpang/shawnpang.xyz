@@ -158,9 +158,9 @@ export default function FintechVcMap({ investors, people, summary }: Props) {
           </div>
           <h1>North America Fintech Investor Map</h1>
           <p>
-            150 sourced investors across 17 hubs, tagged by stage, subsector,
-            stablecoin relevance, crypto relevance, and founder-useful pitch
-            path.
+            {summary.investor_count} sourced investors across {summary.city_count} hubs,
+            tagged by stage, subsector, stablecoin relevance, crypto relevance,
+            and founder-useful pitch path.
           </p>
           <div className="vcmap-source-row" aria-label="Source links">
             <a href="#methodology">Methodology</a>
@@ -458,11 +458,10 @@ export default function FintechVcMap({ investors, people, summary }: Props) {
           <p className="vcmap-method-kicker">Fact-check log</p>
           <h2>Validation passed for scope, duplicates, URLs, and coordinates.</h2>
           <p>
-            The source validation checked 150 selected investors, 17 planned
-            hubs, allowed investor types, US/Canada geography, required fields,
-            URL formatting, X handle format, and rough map bounds. A source
-            reachability audit checked 176 URLs; 2 official pages returned 403
-            to the script and were marked for manual review.
+            The source validation checked {summary.investor_count} selected
+            investors, {summary.city_count} planned hubs, allowed investor
+            types, US/Canada geography, required fields, URL formatting,
+            X handle format, and rough map bounds.
           </p>
           <a href="#top">Back to map</a>
         </article>
