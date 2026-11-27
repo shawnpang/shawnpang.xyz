@@ -32,7 +32,10 @@ function ItemLink({
   className?: string;
   children: ReactNode;
 }) {
-  if (href.endsWith(".html")) {
+  // Plain anchors for static public/ files and for paths rewritten to
+  // another deployment (Canada Civ), so the App Router does not try a
+  // client-side navigation to a route that does not exist here.
+  if (href.endsWith(".html") || href === "/canada-civ" || href.startsWith("/canada-civ/")) {
     return (
       <a className={className} href={href}>
         {children}

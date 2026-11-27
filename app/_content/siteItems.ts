@@ -20,6 +20,17 @@ export type SiteItem = {
 
 export const siteItems: SiteItem[] = [
   {
+    title: "Canada Civ",
+    href: "/canada-civ",
+    kind: "data-map",
+    status: "Live",
+    date: "November 2026",
+    description:
+      "A Civilization-styled, read-only hex atlas of Canada, built from Statistics Canada and Natural Resources Canada data.",
+    tags: ["Canada", "maps", "open data"],
+    featured: true,
+  },
+  {
     title: "YC Fintech Wave Map",
     href: "/yc-fintech-map",
     kind: "data-map",
