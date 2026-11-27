@@ -21,34 +21,20 @@ const nextConfig: NextConfig = {
     ];
   },
   async rewrites() {
-    return {
-      // beforeFiles so /canada-civ is proxied before Next.js looks for a
-      // page or applies trailing-slash handling. This is an external
-      // rewrite, unlike /fintech-investors-map, because Canada Civ is a
-      // separate static deployment (shawnpang/canada-civ).
-      beforeFiles: [
-        {
-          source: "/canada-civ",
-          destination: "https://canada-civ.vercel.app/",
-        },
-        {
-          source: "/canada-civ/:path*",
-          destination: "https://canada-civ.vercel.app/:path*",
-        },
-      ],
-      afterFiles: [
-        {
-          source: "/fintech-investors-map",
-          destination: "/fintechvcmaps",
-        },
-        // Canonical short URL for the static YC fintech wave map; the page's
-        // asset references are absolute, so it renders from any mount point.
-        {
-          source: "/yc-fintech-map",
-          destination: "/yc-fintech-wave-map/index.html",
-        },
-      ],
-    };
+    // /canada-civ is proxied in proxy.ts (not here) so the trailing slash
+    // can be preserved. Relative assets on that static app require it.
+    return [
+      {
+        source: "/fintech-investors-map",
+        destination: "/fintechvcmaps",
+      },
+      // Canonical short URL for the static YC fintech wave map; the page's
+      // asset references are absolute, so it renders from any mount point.
+      {
+        source: "/yc-fintech-map",
+        destination: "/yc-fintech-wave-map/index.html",
+      },
+    ];
   },
 };
 
