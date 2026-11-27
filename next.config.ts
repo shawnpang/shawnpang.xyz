@@ -48,6 +48,14 @@ const nextConfig: NextConfig = {
           source: "/yc-fintech-map",
           destination: "/yc-fintech-wave-map/index.html",
         },
+        // Stablecoin Atlas (shawnpang/stablecoin-world-map), built with Vite
+        // base "/stablecoin-atlas/" and copied into public/stablecoin-atlas.
+        // Its asset URLs are absolute under that base, so it renders at the
+        // slash-less URL Next.js normalises to.
+        {
+          source: "/stablecoin-atlas",
+          destination: "/stablecoin-atlas/index.html",
+        },
       ],
     };
   },
