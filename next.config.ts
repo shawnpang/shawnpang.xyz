@@ -21,20 +21,35 @@ const nextConfig: NextConfig = {
     ];
   },
   async rewrites() {
-    // /canada-civ is proxied in proxy.ts (not here) so the trailing slash
-    // can be preserved. Relative assets on that static app require it.
-    return [
-      {
-        source: "/fintech-investors-map",
-        destination: "/fintechvcmaps",
-      },
-      // Canonical short URL for the static YC fintech wave map; the page's
-      // asset references are absolute, so it renders from any mount point.
-      {
-        source: "/yc-fintech-map",
-        destination: "/yc-fintech-wave-map/index.html",
-      },
-    ];
+    return {
+      // External rewrite, unlike /fintech-investors-map, because Canada Civ
+      // is a separate static deployment (shawnpang/canada-civ). The atlas
+      // sets <base href="/canada-civ/"> and injects assets in a head script
+      // so relative CSS/JS/data work at the slash-less /canada-civ URL
+      // (Next.js would otherwise 308 /canada-civ/ back to /canada-civ).
+      beforeFiles: [
+        {
+          source: "/canada-civ",
+          destination: "https://canada-civ.vercel.app/",
+        },
+        {
+          source: "/canada-civ/:path*",
+          destination: "https://canada-civ.vercel.app/:path*",
+        },
+      ],
+      afterFiles: [
+        {
+          source: "/fintech-investors-map",
+          destination: "/fintechvcmaps",
+        },
+        // Canonical short URL for the static YC fintech wave map; the page's
+        // asset references are absolute, so it renders from any mount point.
+        {
+          source: "/yc-fintech-map",
+          destination: "/yc-fintech-wave-map/index.html",
+        },
+      ],
+    };
   },
 };
 

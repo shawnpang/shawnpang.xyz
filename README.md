@@ -36,9 +36,8 @@ app/
       icons.tsx      ← Icon (with IconName) and XGlyph
 next.config.ts       ← redirects /x and /x-algorithm to /howxworks;
                        rewrites /fintech-investors-map and /yc-fintech-map
-                       internally
-proxy.ts             ← proxies /canada-civ to the Canada Civ Vercel
-                       deployment (https://canada-civ.vercel.app)
+                       internally; proxies /canada-civ to the Canada Civ
+                       Vercel deployment (https://canada-civ.vercel.app)
 ```
 
 ## Adding a new piece
